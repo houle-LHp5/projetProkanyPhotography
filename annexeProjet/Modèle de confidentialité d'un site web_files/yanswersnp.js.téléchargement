@@ -1,0 +1,92 @@
+
+
+var saveDocumentServiceLocation;
+if(saveDocumentServiceLocation==undefined) saveDocumentServiceLocation = "/contracts/SaveDoc/index.aspx";
+function saveAnswers() 
+{    
+   postTo("/contracts/SaveAnswers.php", {'contract':PU, 'variablestring':saveAnswersFromPage(), 'dbcountry':dbcountry, 'dbregion':dbregion});
+}
+
+var _save_filename = '';
+function saveAsHTML(filename) 
+{
+	saveAs("html", filename);	
+}
+
+function saveAsWord(filename) 
+{
+	saveAs("doc", filename);
+}
+
+function saveAsRTF(filename) 
+{
+	saveAs("rtf", filename);
+}
+
+function saveAsPDF(filename) 
+{
+	saveAs("pdf", filename);	
+}
+
+
+function displaySuccess(req, ind, suc) {
+	hideMessage();
+	if(!(suc && req.responseText))
+		alert("Il y avait une erreur de sauvgarder: "+req.responseText);
+	else
+		alert("Le document a bien été enregistré.");
+
+	if(saveDocument_Callback) {
+		saveDocument_Callback();
+		saveDocument_Callback = null;
+	}
+}
+
+var saveDocument_Callback = null;
+function saveDocument(format, filename, callback) 
+{
+	if(callback)
+		saveDocument_Callback = callback;
+	if(format == 'html')
+		saveAsHTML(filename);
+	if(format == 'doc')
+		saveAsWord(filename);
+	if(format == 'pdf')
+		saveAsPDF(filename);
+	if(format == 'rtf')
+		saveAsRTF(filename);
+}
+
+function saveAnswersFromPage() {
+	// Clear getVS so that we always get the current variable string.
+	if(typeof(getVS) != "undefined") getVS = null;
+	var vstringInfo = saveASPAJAX('aspnetForm', false, false).replace(/&/g, '&amp;');
+	var xml = str2XML('<?xml version="1.0"?><vstringInfo>'+vstringInfo+'</vstringInfo>');
+	var conflict = xml.getElementsByTagName("conflict")[0].firstChild.data;
+	if(conflict == 'True') alert('Un autre utilisateur a apporté des modifications depuis vous dernier chargement. Vos modifications ont été automatiquement fusionnées avec les leurs.');
+	var vstring = '';
+   for (var counter=0; counter<xml.getElementsByTagName("string").length;
+         counter++)
+   {
+      vstring += xml.getElementsByTagName("string")[counter].firstChild.data;
+   }
+	vstring = vstring.replace(/&amp;/g, '&');
+	return vstring;
+}
+
+function showSaveAnswersDialog(title, href, width, height, cssClass, overlayOpacity) {
+	showDialog(title, href, width, height, cssClass, overlayOpacity); 
+	return false;
+}
+function newAnswerDialog(code, type, criteria, version){
+   if(typeof(code) == "undefined"){
+      alert("Aucun produit défini pour le nouveau document.");
+      return;
+   }
+   if(typeof(type) == "undefined") type = 0;
+   if(typeof(criteria) == "undefined") criteria = "";
+   if(typeof(version) == "undefined") version = "";
+      saveAllFrames();
+   showDialog("Créer un nouveau document", "/newDialog.php?code="+code+"&type="+type+"&criteria="+criteria+"&version="+version, 370, 241, "plainDialog", 0.7);
+}
+

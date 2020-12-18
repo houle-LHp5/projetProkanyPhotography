@@ -1,0 +1,2 @@
+
+var _maintenanceWarning = {"enabled":true,"warningStart":{"date":"2020-10-24 21:45:00.000000","timezone_type":3,"timezone":"America\/Edmonton"},"warningEnd":{"date":"2020-10-24 22:15:00.000000","timezone_type":3,"timezone":"America\/Edmonton"},"maintenanceStart":{"date":"2020-10-25 06:00:00.000000","timezone_type":3,"timezone":"America\/Edmonton"},"maintenanceEnd":{"date":"2020-10-25 06:10:00.000000","timezone_type":3,"timezone":"America\/Edmonton"},"timezoneAbbr":"","dateFormat":"d MM yy","is24HourFormat":true}

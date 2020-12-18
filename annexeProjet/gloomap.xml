@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gloomaps scheme="1.0">
+  <link>https://www.gloomaps.com/M9tEyt7GWX</link>
+  <pubdate>11/25/2020</pubdate>
+  <section>
+    <box>
+      <text>Acceuil</text>
+      <member>
+        <box>
+          <text>A Propos</text>
+          <member>
+            <box>
+              <text>Contact</text>
+              <propa>#ffffff</propa>
+              <propb>#000000</propb>
+              <propc>Lato</propc>
+              <propd>100%</propd>
+              <member/>
+            </box>
+            <box>
+              <text>Qui suis-je ?</text>
+              <member/>
+            </box>
+          </member>
+        </box>
+        <box>
+          <text>Blog</text>
+          <member>
+            <box>
+              <text>Catégorie  photo1</text>
+              <member/>
+            </box>
+            <box>
+              <text>Catégorie photo 2</text>
+              <propa>#ffffff</propa>
+              <propb>#000000</propb>
+              <propc>Lato</propc>
+              <propd>100%</propd>
+              <member/>
+            </box>
+          </member>
+        </box>
+        <box>
+          <text>Service</text>
+          <member/>
+        </box>
+      </member>
+    </box>
+  </section>
+</gloomaps>

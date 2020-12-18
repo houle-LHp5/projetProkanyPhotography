@@ -1,0 +1,11 @@
+#navbar{
+    background-color: transparent;
+    background: transparent;
+}
+
+.imgCaroussel{
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
