@@ -50,7 +50,7 @@
                 </div>
             </nav>
     </thead>
-    <!-- fin de la navbar-->
+    <!-- fin de la navbars-->
     <tbody>
         <div id="formPageContact">
             <h1>formulaire de Contact</h1>
