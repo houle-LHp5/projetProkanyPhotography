@@ -54,7 +54,7 @@
     <tbody>
         <div id="formPageContact">
             <h1>formulaire de Contact</h1>
-            <!-- formulaire de contact -->
+            <!-- formulaire de contacts -->
             <form id="formContactPageContact">
                 <!-- Nom -->
                 <div class="row'">
