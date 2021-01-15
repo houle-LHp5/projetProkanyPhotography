@@ -110,11 +110,11 @@ p {
     height: auto;
 }
 
-img.galeryPhotoDecoInterieur {
+img.galeryPhotoDecoInterieur{
     max-width: 100%;
     height: auto;
+    
 }
-
 
 /* css de la page contact */
 #formPageContact {
@@ -126,11 +126,12 @@ img.galeryPhotoDecoInterieur {
     padding-right: 20em;
     padding-top: 2em;
     text-decoration: bold;
+    background-attachment: fixed;
+    
 }
 
 h1{
     text-align: center;
-    margin-top: 1em;
 }
 
 #bodyPageContact {
@@ -138,12 +139,16 @@ h1{
     margin: auto;
 }
 
-.paragraphFooterPageContact {
-    margin-top: 2em;
+#formContactPageContact{
+    margin-top: -2em;
 }
-.iconeReseauSociauxPageContact {
-    margin-top: -6em;
-    font-style: bold;
+
+.paragraphFooterPageContact{
+    margin-top: 1em;
+}
+
+footer{
+    position: fixed;
 }
 
 /* .paragraphFooterPageContact{
@@ -153,7 +158,6 @@ h1{
 /* CSS de la page A propos */
 
 .bodyPageApropos{
-    background-image: url(assets/imagePageDecoInterieur/tableAmanger);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -170,11 +174,11 @@ h1{
 
 #footerPageApropos{
     background: #3a3a3a;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     width:100%;
-    padding-top:50px;
-    height:150px;
+    padding-top: 50px;
+    height: 150px;
     }
 
 .iconeReseauSociauxPageApropos{
@@ -182,5 +186,8 @@ h1{
 }
 
 .paragrapheFooterPageContact{
-    margin-top: -3em;
+    margin-top: -4em;
 }
+
+
+/* exemple de la galerie css */

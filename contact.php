@@ -56,34 +56,37 @@
             <h1>formulaire de Contact</h1>
             <!-- formulaire de contacts -->
             <form id="formContactPageContact">
-                <!-- Nom -->
-                <div class="row'">
-                <div class="col">
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="nomPrenom">Prénom</label>
-                    <input type="text" id="nomPrenom" class="form-control" name="nomPrenom" />
-                </div>
-                </div>
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="nomPrenom">Nom</label>
-                    <input type="text" id="nomPrenom" class="form-control" name="nomPrenom" />
-                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Nom</label>
+                            <input type="text" id="form3Example1" class="form-control" />
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                        <label class="form-label" for="form3Example2">Prénom</label>
+                            <input type="text" id="form3Example2" class="form-control" />
+                            
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Email -->
                 <div class="row">
-                <div class="col">
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="adressMail">Adresse E-mail</label>
-                    <input type="email" id="adressMail" class="form-control" name="adressMail" />
-                </div>
-                </div>
+                    <div class="col">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="adressMail">Adresse E-mail</label>
+                            <input type="email" id="adressMail" class="form-control" name="adressMail" />
+                        </div>
+                    </div>
 
-                <!-- numéro de télèphone -->
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="phoneNumber">Télèphone</label>
-                    <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" />
-                </div>
+                    <!-- numéro de télèphone -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="phoneNumber">Télèphone</label>
+                        <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" />
+                    </div>
                 </div>
 
                 <!-- Message -->
@@ -93,7 +96,8 @@
                 </div>
 
                 <!-- bouton de  contact -->
-                <button type="submit" class="btn btn-brown btn-block mb-4" class="buttonContact" name="envoyer">Envoyer</button>
+                <button type="submit" class="btn btn-brown btn-block mb-4" class="buttonContact"
+                    name="envoyer">Envoyer</button>
             </form>
             <!-- fin du formulaire de contact -->
 
