@@ -203,7 +203,7 @@
         </div>
     </div>
     </div>
-    <footer>
+    <footer class="footerPageTouteLesCategories">
         <div class="iconeReseauSociaux">
            <!-- Facebook -->
            <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou" role="button"><i

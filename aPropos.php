@@ -70,6 +70,20 @@
             Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages du Lorem Ipsum,
             et plus récemment avec un logiciel de publication assistée par ordinateur comme Aldus PageMaker comprenant des versions de Lorem Ipsum.
         </p>
+        
+        <p>Je suis photographe depuis à peu prés 2 ans, aprés ma formation auprés d'une photographe professionnel,
+            la photographie est une passion pour moi depuis toujours. 
+            Dans se blog vous trouvereez une partie de mes réalisations.
+            Je propose mes préstations de photographie et de décoration Intérieur. 
+
+            Lorem Ipsum est simplement un texte factice de l'industrie de l'impression et de la composition.
+            Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500,
+            quand un imprimeur inconnu a pris une galère de caractères et l'a brouillée pour en faire un livre de spécimens.
+            Il a survécu non seulement cinq siècles, mais aussi le saut dans la composition électronique, demeurant essentiellement inchangé.
+            Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages du Lorem Ipsum,
+            et plus récemment avec un logiciel de publication assistée par ordinateur comme Aldus PageMaker comprenant des versions de Lorem Ipsum.
+        </p>
+        
         </tbody>
         <footer id="footerPageApropos">
             <!-- <p class="paragraphFooter">© Copyright KanysPhotoGraphie 2020</p> -->

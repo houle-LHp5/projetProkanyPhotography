@@ -22,6 +22,7 @@
     background-color: #3a3a3a; 
 }
 /* fin navbar */
+/* //////////////////////////////////////////////////////////////////////////// */
 /* caroussel de la page d'acceuil */
 .imgCaroussel {
     width: auto;
@@ -29,18 +30,6 @@
     object-fit: cover;
     object-position: center;
 }
-
-#formContact {
-    margin-top: 4em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-.buttonContact {
-    margin-left: 4em;
-    margin-right: 4em;
-}
-
 
 .paragraphFooter {
     justify-content: end;
@@ -55,7 +44,7 @@ footer {
     height: 10em;
     position: relative;
 }
-
+/* page toutes les categories ///////////////////////////////////////////// */
 .content {
     column-count: 2;
     -moz-column-count: 2;
@@ -83,7 +72,7 @@ p {
 
 }
 
-/* css page portrait */
+/* css page portrait ///////////////////////////////////////////////////// */
 .containerPagePortrait {
     width: 80%;
     min-width: 400px;
@@ -104,7 +93,7 @@ p {
     background-color: white;
 }
 
-/* css page décoInterior */
+/* css page décoInterior //////////////////////////////////////////////////*/
 .bodyPageDecoInterior {
     width: 100%;
     height: auto;
@@ -116,46 +105,47 @@ img.galeryPhotoDecoInterieur{
     
 }
 
-/* css de la page contact */
+/* css de la page contact //////////////////////////////////////////////// */
 #formPageContact {
-    background-image: url(assets/imagePageDecoInterieur/tableAmanger);
     opacity: 0.80;
     width: 100%;
     height: auto;
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 25em;
+    padding-right: 25em;
     padding-top: 2em;
-    text-decoration: bold;
-    background-attachment: fixed;
     
 }
 
 h1{
     text-align: center;
+
 }
 
-#bodyPageContact {
+body{
     width: 100%;
     margin: auto;
 }
 
-#formContactPageContact{
-    margin-top: -2em;
-}
 
 .paragraphFooterPageContact{
     margin-top: 1em;
 }
 
-footer{
-    position: fixed;
+.buttonContact {
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
-/* .paragraphFooterPageContact{
-    background-color: red;
-} */
+.footerPageContact{
+    position: absolute;
+    width: 1001%;
+    bottom: 0;
+}
 
-/* CSS de la page A propos */
+
+
+
+/* CSS de la page A propos ///////////////////////////////////////////////////*/
 
 .bodyPageApropos{
     background-size: cover;
@@ -185,9 +175,6 @@ h1{
     margin-bottom: 2em;
 }
 
-.paragrapheFooterPageContact{
-    margin-top: -4em;
-}
 
 
 /* exemple de la galerie css */

@@ -13,7 +13,7 @@
     </script>
 </head>
 
-<body id="bodyPageContact">
+<body>
     <thead>
         <div class="containeur-fluid">
             <!--Navbar -->
@@ -52,40 +52,42 @@
     </thead>
     <!-- fin de la navbars-->
     <tbody>
-        <div id="formPageContact">
+        <div>
             <h1>formulaire de Contact</h1>
             <!-- formulaire de contacts -->
-            <form id="formContactPageContact">
+            <form id="formPageContact">
                 <div class="row mb-4">
                     <div class="col">
                         <div class="form-outline">
-                        <label class="form-label" for="form3Example1">Nom</label>
-                            <input type="text" id="form3Example1" class="form-control" />
-                            
+                            <label class="form-label" for="nom">Nom</label>
+                            <input type="text" id="nom" class="form-control" name="nom" />
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-outline">
-                        <label class="form-label" for="form3Example2">Prénom</label>
-                            <input type="text" id="form3Example2" class="form-control" />
-                            
+                            <label class="form-label" for="prenom">Prénom</label>
+                            <input type="text" id="prenom" class="form-control" name="prenom" />
+
                         </div>
                     </div>
                 </div>
 
                 <!-- Email -->
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col">
-                        <div class="form-outline mb-4">
-                            <label class="form-label" for="adressMail">Adresse E-mail</label>
+                        <div class="form-outline">
+                            <label class="form-label" for="adressMail">Adresse mail</label>
                             <input type="email" id="adressMail" class="form-control" name="adressMail" />
+
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="phoneNumber">Télèphone</label>
+                            <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" />
 
-                    <!-- numéro de télèphone -->
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="phoneNumber">Télèphone</label>
-                        <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" />
+                        </div>
                     </div>
                 </div>
 
@@ -104,6 +106,7 @@
         </div>
     </tbody>
 
+
     <footer class="footerPageContact">
         <div class="iconeReseauSociauxPageContact">
             <!-- Facebook -->
@@ -115,7 +118,9 @@
                 role="button"><i class="fab fa-instagram">Instagram</i></a>
         </div>
         <p class="paragraphFooterPageContact">© Copyright KanysPhotoGraphie 2020</p>
+        
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
