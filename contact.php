@@ -15,7 +15,7 @@
     </script>
 </head>
 
-<body>
+<body class="bodyPageContact">
     <thead>
         <div class="container">
             <!--Navbar -->
@@ -107,10 +107,20 @@
         </div>
     </tbody>
 
-
-    <footer class="footerPageContact">
-        <p class="paragraphFooterPageContact">© Copyright KanysPhotoGraphie 2020</p>
-    </footer>
+    <div class="footerPageContact">
+        <footer>
+            <div class="iconeReseauSociaux">
+                <!-- Facebook -->
+                <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou"
+                    role="button"><i class="fab fa-facebook-f">Facebook</i></a>
+                <!-- Instagram -->
+                <a class="btn" style="background-color: #ac2bac"
+                    href="https://www.instagram.com/kanysphotographie/?hl=fr" role="button"><i
+                        class="fab fa-instagram">Instagram</i></a>
+                <p class="paragraphFooterPageContact">© Copyright KanysPhotoGraphie 2020</p>
+            </div>
+        </footer>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

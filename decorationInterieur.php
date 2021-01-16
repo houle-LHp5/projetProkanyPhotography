@@ -46,57 +46,43 @@
             </ul>
         </div>
     </nav>
-
-    
-    <div class="thumb">
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/chambreLumineuse.jpg"
-                alt="photo chambre lumineuse"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/commodeFondBleu.jpg"
-                alt="photo d'une commode avec mur bleu"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/cuisine.jpg" alt="photo cuisine"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/cuisineAmenager.jpg" alt="photo cuisine aménager">
-        </div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/litHotelChambre.jpg" alt="lit de chambre d'Hôtel">
-        </div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salle a mangé.jpg" alt="photo de salle a manger">
-        </div>
-        <div><img class="img-fluid" src="assets/img/photoDecoInterior/salleAmangerBleu.jpg"
-                alt="photo de salle a manger"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salleDeBain.jpg" alt="photo salle de bain"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salonBaieVitre.jpg"
-                alt="photo de salon avec baie vitre"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salonBlancNoir.jpg"
-                alt="photo salon blanc et noir"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salonBois.jpg" alt="photo salon bois"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salonCanapeBlanc.jpg" alt="photo canapé blanc">
-        </div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/salonSalleAmanger.jpg"
-                alt="photo salon salle a manger"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/tableAmanger.jpg" alt="photo de table a manger">
-        </div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/tableAmangerBois.jpg"
-                alt="photo table a mager en bois"></div>
-        <div><img class="img-fluid hover-shadow" src="assets/img/photoDecoInterior/tableBasseBlanche.jpg"
-                alt="photo table basse blanche"></div>
+    <!-- fin de nav -->
+    <div class="bg-image hover-overlay ripple">
+        <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid" />
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+        </a>
     </div>
     <div>
-    <a href="#" class="btn" id="buttonHautDePage">↑</a>
+        <img src="https://mdbootstrap.com/img/new/standard/city/047.jpg" class="img-fluid rounded" alt="" />
+        <img src="https://mdbootstrap.com/img/new/standard/city/047.jpg" class="img-fluid rounded" alt="" />
+        <img src="https://mdbootstrap.com/img/new/standard/city/047.jpg" class="img-fluid rounded" alt="" />
     </div>
-    <footer>
-        <p></p>
-    </footer>
+
+    <div class="float-right">
+        <a href="#" class="btn" id="buttonHautDePage">↑</a>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <div class="footerPageDeco">
+        <div class="iconeReseauxPageDeco">
+            <!-- Facebook -->
+            <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou"
+                role="button"><i class="fab fa-facebook-f">Facebook</i></a>
+            <!-- Instagram -->
+            <a class="btn" style="background-color: #ac2bac" href="https://www.instagram.com/kanysphotographie/?hl=fr"
+                role="button"><i class="fab fa-instagram">Instagram</i></a>
+            <p class="paragraphFooterPageDeco">© Copyright KanysPhotoGraphie 2020</p>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

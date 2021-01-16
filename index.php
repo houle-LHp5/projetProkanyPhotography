@@ -11,18 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body class="overflow-hidden">
     <thead>
         <div class="containeur-fluid">
             <!--Navbar -->
             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-                <a class="navbar-brand nav-link" href="index.php">KANY'S</a>
+                <a class="navbar-brand text-white" href="index.php">KANY'S</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -53,25 +52,15 @@
                     </ul>
                 </div>
             </nav>
-            </thead>
-            <!--/.Navbar -->
-    
-
+    </thead>
+    <!--/.Navbar -->
     <div>
         <div class="jumbotron p-0 m-0">
             <video class="min-vh-100 min-vw-100" autoplay="" muted="" loop="">
                 <source src="assets/vidéo fond d'ecran/appareilPhotoEntier.mp4" type="video/mp4">
             </video>
-            <div card-img-overlay d-flex h-50 flex-column my-auto align-items-center justify-content-center text-center
-                text-white>
-                <h1 id="titrePageDacceuil" class="display-4">KanyPhotography</h1>
-                <p class="lead">Retrouvez les réalisation de Kany's.</p>
-                <a class="btn btn-warning btn-lg" href="#" role="button">Ecran large</a>
-            </div>
         </div>
     </div>
-    
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

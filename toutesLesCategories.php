@@ -56,11 +56,14 @@
         <div class="blockPhotoPageAllCategories">
             <div class="row">
                 <!-- <div class="col-md-12 mb-3"> -->
-                    <div class="bg-image hover-zoom">
-                    <img src="assets/img/imagePageDecoInterieur/tableAmanger.png" id="firstImgAllCategories"
-                        class="img-fluid z-depth-1" alt="Responsive image">
+                <div class="bg-image hover-zoom">
+                    <img src="assets/img/biggyEtOUmou2.png" id="firstImgAllCategories" class="img-fluid z-depth-1"
+                        alt="Responsive image">
                 </div>
             </div>
+        </div>
+        <div>
+            <h1>Toutes les catégories</h1>
         </div>
         <!-- paragraphe  -->
         <div class="content">
@@ -97,7 +100,34 @@
             </p>
             <!-- fin de paragraphe -->
         </div>
-
+        <!-- caroussel page Toutes les categories -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0" class="active"></li>
+                <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1"></li>
+                <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/hawaSawane1.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/maraEtBinta.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/kabaEtBarole.png" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précedent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </a>
+        </div>
+        <!-- fin du caroussel -->
         <!--premier bloc 5 image -->
         <div class="row" class="imgSurvolAllCategories">
             <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
@@ -105,12 +135,10 @@
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/lesFillesMannequin.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/lesFillesMannequin.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/soeurVoileVoiture2.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/soeurVoileVoiture2.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgSurvolAllCategories">
@@ -126,16 +154,13 @@
         <!-- deuxieme bloc 5 image -->
         <div class="row" class="imgSurvolAllCategories">
             <div class="col-lg-4 col-md-12 mb-3">
-                <img src="assets/img/biggyEtOumou.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/biggyEtOumou.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/photoDecoInterior/cuisine.jpg" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/photoDecoInterior/cuisine.jpg" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/lesFillesPlage.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/lesFillesPlage.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgSurvolAllCategories">
@@ -143,23 +168,20 @@
                 <img src="assets/img/mara.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <div class="col-md-6 mb-3">
-                <img src="assets/img/groupeDesGarcon.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/groupeDesGarcon.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
         <!--troisiéme bloc 5 image -->
         <div class="row" class="imgSurvolAllCategories">
             <div class="col-lg-4 col-md-12 mb-3">
-                <img src="assets/img/hawaSawane2.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/hawaSawane2.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
                 <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/ourkty4.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/ourkty4.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgSurvolAllCategories">
@@ -168,28 +190,23 @@
                     alt="Responsive image">
             </div>
             <div class="col-md-6 mb-3">
-                <img src="assets/img/ourkty10.png" class="img-fluid z-depth-1"
-                    alt="Responsive image">
+                <img src="assets/img/ourkty10.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <!-- dernier bloc image page allCategggories -->
             <div class="row" class="imgSurvolAllCategories">
                 <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
-                    <img src="assets/img/silakré.png" class="img-fluid z-depth-1"
-                        alt="Responsive image">
+                    <img src="assets/img/silakré.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <img src="assets/img/lasderEtIsmael.png" class="img-fluid z-depth-1"
-                        alt="Responsive image">
+                    <img src="assets/img/lasderEtIsmael.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <img src="assets/img/toubab.png" class="img-fluid z-depth-1"
-                        alt="Responsive image">
+                    <img src="assets/img/toubab.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
             </div>
             <div class="row" class="imgSurvolAllCategories">
                 <div class="col-md-6 mb-3">
-                    <img src="assets/img/lesFillesPlage.png" class="img-fluid z-depth-1"
-                        alt="Responsive image">
+                    <img src="assets/img/lesFillesPlage.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
                 <div class="col-md-6 mb-3">
                     <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
@@ -197,25 +214,27 @@
                 </div>
                 <!-- fin de bloc -->
             </div>
-
-            <a href="#" class="btn" id="buttonHautDePage">↑</a>
-
+            <div class="float-right">
+                <a href="#" class="btn bg-dark text-white" id="buttonHautDePage">↑</a>
+            </div>
         </div>
     </div>
     </div>
-    <footer class="footerPageTouteLesCategories">
-        <div class="iconeReseauSociaux">
-           <!-- Facebook -->
-           <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou" role="button"><i
-                   class="fab fa-facebook-f">Facebook</i></a>
+    <div class="footerPageTouteCategories">
+        <footer class="footerPageTouteLesCategories">
+            <div class="iconeReseauSociaux">
+                <!-- Facebook -->
+                <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou"
+                    role="button"><i class="fab fa-facebook-f">Facebook</i></a>
+                <!-- Instagram -->
+                <a class="btn" style="background-color: #ac2bac"
+                    href="https://www.instagram.com/kanysphotographie/?hl=fr" role="button"><i
+                        class="fab fa-instagram">Instagram</i></a>
+                <p class="paragraphFooter">© Copyright KanysPhotoGraphie 2020</p>
+            </div>
 
-           
-           <!-- Instagram -->
-           <a class="btn" style="background-color: #ac2bac" href="https://www.instagram.com/kanysphotographie/?hl=fr" role="button"><i
-                   class="fab fa-instagram">Instagram</i></a>
-        </div>
-        <p class="paragraphFooter">© Copyright KanysPhotoGraphie 2020</p>
-    </footer>
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
