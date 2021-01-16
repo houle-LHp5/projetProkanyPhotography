@@ -5,17 +5,19 @@
     <title>KanysPhotoGraphie</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/path/to/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
 
     </script>
 </head>
 
 <body>
     <thead>
-        <div class="containeur-fluid">
+        <div class="container">
             <!--Navbar -->
             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPageContact">
                 <a class="navbar-brand text-white" href="index.php">KANY'S</a>
@@ -55,52 +57,51 @@
         <div>
             <h1>formulaire de Contact</h1>
             <!-- formulaire de contacts -->
-            <form id="formPageContact">
-                <div class="row mb-4">
-                    <div class="col">
-                        <div class="form-outline">
-                            <label class="form-label" for="nom">Nom</label>
-                            <input type="text" id="nom" class="form-control" name="nom" />
+            <form>
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+      <label class="nom" for="nom">Nom</label>
+        <input type="text" id="nom" class="form-control" name="nom" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+      <label class="form-label" for="prenom">Prénom</label>
+        <input type="text" id="prenom" class="form-control" name="prenom" />
+        
+      </div>
+    </div>
+  </div>
 
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-outline">
-                            <label class="form-label" for="prenom">Prénom</label>
-                            <input type="text" id="prenom" class="form-control" name="prenom" />
+  <!-- Text input -->
+  <div class="form-outline mb-4">
+  <label class="form-label" for="form6Example4">Adresse :</label>
+    <input type="text" id="form6Example4" class="form-control" />
+  </div>
 
-                        </div>
-                    </div>
-                </div>
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="email">Email</label>
+    <input type="email" id="email" class="form-control" name="email" />
+  </div>
 
-                <!-- Email -->
-                <div class="row mb-4">
-                    <div class="col">
-                        <div class="form-outline">
-                            <label class="form-label" for="adressMail">Adresse mail</label>
-                            <input type="email" id="adressMail" class="form-control" name="adressMail" />
+  <!-- Number input -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="phoneNumber">Télèphone</label>
+    <input type="number" id="phoneNumber" class="form-control" name="phoneNumber" />
+  </div>
 
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-outline">
-                            <label class="form-label" for="phoneNumber">Télèphone</label>
-                            <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" />
+  <!-- Message input -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="message">message</label>
+    <textarea class="form-control" id="message" rows="4" name="message"></textarea>
+  </div>
 
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Message -->
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="blockMessage">Message</label>
-                    <textarea class="form-control" id="blockMessage" rows="4" name="blockMessage"></textarea>
-                </div>
-
-                <!-- bouton de  contact -->
-                <button type="submit" class="btn btn-brown btn-block mb-4" class="buttonContact"
-                    name="envoyer">Envoyer</button>
-            </form>
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-danger btn-block mb-4">Envoyer</button>
+</form>
             <!-- fin du formulaire de contact -->
 
         </div>
@@ -108,17 +109,7 @@
 
 
     <footer class="footerPageContact">
-        <div class="iconeReseauSociauxPageContact">
-            <!-- Facebook -->
-            <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou"
-                role="button"><i class="fab fa-facebook-f">Facebook</i></a>
-
-            <!-- Instagram -->
-            <a class="btn" style="background-color: #ac2bac" href="https://www.instagram.com/kanysphotographie/?hl=fr"
-                role="button"><i class="fab fa-instagram">Instagram</i></a>
-        </div>
         <p class="paragraphFooterPageContact">© Copyright KanysPhotoGraphie 2020</p>
-        
     </footer>
 
 
@@ -131,8 +122,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
     <script src="script.js"></script>
 </body>
 
