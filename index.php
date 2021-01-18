@@ -14,8 +14,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="cover.css" rel="stylesheet">
 </head>
+
 <body class="overflow-hidden">
     <thead>
         <div class="containeur-fluid">
@@ -49,18 +53,33 @@
                             <a class="nav-link" href="aPropos.php">
                                 <i class="fab fa-instagram"></i>A propos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.php">
+                                <i class="fab fa-instagram"></i>Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tableBord.php">
+                                <i class="fab fa-instagram"></i>Tableau de Bord</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
     </thead>
     <!--/.Navbar -->
-    <div>
-        <div class="jumbotron p-0 m-0">
-            <video class="min-vh-100 min-vw-100" autoplay="" muted="" loop="">
-                <source src="assets/vidéo fond d'ecran/appareilPhotoEntier.mp4" type="video/mp4">
+    <!-- vidéo et message de la page d'accueil -->
+        <div id="videoDiv">
+            <video id="video1"   controls class="min-vh-100 min-vw-100" autoplay="" muted="" playsinline="" loop="" poster="assets/videoEtPhotoFondEcran/camera-2125549_1920.jpg">
+                <source src="assets/videoEtPhotoFondEcran/appareilPhotoEntier.mp4" type="video/mp4">
             </video>
+            <div id="videoMessage" class="styling">
+                <h1>KanyPhotography</h1>
+                <h2>Consultez mon site</h2>
+                <p class="videoClick">
+                <a href="index.php">Cliquer ICI</a>
+                </p>
+            </div>
         </div>
-    </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

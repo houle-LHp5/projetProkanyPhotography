@@ -16,11 +16,10 @@
 </head>
 
 <body class="bodyPageContact">
-    <thead>
         <div class="container">
             <!--Navbar -->
             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPageContact">
-                <a class="navbar-brand text-white" href="index.php">KANY'S</a>
+                <a class="navbar-brand text-dark" href="index.php">KANY'S</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,98 +28,96 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="toutesLesCategories.php">
+                            <a class="nav-link text-dark" href="toutesLesCategories.php">
                                 <i class="fab fa-instagram"></i>Toutes les catégories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="portrait.php">
+                            <a class="nav-link text-dark" href="portrait.php">
                                 <i class="fab fa-instagram"></i>Portrait</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="decorationInterieur.php">
+                            <a class="nav-link text-dark" href="decorationInterieur.php">
                                 <i class="fab fa-instagram"></i>décoration Intérieur</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="contact.php">
+                            <a class="nav-link text-dark" href="contact.php">
                                 <i class="fab fa-instagram"></i>Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="aPropos.php">
+                            <a class="nav-link text-dark" href="aPropos.php">
                                 <i class="fab fa-instagram"></i>A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="admin.php">
+                                <i class="fab fa-instagram"></i>Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="tableBord.php">
+                                <i class="fab fa-instagram"></i>Tableau de Bord</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-    </thead>
     <!-- fin de la navbars-->
-    <tbody>
-        <div>
-            <h1>formulaire de Contact</h1>
-            <!-- formulaire de contacts -->
-            <form>
-  <!-- 2 column grid layout with text inputs for the first and last names -->
+
+
+
+    <div class="card">
+  <div class="card-body">
+    <form class="formContact mt-5">
+  <h1>Formulaire de contact</h1>
   <div class="row mb-4">
     <div class="col">
       <div class="form-outline">
-      <label class="nom" for="nom">Nom</label>
-        <input type="text" id="nom" class="form-control" name="nom" />
+      <label class="form-label" for="nom">Nom</label>
+        <input type="text" id="nom" class="form-control" name="nom"/>
       </div>
     </div>
     <div class="col">
       <div class="form-outline">
       <label class="form-label" for="prenom">Prénom</label>
         <input type="text" id="prenom" class="form-control" name="prenom" />
-        
       </div>
     </div>
   </div>
 
-  <!-- Text input -->
+  <!-- adresse E-mail -->
   <div class="form-outline mb-4">
-  <label class="form-label" for="form6Example4">Adresse :</label>
-    <input type="text" id="form6Example4" class="form-control" />
+  <label class="form-label" for="adresseMail">Adresse Mail</label>
+    <input type="email" id="adresseMail" class="form-control" name="adresseMail"/>
   </div>
 
-  <!-- Email input -->
-  <div class="form-outline mb-4">
-    <label class="form-label" for="email">Email</label>
-    <input type="email" id="email" class="form-control" name="email" />
-  </div>
-
-  <!-- Number input -->
-  <div class="form-outline mb-4">
-    <label class="form-label" for="phoneNumber">Télèphone</label>
-    <input type="number" id="phoneNumber" class="form-control" name="phoneNumber" />
-  </div>
-
-  <!-- Message input -->
-  <div class="form-outline mb-4">
-    <label class="form-label" for="message">message</label>
-    <textarea class="form-control" id="message" rows="4" name="message"></textarea>
-  </div>
-
-  <!-- Submit button -->
-  <button type="submit" class="btn btn-danger btn-block mb-4">Envoyer</button>
+  <div class="form-floating">
+  <label for="floatingTextarea">Message</label>
+  <textarea class="form-control" placeholder="Votre message ici" id="floatingTextarea" name="message"></textarea>
+</div>
+<button type="button" class="btn btn-primary">Envoyer</button>
 </form>
-            <!-- fin du formulaire de contact -->
+  </div>
+</div>
 
-        </div>
-    </tbody>
 
-    <div class="footerPageContact">
-        <footer>
-            <div class="iconeReseauSociaux">
-                <!-- Facebook -->
-                <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou"
-                    role="button"><i class="fab fa-facebook-f">Facebook</i></a>
-                <!-- Instagram -->
-                <a class="btn" style="background-color: #ac2bac"
-                    href="https://www.instagram.com/kanysphotographie/?hl=fr" role="button"><i
-                        class="fab fa-instagram">Instagram</i></a>
-                <p class="paragraphFooterPageContact">© Copyright KanysPhotoGraphie 2020</p>
-            </div>
-        </footer>
+    
+   <!-- fin du formulaire de contact -->
+    <footer class="bg-dark text-white text-center text-lg-start fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 mb-4 md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
     </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright: KanyPhotography
+    <a class="text-white" href="https://mdbootstrap.com/"></a>
+  </div>
+</footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

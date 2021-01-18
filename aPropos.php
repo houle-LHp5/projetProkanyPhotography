@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <!--Navbar -->
         <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPageApropos">
-            <a class="navbar-brand text-white" href="index.php">KANY'S</a>
+            <a class="navbar-brand text-dark" href="index.php">KANY'S</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
                 aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,25 +29,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="toutesLesCategories.php">
+                        <a class="nav-link text-dark" href="toutesLesCategories.php">
                             <i class="fab fa-instagram"></i>Toutes les catégories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="portrait.php">
+                        <a class="nav-link text-dark" href="portrait.php">
                             <i class="fab fa-instagram"></i>Portrait</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="decorationInterieur.php">
+                        <a class="nav-link text-dark" href="decorationInterieur.php">
                             <i class="fab fa-instagram"></i>décoration Intérieur</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.php">
+                        <a class="nav-link text-dark" href="contact.php">
                             <i class="fab fa-instagram"></i>Contact</a>
                     </li>
                         <li class="nav-item">
-                        <a class="nav-link text-white" href="aPropos.php">
+                        <a class="nav-link text-dark" href="aPropos.php">
                             <i class="fab fa-instagram"></i>A propos</a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link text-dark" href="admin.php">
+                                <i class="fab fa-instagram"></i>Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="tableBord.php">
+                                <i class="fab fa-instagram"></i>Tableau de Bord</a>
+                        </li>
                 </ul>
             </div>
         </nav>
@@ -56,8 +64,10 @@
         </nav>
         <!-- fin de la navbar-->
     </thead>
+    <div class="mt-5">
     <tbody>
         <h1>A propos de moi</h1>
+        <div class="mt-5">
         <p>Je suis photographe depuis à peu prés 2 ans, aprés ma formation auprés d'une photographe professionnel,
             la photographie est une passion pour moi depuis toujours. 
             Dans se blog vous trouvereez une partie de mes réalisations.
@@ -83,23 +93,79 @@
             Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages du Lorem Ipsum,
             et plus récemment avec un logiciel de publication assistée par ordinateur comme Aldus PageMaker comprenant des versions de Lorem Ipsum.
         </p>
-        
+        </div>
         </tbody>
-        <footer id="footerPageApropos">
-            <!-- <p class="paragraphFooter">© Copyright KanysPhotoGraphie 2020</p> -->
-            <div class="iconeReseauSociauxPageApropos">
-                <!-- Facebook -->
-                <a class="btn" style="background-color: #3b5998" href="https://www.facebook.com/toure.aisettou" role="button"><i
-                        class="fab fa-facebook-f">Facebook</i></a>
-     
-                <!-- Instagram -->
-                <a class="btn" style="background-color: #ac2bac" href="https://www.instagram.com/kanysphotographie/?hl=fr" role="button"><i
-                        class="fab fa-instagram">Instagram</i></a>
-             </div>
-             <div class="paragrapheFooterPageContact">
-         <p>© Copyright KanysPhotoGraphie 2020</p>
-            </div>
-        </footer>
+        <footer class="bg-dark text-white text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright: KanyPhotography
+    <a class="text-white" href="https://mdbootstrap.com/"></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
