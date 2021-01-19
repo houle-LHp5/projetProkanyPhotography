@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="toutesLesCategories.php">
+                            <a class="nav-link text-dark" href="pageAccueil.php">
                                 <i class="fab fa-instagram"></i>Accueil</a>
                         </li>
                         <li class="nav-item">
@@ -42,10 +42,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="contact.php">
                                 <i class="fab fa-instagram"></i>Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="aPropos.php">
-                                <i class="fab fa-instagram"></i>A propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="admin.php">

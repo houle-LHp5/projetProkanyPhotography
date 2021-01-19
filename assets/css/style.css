@@ -41,11 +41,11 @@ video {
 
 
 /* page toutes les categories ///////////////////////////////////////////// */
-.content {
+/* .content {
     column-count: 2;
     -moz-column-count: 2;
     -webkit-column-count: 2;
-}
+} */
 
 
 
@@ -72,12 +72,6 @@ h1{
     background-image: url(assets/videoEtPhotoFondEcran/appareilPhotoBureauPc.jpg);
     
 }
-.formContact{
-
-}
-
-
-/* CSS de la page A propos ///////////////////////////////////////////////////*/
 
 
 
