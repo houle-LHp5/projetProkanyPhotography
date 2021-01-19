@@ -5,7 +5,7 @@
 
 
 /* //////////////////////////////////////////////////////////////////////////// */
-/* caroussel de la page d'acceuil */
+/* caroussel de la page d'acceuil 1*/
 video {
     background-size: cover;
     position: fixed;
@@ -39,7 +39,26 @@ video {
     margin-top: 300px;
 }
 
+#titlePageAccueil{
+  font-size: 6em;
+}
 
+/* page d'acceuil */
+
+#navbar{
+  background-color: #BF8360;
+}
+
+
+.carousel{
+  width: 70%;
+  height: 30%;
+  display: inline;
+}
+
+#footerPageAccueil{
+  background-color: #BF8360;
+}
 /* page toutes les categories ///////////////////////////////////////////// */
 /* .content {
     column-count: 2;
