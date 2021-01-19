@@ -16,7 +16,7 @@
     </script>
 </head>
 
-<body>
+<body id="pageAdmin">
     <div class="containeur">
         <!--Navbar -->
         <!-- fin de la navbar-->

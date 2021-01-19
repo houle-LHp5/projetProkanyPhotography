@@ -6,7 +6,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +25,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="toutesLesCategories.php">
-                        <i class="fab fa-instagram"></i>Toutes les catégories</a>
+                        <i class="fab fa-instagram"></i>Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="portrait.php">
@@ -34,7 +33,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="decorationInterieur.php">
-                        <i class="fab fa-instagram"></i>décoration Intérieur</a>
+                        <i class="fab fa-instagram"></i>Décoration Intérieur</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="contact.php">
@@ -63,22 +62,78 @@
         </a> -->
     </div>
     <!-- corp de la page -->
-    <div class="ui small images">
-  <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png">
-  <img src="assets/img/imagePageDecoInterieur/salon1.png">
-  <img src="assets/img/imagePageDecoInterieur/salon2.png">
-  <img src="assets/img/imagePageDecoInterieur/salon3.png">
+ 
+
+
+
+    <span id="votre_id1" class="target">
+</span>
+<span id="votre_id2" class="target">
+</span>
+<span id="votre_id3" class="target">
+</span>
+<span id="votre_id4" class="target">
+</span>
+<div class="cadre_diapo">
+<div class="interieur_diapo">
+<div class=description>
+<span>
+description1
+</span>
+<img src="assets/img/imagePageDecoInterieur/salon1.png" alt>
 </div>
+<div class=description>
+<span>
+description2
+</span>
+<img src="assets/img/imagePageDecoInterieur/salon2.png" alt>
+</div>
+<div class=description>
+<span>
+description3
+</span>
+<img src="assets/img/imagePageDecoInterieur/salon3.png" alt>
+</div>
+<div class=description>
+<span>
+description4
+</span>
+<img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" alt>
+</div>
+</div>
+<ul class="navigation_diapo">
+<li>
+<a href="#votre_id1">
+<img src="assets/img/imagePageDecoInterieur/meubleTVetTv.png" alt>
+</a>
+</li>
+<li>
+<a href="#votre_id2">
+<img src="assets/img/imagePageDecoInterieur/tableAmanger.png" alt>
+</a>
+</li>
+<li>
+<a href="#votre_id3">
+<img src="assets/img/imagePageDecoInterieur/salon1.pngy" alt>
+</a>
+</li>
+<li>
+<a href="#votre_id4">
+<img src="4.jpg" alt>
+</a>
+</li>
+</ul>
+</div>
+
+
+
 <!-- fin du corq de  la page -->
     <div class="float-right">
         <a href="#" class="btn" id="buttonHautDePage">⬆</a>
     </div>
     <footer class="bg-dark text-white text-center text-lg-start">
-        <!-- Grid container -->
         <div class="container p-4">
-            <!--Grid row-->
             <div class="row">
-                <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Footer Content</h5>
 
@@ -88,9 +143,7 @@
                         voluptatem veniam, est atque cumque eum delectus sint!
                     </p>
                 </div>
-                <!--Grid column-->
 
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Links</h5>
 
@@ -109,9 +162,7 @@
                         </li>
                     </ul>
                 </div>
-                <!--Grid column-->
 
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-0">Links</h5>
 
@@ -130,13 +181,9 @@
                         </li>
                     </ul>
                 </div>
-                <!--Grid column-->
             </div>
-            <!--Grid row-->
         </div>
-        <!-- Grid container -->
 
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2021 Copyright: KanyPhotography
             <a class="text-white" href="https://mdbootstrap.com/"></a>

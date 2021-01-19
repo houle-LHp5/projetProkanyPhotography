@@ -29,7 +29,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="toutesLesCategories.php">
-                            <i class="fab fa-instagram"></i>Toutes les catégories</a>
+                            <i class="fab fa-instagram"></i>Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="portrait.php">
@@ -37,7 +37,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="decorationInterieur.php">
-                            <i class="fab fa-instagram"></i>décoration Intérieur</a>
+                            <i class="fab fa-instagram"></i>Décoration Intérieur</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contact.php">
