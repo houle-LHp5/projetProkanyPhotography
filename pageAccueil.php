@@ -56,16 +56,33 @@
         </nav>
         <!-- fin de la navbar-->
 
-<div class="row d-flex justify-content-center">
-<div class="card" style="width: 18rem">
-  <div class="card-body">
-    <h2 class="card-title">TOURE Aïssétou</h2>
-    <p class="card-text">
-      Bonojour, je suis une jeune auto entrepreneuse de 27ans, j'ai créer mon entreprise en 2019, je sort tout juste de formation de photographie. 
-    </p>
+
+
+        <div class="card mb-3" style="max-width: 540px">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img
+        src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg"
+        alt="photo aissetou Toure"
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">TOURE Aïssétou</h5>
+        <p class="card-text">
+        Bonojour, je suis une jeune auto entrepreneuse de 27ans, 
+        j'ai créer mon entreprise en 2019, je sort tout juste de formation de photographie. 
+        </p>
+        <p class="card-text">
+          <small class="text-muted">
+            Dernière mise à jour il y a 3 minutes</small>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
-</div>
+
 
         <div class="">
             <div class="text-center">
