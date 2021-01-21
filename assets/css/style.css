@@ -46,7 +46,7 @@ video {
 /* page d'acceuil */
 
 #navbar{
-  background-color: #BF8360;
+  background-color: #F2A679;
 }
 
 
@@ -57,7 +57,7 @@ video {
 }
 
 #footerPageAccueil{
-  background-color: #BF8360;
+  background-color: #F2A679;
 }
 /* page toutes les categories ///////////////////////////////////////////// */
 /* .content {
@@ -247,8 +247,6 @@ h1{
   
   .form-control-dark {
     color: #fff;
-    background-color: rgba(255, 255, 255, .1);
-    border-color: rgba(255, 255, 255, .1);
   }
   
   .form-control-dark:focus {

@@ -28,36 +28,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="pageAccueil">
-                                <i class="fab fa-instagram"></i>Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portrait.php">
-                                <i class="fab fa-instagram"></i>Portrait</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorationInterieur.php">
-                                <i class="fab fa-instagram"></i>Décoration Intérieur</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.php">
-                                <i class="fab fa-instagram"></i>Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aPropos.php">
-                                <i class="fab fa-instagram"></i>A propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="admin.php">
-                                <i class="fab fa-instagram"></i>Admin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tableBord.php">
-                                <i class="fab fa-instagram"></i>Tableau de Bord</a>
-                        </li>
-                    </ul>
                 </div>
             </nav>
     </thead>
