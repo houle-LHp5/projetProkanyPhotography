@@ -5,7 +5,7 @@
 
 
 /* //////////////////////////////////////////////////////////////////////////// */
-/* caroussel de la page d'acceuil 1*/
+/* video fond d'ecran page d'acceuil 1*/
 video {
     background-size: cover;
     position: fixed;
@@ -50,64 +50,18 @@ video {
 }
 
 
-.carousel{
-  width: 70%;
-  height: 30%;
-  display: inline;
-}
-
-#footerPageAccueil{
+#footer{
   background-color: #F2A679;
 }
-/* page toutes les categories ///////////////////////////////////////////// */
-/* .content {
-    column-count: 2;
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-} */
 
 
-
-/* css page portrait ///////////////////////////////////////////////////// */
-
-
-/* css page décoInterior //////////////////////////////////////////////////*/
-.bodyPageDecoInterior {
-    width: 100%;
-    height: auto;
+.tablePageTableBord{
+  margin-top: -20em;
 }
-
-
-/* css de la page contact //////////////////////////////////////////////// */
 h1{
     text-align: center;
 }
 
-.bodyPageContact{
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-
-    background-image: url(assets/videoEtPhotoFondEcran/appareilPhotoBureauPc.jpg);
-    
-}
-
-
-
-/* exemple de la galerie css */
-
-/* .overflow-hidden{
-    height: 100%;
-  }
-  
-.overflow-hidden{
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f5f5f5;
-  }
-  */
   
   .form-signin {
     width: 100%;
@@ -222,17 +176,6 @@ h1{
     text-transform: uppercase;
   }
   
-  /*
-   * Navbar
-   */
-  
-  .navbar-brand {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    font-size: 1rem;
-    background-color: rgba(0, 0, 0, .25);
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-  }
   
   .navbar .navbar-toggler {
     top: .25rem;
@@ -254,126 +197,3 @@ h1{
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
   }
   
-
-/* css galery photo exemple 1 */
-
-
-
-*{box-sizing:border-box}
-
-img{
-
-max-width: 100%;
-
-}
-
-/*pour le saut de page, on cree une class que l'on met en display:none*/
-.target{
-
-display: none
-
-}
-
-
-/* englobe le slider */
-
-.cadre_diapo{
-
-max-width: 600px;
-margin: 2rem auto;
-overflow: hidden;
-	
-	}
-
-.interieur_diapo{
-	
-display: flex;
-width: 400%;
-transition: transform .6s ease-in-out
-	
-	}
-
-.description{
-
-position: relative;
-
-}
-
-.description span{
-
-position: absolute;
-left: 0;
-top: 2%;
-font-size: 75%;
-display: flex;
-padding: .5rem;
-justify-content: center;
-color: white;
-background: hsla(0,0%,0%,.35)
-	
-	}
-	
-	
-#votre_id1:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(0)
-
-}/*image 1*/
-
-#votre_id2:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(-25%)
-
-}/*image 2*/
-
-#votre_id3:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(-50%)
-
-}/*image 3*/
-
-#votre_id4:target ~ .cadre_diapo .interieur_diapo{
-
-transform:translatex(-75%)
-
-}/*image 4*/
-
-
-
-
-
-/*navigation avec images miniatures*/
-.navigation_diapo{
-	
-display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
-list-style-type: none;
-margin: 0;
-padding: 0
-	
-	}
-
-.navigation_diapo li {
-	
-	padding: .25rem;
-	
-	}
-
-.navigation_diapo img{
-
-border: 3px solid white;
-box-shadow:0 0 5px hsla(0,0%,0%,.4);
-
-	
-	}
-	
-	
-	@media (min-width:31.25rem){
-		
-		.description span{
-			
-			font-size: initial
-		
-		}
-	
-	}
-	

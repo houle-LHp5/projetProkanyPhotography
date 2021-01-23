@@ -72,7 +72,6 @@
 
 
 
-
         <!-- bloc des 8 photos -->
         <div class="row ml-5 mb-3">
             <div class="card p-2 bg-light mr-3" style="width: 18rem">
@@ -153,7 +152,7 @@
         </div>
     </div>
 
-    <footer id="footerPageAccueil" class="text-white text-center text-lg-start">
+    <footer id="footer" class="text-white text-center text-lg-start">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->

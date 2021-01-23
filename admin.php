@@ -17,18 +17,16 @@
 </head>
 
 <body id="pageAdmin">
-    <div class="containeur">
-        <!--Navbar -->
-        <!-- fin de la navbar-->
-        <h1 class="text-center mb-4 mt-3">KanyPotography</h1>
+    <div class="containeur-fluid p-5">
+        <h1 class="text-center mb-4 mt-n5">KanyPotography</h1>
         <div class="d-flex justify-content-center vh-100">
         <div class="card m-0" style="width: 20rem">
             <div class="card-body">
             <main class="form-signin">
-                <form>
-                    <img class="mb-4" src="assets/videoEtPhotoFondEcran/appareilReflex.jpg" alt="" width="72" height="57">
+                <form class="pb-n5">
+                    <img class="mb-4" src="assets/videoEtPhotoFondEcran/camera-1815480_1920.jpg" alt="" width="72" height="57">
                     <h1 class="h3 mb-3 fw-normal">Connectez-vous </h1>
-                    <label for="inputEmail" class="visually-hidden">Adresse E-Mail</label>
+                    <label for="inputEmail" class="visually-hidden">Adresse E-mail</label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="monAppareilPhoto@zoom.com" required
                         autofocus>
                     <label for="inputPassword" class="visually-hidden">Mot de passe</label>
@@ -38,8 +36,8 @@
                             <input type="checkbox" value="remember-me"> Se souvenir de moi
                         </label>
                     </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Connexion</button>
-                    <p class="mt-5 mb-3 text-muted">&copyright: KanyPhotography 2021</p>
+                    <button class="w-100 btn btn-lg btn-warning" type="submit">Connexion</button>
+                    <p class="mt-5 pb-n3 text-center text-muted">&copyright: KanyPhotography 2021</p>
                 </form>
             </main>
             </div>

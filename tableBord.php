@@ -83,7 +83,7 @@
       </div>
 
       <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
+  <div class="mt-n5 tablePageTableBord">
       <h2>Liste des personnes</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
@@ -166,6 +166,7 @@
       </div>
     </main>
   </div>
+</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

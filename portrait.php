@@ -43,21 +43,11 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="contact.php">
                                     <i class="fab fa-instagram"></i>Contact</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="admin.php">
-                                <i class="fab fa-instagram"></i>Admin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tableBord.php">
-                                <i class="fab fa-instagram"></i>Tableau de Bord</a>
-                        </li>
                         </ul>
                     </div>
                 </nav>
-                <div class="blockPhotoPageAllCategories">
+                <div class="blockPhotoPageAllCategories mb-5">
                     <div class="row">
-                        <!-- <div class="col-md-12 mb-3"> -->
                         <div class="bg-image hover-zoom">
                             <img src="assets/img/ourkty2.png" id="firstImgAllCategories" class="img-fluid z-depth-1"
                                 alt="Responsive image">
@@ -67,10 +57,7 @@
                 <!-- fin de la navbar-->
         </thead>
         <!-- corq du site -->
-        <!-- titre -->
-        <div>
-            <h1>Portrait</h1>
-        </div>
+      
         <!--premier bloc 5 image -->
         <div class="row" class="imgPagePortrait">
             <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
@@ -151,13 +138,11 @@
                 </div>
                 <!-- fin de bloc -->
             </div>
-            <div style="text-align: right">
-                <a href="#" class="btn" id="buttonHautDePage">⬆</a>
-                <!-- <i class="fas fa-arrow-circle-up"></i> -->
-            </div>
-            <footer class="bg-dark text-white text-center text-lg-start">
+
+
+            <footer id="footer" class="bg-dark text-white text-center text-lg-start">
                 <!-- Grid container -->
-                <div class="container p-4">
+                <div class="container-fluid p-4">
                     <!--Grid row-->
                     <div class="row">
                         <!--Grid column-->
