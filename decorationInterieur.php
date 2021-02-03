@@ -3,17 +3,14 @@
 
 <head>
     <title>page decoration interieur</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 </head>
 
 <body>
-
     <!--Navbar -->
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPagePortrait">
         <a class="navbar-brand text-white" href="index.php">KANY'S</a>
