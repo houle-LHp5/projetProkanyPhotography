@@ -55,81 +55,97 @@
             </div>
         </nav>
         <!-- fin de la navbar-->
+        <div class="row">
+            <div class="justify-content-center mb-3 mlm-3 mr-2">
+                <img src="assets/img2/imageNoirEtBlanc1.png" alt="...">
+            </div>
 
-    <section>
-    
-    </section>
-
+            <div class="justify-content-center mb-3">
+                <img src="assets/img2/imageNoirEtBlanc1.png" alt="...">
+            </div>
+        </div>
         <section>
-        <div class="card mb-5">
-  <div class="card-header">Quote</div>
-  <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-        ante.
-        On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions,
-        et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. 
-        Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard.
-        De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour
-        'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction.
-        Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
-      </p>
-      <p>
-      On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions,
-       et empêche de se concentrer sur la mise en page elle-même. 
-       L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. 
-       Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale,
-        et en tout cas comparable avec celle du français standard. 
-        De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, 
-        et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction.
-         Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, 
-      voire des phrases embarassantes).
-      </p>
-      <footer class="blockquote-footer">
-        Someone famous in <cite title="Source Title">Source Title</cite>
-      </footer>
-    </blockquote>
-  </div>
-</div>
-</section>
-
-        <section>
-            <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-                <div class="col">
-                    <div class="card">
-                        <img src="assets/img/copineHawa.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Hawa sawané</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="assets/img/ourkty6.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Akawates Filah</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="assets/img/ourkty2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ourkty Fillah</h5>
-                            <p class="card-text">This is a longer card with supporting je vais ajouter du lorem itsum
-                                text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="mb-3 text-end">
+                <img src="assets/img2/portraitNb.png" alt="photo niouma">
+                <h5 class="text-bold">A propos de moi</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                    On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
+                    distractions,
+                    et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un
+                    texte générique comme 'Du texte.
+                    Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en
+                    tout cas comparable avec celle du français standard.
+                    De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
+                    Ipsum leur faux texte par défaut, et une recherche pour
+                    'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de
+                    construction.
+                    Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement
+                    (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</br>
+                    On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
+                    distractions,
+                    et empêche de se concentrer sur la mise en page elle-même.
+                    L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.
+                    Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale,
+                    et en tout cas comparable avec celle du français standard.
+                    De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
+                    Ipsum leur faux texte par défaut,
+                    et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore
+                    qu'à leur phase de construction.
+                    Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement
+                    (histoire d'y rajouter de petits clins d'oeil,
+                    voire des phrases embarassantes).
+                </p>
+                <footer class="blockquote-footer">
+                    Aissétou TOURE <cite title="Source Title">Source Title</cite>
+                </footer>
+                </blockquote>
             </div>
         </section>
 
-<!-- footer  -->
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Article 1</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/042.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Article 2</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Article 3</h5>
+                        <p class="card-text">
+                            This is a longer card FDHSDXBGFJN FNJHwith supportingDFGBFGDGG text below as a natural
+                            lead-in to
+                            additional content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
         <footer id="footer" class="text-white text-center text-lg-start">
             <!-- Grid container -->
             <div class="container p-4">

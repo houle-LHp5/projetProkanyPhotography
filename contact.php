@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="form-outline mb-4">
-                            <label class="form-label" for="adressMail">Adresse E-mail</label>
+                            <label class="form-label" for="adressMail">E-mail</label>
                             <input type="email" id="adressMail" class="form-control" name="adressMail" />
                         </div>
                         <div class="form-outline">

@@ -15,7 +15,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
-    <link rel="stylesheet" href="../monProjetProLaManu/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="pageTableBord">
@@ -33,92 +33,80 @@
 </header>
 
 <div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home"></span>
-              Tableau de bord
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Formulaire de contact
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Ajouter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Modifier
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
-              Supprimer
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers"></span>
-              Intégrations
-            </a>
-          </li>
-        </ul>
+<div class="row">
+  <div class="col-sm-6 mb-5 mt-5 pl-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Ajouter une Photos</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-warning">Ajouter</a>
       </div>
-    </nav>
-
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Tableau de bord</h1>
+    </div>
+  </div>
+  <div class="col-sm-6 mt-5 pl-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Consultez la Galerie</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-warning">Galerie photo</a>
       </div>
+    </div>
+  </div>
+</div>
+</div>
 
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-  <div class="mt-n5 tablePageTableBord">
+<div class="row">
+  <div class="col-sm-6 pl-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Supprimer une image</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-warning">Supprimer</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 pl-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Télècharger une image</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-warning">Télècharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+ 
+
+  <div class="mt-5 tablePageTableBord ml-5">
       <h2>Liste des personnes</h2>
-      <div class="table-responsive">
+      <div id="tableDashboard" class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
               <th>Date</th>
               <th>Nom</th>
               <th>Prénom</th>
+              <th>Télèphone</th>
               <th>Adresse E-mail</th>
               <th>Message</th>
             </tr>
           </thead>
           <tbody>
            
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
             <tr>
               <td></td>
               <td></td>

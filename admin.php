@@ -11,22 +11,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../monProjetProLaManu/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     </script>
 </head>
 
 <body id="pageAdmin">
     <div class="containeur-fluid p-5">
-        <h1 class="text-center mb-4 mt-n5">KanyPotography</h1>
+        <h1 class="text-center mb-4 mt-3">KanyPotography</h1>
         <div class="d-flex justify-content-center vh-100">
-        <div class="card m-0" style="width: 20rem">
+        <div class="card m-0 mt-4" style="width: 20rem">
             <div class="card-body">
             <main class="form-signin">
                 <form class="pb-n5">
                     <img class="mb-4" src="assets/videoEtPhotoFondEcran/camera-1815480_1920.jpg" alt="" width="72" height="57">
                     <h1 class="h3 mb-3 fw-normal">Connectez-vous </h1>
-                    <label for="inputEmail" class="visually-hidden">Adresse E-mail</label>
+                    <label for="inputEmail" class="visually-hidden">Identifiant</label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="monAppareilPhoto@zoom.com" required
                         autofocus>
                     <label for="inputPassword" class="visually-hidden">Mot de passe</label>
