@@ -16,33 +16,26 @@
     </script>
 </head>
 
-<body id="pageAdmin">
-    <div class="containeur-fluid p-5">
-        <h1 class="text-center mb-4 mt-3">KanyPotography</h1>
-        <div class="d-flex justify-content-center vh-100">
-        <div class="card m-0 mt-4" style="width: 20rem">
-            <div class="card-body">
-            <main class="form-signin">
-                <form class="pb-n5">
-                    <img class="mb-4" src="assets/videoEtPhotoFondEcran/camera-1815480_1920.jpg" alt="" width="72" height="57">
-                    <h1 class="h3 mb-3 fw-normal">Connectez-vous </h1>
-                    <label for="inputEmail" class="visually-hidden">Identifiant</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="monAppareilPhoto@zoom.com" required
-                        autofocus>
-                    <label for="inputPassword" class="visually-hidden">Mot de passe</label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="123456789" required>
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Se souvenir de moi
-                        </label>
-                    </div>
-                    <button class="w-100 btn btn-lg btn-warning" type="submit">Connexion</button>
-                    <p class="mt-5 pb-n3 text-center text-muted">&copyright: KanyPhotography 2021</p>
-                </form>
-            </main>
-            </div>
-        </div>
-        </div>
+
+
+<main class="form-signin">
+  <form class="mt-5">
+    <img class="mb-4" src="assets/videoEtPhotoFondEcran/camera-lens-240966_1920.jpg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Vous connecter</h1>
+    <label for="inputEmail" class="visually-hidden">Adresse E-mail</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="monadressemail@gmail.com" required autofocus>
+    <label for="inputPassword" class="visually-hidden">Mot de passe</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="1246757e76G" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Se souvenir
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-warning" type="submit">Connection</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+  </form>
+</main>
+
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

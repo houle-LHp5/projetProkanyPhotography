@@ -51,30 +51,30 @@
                         <a class="nav-link" href="tableBord.php">
                             <i class="fab fa-instagram"></i>Tableau de Bord</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.php">
+                            <i class="fab fa-instagram"></i>Error 404</a>
+                    </li>
                 </ul>
             </div>
         </nav>
         <!-- fin de la navbar-->
-        <div class="row">
+        <div class="container-fluid row ml-3">
+        <!-- <div class="row ml-5" > -->
             <div class="justify-content-center mb-3 mlm-3 mr-2">
-                <img src="assets/img2/imageNoirEtBlanc1.png" alt="...">
+                <img src="assets/img2/femmeNb.png" alt="...">
             </div>
 
             <div class="justify-content-center mb-3">
-                <img src="assets/img2/imageNoirEtBlanc1.png" alt="...">
+                <img src="assets/img2/petiteNb.png" alt="...">
             </div>
         </div>
         <section>
-            <div class="mb-3 text-end">
-                <img src="assets/img2/portraitNb.png" alt="photo niouma">
-                <h5 class="text-bold">A propos de moi</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.
-                    On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
-                    distractions,
-                    et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un
-                    texte générique comme 'Du texte.
+
+            <div id="textCard" class="mb-3 mt-3 ml-5 mr-3 pr-3 pl-3">
+                <h4 class="text-white text-center">A propos de moi</h4>
+                <p class="text-white">
+                <img src="assets/img2/groupeDeVie.png" alt="photo niouma">
                     Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en
                     tout cas comparable avec celle du français standard.
                     De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
@@ -104,45 +104,32 @@
             </div>
         </section>
 
-
+<div  class="cardArticle">
         <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
             <div class="col">
                 <div class="card">
-                    <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg" class="card-img-top" alt="..." />
+                    <img src="assets/img2/Web 1.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Article 1</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                        <p>
+                            Article de mes dernieres réalisation de shooting photo...
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="https://mdbootstrap.com/img/new/standard/city/042.jpg" class="card-img-top" alt="..." />
+                    <img src="assets/img2/Web 1280 – 1.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Article 2</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                        <p>
+                            Article de mes dernieres réalisation de shooting photo...
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Article 3</h5>
-                        <p class="card-text">
-                            This is a longer card FDHSDXBGFJN FNJHwith supportingDFGBFGDGG text below as a natural
-                            lead-in to
-                            additional content.
-                        </p>
-                    </div>
-                </div>
             </div>
+        </div>
         </div>
 
         <!-- footer  -->
