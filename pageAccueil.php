@@ -19,7 +19,7 @@
 <body>
     <div class="containeur-fluid">
         <!--Navbar -->
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
             <a class="navbar-brand text-white" href="index.php">KANY'S</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
                 aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,11 +62,11 @@
         <div class="container-fluid row ml-3">
         <!-- <div class="row ml-5" > -->
             <div class="justify-content-center mb-3 mlm-3 mr-2">
-                <img src="assets/img2/femmeNb.png" alt="...">
+                <img src="assets/img/img2/Web 1.png" alt="...">
             </div>
 
             <div class="justify-content-center mb-3">
-                <img src="assets/img2/petiteNb.png" alt="...">
+                <img src="assets/img/img2/Web 1280 – 1.png" alt="...">
             </div>
         </div>
         <section>
@@ -74,7 +74,7 @@
             <div id="textCard" class="mb-3 mt-3 ml-5 mr-3 pr-3 pl-3">
                 <h4 class="text-white text-center">A propos de moi</h4>
                 <p class="text-white">
-                <img src="assets/img2/groupeDeVie.png" alt="photo niouma">
+                <img src="assets/img/img2/card3article.png" alt="photo niouma">
                     Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en
                     tout cas comparable avec celle du français standard.
                     De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
@@ -108,7 +108,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
             <div class="col">
                 <div class="card">
-                    <img src="assets/img2/Web 1.png" class="card-img-top" alt="..." />
+                    <img src="assets/img/img2/card2article.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Article 1</h5>
                         <p>
@@ -119,7 +119,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="assets/img2/Web 1280 – 1.png" class="card-img-top" alt="..." />
+                    <img src="assets/img/img2/card3article.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Article 2</h5>
                         <p>
@@ -133,7 +133,7 @@
         </div>
 
         <!-- footer  -->
-        <footer id="footer" class="text-white text-center text-lg-start">
+        <footer id="allFooter" class="text-white text-center text-lg-start">
             <!-- Grid container -->
             <div class="container p-4">
                 <!--Grid row-->

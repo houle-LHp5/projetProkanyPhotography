@@ -15,8 +15,8 @@
 <body class="bodyPageContact">
     <div class="container">
         <!--Navbar -->
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPageContact">
-            <a class="navbar-brand text-dark" href="index.php">KANY'S</a>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
+            <a class="navbar-brand text-white" href="index.php">KANY'S</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
                 aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,27 +24,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="pageAccueil.php">
+                        <a class="nav-link text-white" href="pageAccueil.php">
                             <i class="fab fa-instagram"></i>Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="portrait.php">
+                        <a class="nav-link text-white" href="portrait.php">
                             <i class="fab fa-instagram"></i>Portrait</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="decorationInterieur.php">
+                        <a class="nav-link text-white" href="decorationInterieur.php">
                             <i class="fab fa-instagram"></i>Décoration Intérieur</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="contact.php">
+                        <a class="nav-link text-white" href="contact.php">
                             <i class="fab fa-instagram"></i>Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="admin.php">
+                        <a class="nav-link text-white" href="admin.php">
                             <i class="fab fa-instagram"></i>Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="tableBord.php">
+                        <a class="nav-link text-white" href="tableBord.php">
                             <i class="fab fa-instagram"></i>Tableau de Bord</a>
                     </li>
                 </ul>
@@ -52,7 +52,7 @@
         </nav>
         <!-- fin de la navbars-->
         <div id="cardFormContact" class="container-fluid">
-            <div class="card mt-3 bg-dark text-white">
+            <div id="textCard" class="card mt-3 text-white">
                     <h1 class="card-title mt-3">Contact</h1>
                     <form id="formContactPage" class="ml-5 mr-5">
                         <div class="row mb-4">
@@ -76,14 +76,14 @@
                         <div class="form-outline">
                         <label class="form-label" for="textAreaExample">Message</label>
                             <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-                            <button type="submit" class="text-center btn btn-warning justify-content-center">Envoyer</button>
+                            <button type="submit" id="buttonAllPage" class="text-center btn justify-content-center">Envoyer</button>
                         </div>
                     </form>
             </div>
         </div>
  
-        <footer>
-            <div class="text-center p-3 bg-dark text-white mt-3">
+        <footer id="allFooter">
+            <div class="text-center p-3 text-white mt-3">
                 © 2021 Copyright: KanyPhotography
                 <a class="text-white" href="https://mdbootstrap.com/"></a>
             </div>

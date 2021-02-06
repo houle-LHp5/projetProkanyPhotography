@@ -19,7 +19,7 @@
         <thead>
             <div class="containeur-fluid">
                 <!--Navbar -->
-                <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPagePortrait">
+                <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
                     <a class="navbar-brand text-white" href="index.php">KANY'S</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
@@ -140,27 +140,19 @@
             </div>
 
 
-            <footer id="footer" class="bg-dark text-white text-center text-lg-start">
-                <!-- Grid container -->
+            <footer id="allFooter" class="text-white text-center text-lg-start">
                 <div class="container-fluid p-4">
-                    <!--Grid row-->
                     <div class="row">
-                        <!--Grid column-->
                         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                             <h5 class="text-uppercase">Footer Content</h5>
-
                             <p>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
                                 molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
                                 voluptatem veniam, est atque cumque eum delectus sint!
                             </p>
                         </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                             <h5 class="text-uppercase">Links</h5>
-
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <i class="fab fa-facebook"></i>
@@ -204,11 +196,10 @@
                 <!-- Grid container -->
 
                 <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div class="text-center p-3">
                     © 2021 Copyright: KanyPhotography
                     <a class="text-white" href="https://mdbootstrap.com/"></a>
                 </div>
-                <!-- Copyright -->
             </footer>
 
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

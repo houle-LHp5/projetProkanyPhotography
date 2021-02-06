@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!--Navbar -->
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPagePortrait">
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
         <a class="navbar-brand text-white" href="index.php">KANY'S</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
             aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,115 +44,123 @@
     <div class="container-fluid">
         <div class="blockPhotoPageAllCategories mb-5">
             <div class="rowmd-12 mb-3">
-                    <div class="bg-image hover-zoom">
-                        <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" id="firstImgAllCategories"
-                            class="img-fluid z-depth-1 img-responsive" alt="Responsive image">
-                    </div>
+                <div class="bg-image hover-zoom">
+                    <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" id="firstImgAllCategories"
+                        class="img-fluid z-depth-1 img-responsive" alt="Responsive image">
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <!-- corp de la page -->
 
-<div>
-    <!--premier bloc 5 image -->
-    <div class="row" class="imgPagePortrait">
-        <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
-            <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/meubleTVetTv.png" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-    </div>
-    <div class="row" class="imgPagePortrait">
-        <div class="col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-        <div class="col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-    </div>
-    <!-- deuxieme bloc 5 image -->
-    <div class="row" class="imgPagePortrait">
-        <div class="col-lg-4 col-md-12 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/home.jpg" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-    </div>
-    <div class="row" class="imgPagePortrait">
-        <div class="col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-        <div class="col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-    </div>
-    <!--troisiéme bloc 5 image -->
-    <div class="row" class="imgPagePortrait">
-        <div class="col-lg-4 col-md-12 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/salon3.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1" alt="Responsive image">
-        </div>
-    </div>
-    <div class="row" class="imgPagePortrait">
-        <div class="col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/homeMutiColor.jpg" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-        <div class="col-md-6 mb-3">
-            <img src="assets/img/imagePageDecoInterieur/living-room-2569325_1920.jpg" class="img-fluid z-depth-1"
-                alt="Responsive image">
-        </div>
-        <!-- dernier bloc image page allCategggories -->
+    <div>
+        <!--premier bloc 5 image -->
         <div class="row" class="imgPagePortrait">
             <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
-                <img src="assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
+                <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/tableWhite.jpg" class="img-fluid z-depth-1"
+                <img src="assets/img/imagePageDecoInterieur/meubleTVetTv.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/tableAndChaise.jpg" class="img-fluid z-depth-1"
+                <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgPagePortrait">
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
+                <img src="assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salonNoirBlanc.jpg" class="img-fluid z-depth-1"
+                <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
-            <!-- fin de bloc -->
         </div>
-    </div>
+        <!-- deuxieme bloc 5 image -->
+        <div class="row" class="imgPagePortrait">
+            <div class="col-lg-4 col-md-12 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/home.jpg" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+        </div>
+        <div class="row" class="imgPagePortrait">
+            <div class="col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+        </div>
+        <!--troisiéme bloc 5 image -->
+        <div class="row" class="imgPagePortrait">
+            <div class="col-lg-4 col-md-12 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/salon3.png" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+        </div>
+        <div class="row" class="imgPagePortrait">
+            <div class="col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/homeMutiColor.jpg" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="assets/img/imagePageDecoInterieur/living-room-2569325_1920.jpg" class="img-fluid z-depth-1"
+                    alt="Responsive image">
+            </div>
+            <!-- dernier bloc image page allCategggories -->
+            <div class="row" class="imgPagePortrait">
+                <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
+                    <img src="assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
+                        alt="Responsive image">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="assets/img/imagePageDecoInterieur/tableWhite.jpg" class="img-fluid z-depth-1"
+                        alt="Responsive image">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="assets/img/imagePageDecoInterieur/tableAndChaise.jpg" class="img-fluid z-depth-1"
+                        alt="Responsive image">
+                </div>
+            </div>
+            <div class="row" class="imgPagePortrait">
+                <div class="col-md-6 mb-3">
+                    <img src="assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
+                        alt="Responsive image">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <img src="assets/img/imagePageDecoInterieur/salonNoirBlanc.jpg" class="img-fluid z-depth-1"
+                        alt="Responsive image">
+                </div>
+                <!-- fin de bloc -->
+            </div>
+        </div>
 
 
 
         <!-- fin du corq de  la page -->
-        <footer id="footer" class="bg-dark text-white text-center text-lg-start">
+        <footer id="allFooter" class="text-dark text-center text-lg-start">
             <div class="container-fluid p-4">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -166,47 +175,16 @@
 
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
                     </div>
-
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase mb-0">Links</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <div class="text-center p-3">
                 © 2021 Copyright: KanyPhotography
-                <a class="text-white" href="https://mdbootstrap.com/"></a>
+                <a class="text-dark" href="https://mdbootstrap.com/"></a>
             </div>
             <!-- Copyright -->
         </footer>

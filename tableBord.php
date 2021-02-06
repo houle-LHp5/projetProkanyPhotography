@@ -23,17 +23,17 @@
 </head>
 
 <body id="pageTableBord">
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">KanyPhotgraphy</a>
+    <header id="navbarAllPage" class="navbar text-white sticky-top flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand text-white col-md-3 col-lg-2 me-0 px-3" href="pageAccueil">KanyPhotgraphy</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Recherche" aria-label="Search">
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="admin.php">Déconnexion</a>
+                <a class="nav-link text-white" href="admin.php">Déconnexion</a>
             </li>
         </ul>
     </header>
@@ -47,10 +47,35 @@
                         <p class="card-text">
                             With supporting text below as a natural lead-in to additional content.
                         </p>
-                        <button href="#" class="btn btn-warning">Ajouter</button>
+                        <button id="buttonAllPage" type="button" class="btn text-white" data-toggle="modal"
+                            data-target="#modalAdd">Ajouter</button>
                     </div>
                 </div>
             </div>
+
+            <!-- card modal ajouter -->
+            <div class="modal" id="modalAdd" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Ajouter/Télècharger</h5>
+                            <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><button type="submit" id="buttonAllPage" class="btn text-white">
+                                    <input type="file" name="fileToUpload" id="fileToUpload"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
+                                Fermer
+                            </button>
+                            <button type="button" id="buttonAllPage" class="btn text-white">Télècharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin modal ajouter -->
 
 
             <!-- card correspondant à la modal des articles -->
@@ -61,158 +86,176 @@
                         <p class="card-text">
                             With supporting text below as a natural lead-in to additional content.
                         </p>
-                        <button href="#" data-toggle="modal" data-target="#modal" class="btn btn-warning">Mes
+                        <button data-toggle="modal" data-target="#modal" id="buttonAllPage" class=" btn text-white">Mes
                             articles</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- fin de card -->
-    <!-- modal -->
-    <div class="modal" id="modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Mes articles</h5>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Je saisi ici mon articles</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
-                        Fermer
-                    </button>
-                    <button type="button" class="btn btn-warning">Enregistrer les modifications</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- fin modal -->
 
-
-    <div id="" class="row">
-        <div class="col-sm-6 pl-5">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Supprimer une image</h5>
-                    <p class="card-text">
-                        With supporting text below as a natural lead-in to additional content.
-                    </p>
-                    <a href="#" class="btn btn-warning">Supprimer</a>
+        <!-- fin de card -->
+        <!-- modal -->
+        <div class="modal" id="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mes articles</h5>
+                        <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Je saisi ici mon articles</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="buttonAllPage" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
+                            Fermer
+                        </button>
+                        <button type="button" id="buttonAllPage" class="btn text-white">Modifier mes articles</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 pl-5">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Télècharger une image</h5>
-                    <p class="card-text">
-                        With supporting text below as a natural lead-in to additional content.
-                    </p>
-                    <button type="submit" class="btn btn-warning">
-                    <input type="file" name="fileToUpload" id="fileToUpload">
-        
-                    </button>
+        <!-- fin modal -->
+
+
+        <div class="row">
+            <div class="col-sm-6 pl-5 mb-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Supprimer une image</h5>
+                        <p class="card-text">
+                            With supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <button type="button" id="buttonAllPage" class="btn text-white" data-toggle="modal"
+                            data-target="#myModal">Supprimer</button>
+                    </div>
                 </div>
             </div>
+
+            <!-- modal suppression -->
+            <div class="modal" id="myModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Suppresion</h5>
+                            <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ici mon image à supprimer</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="buttonAllPage" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
+                                Fermer
+                            </button>
+                            <button type="button" id="buttonAllPage" class="btn text-white">Confirmer la suppression</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal suppression -->
+
+                <div class="col-sm-6 pl-5 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Formulaire de contact</h5>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <button type="button" id="buttonAllPage" class="btn text-white" data-toggle="modal"
+                                data-target="#modalForm">Consultez</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal formulaire de contact -->
+                <div class="modal" id="modalForm" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Contact</h5>
+                                <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                <div class="mt-5 tablePageTableBord ml-5 mt-3 pr-5 pl-5">
+                                    <h2>Liste des personnes</h2>
+                                    <div id="tableDashboard" class="table-responsive">
+                                        <table class="table table-striped table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Nom</th>
+                                                    <th>Prénom</th>
+                                                    <th>Télèphone</th>
+                                                    <th>Adresse E-mail</th>
+                                                    <th>Message</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </main>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
+                                    Fermer
+                                </button>
+                                <button type="button" id="buttonAllPage" class="btn text-white">Consultez</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    <!-- modal telechargement image -->
-    <div id="modaltwo" class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Télèchargement</h5>
-        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>photo Ici</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-mdb-dismiss="modal">
-          Fermer
-        </button>
-        <button type="button" class="btn btn-warning">Enregistrer</button>
-      </div>
     </div>
-  </div>
-</div>
-<!-- fiin de modal telechargement -->
-
-
-
-     
-
-
-
-
-    <div class="mt-5 tablePageTableBord ml-5">
-        <h2>Liste des personnes</h2>
-        <div id="tableDashboard" class="table-responsive">
-            <table class="table table-striped table-sm">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Nom</th>
-                        <th>Prénom</th>
-                        <th>Télèphone</th>
-                        <th>Adresse E-mail</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        </main>
-    </div>
-    </div>
-    </div>
+  
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -232,3 +275,4 @@
         integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
     </script>
     <script src="dashboard.js"></script>
+</body>

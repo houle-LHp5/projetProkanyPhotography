@@ -20,8 +20,8 @@
 
 <main class="form-signin">
   <form class="mt-5">
-    <img class="mb-4" src="assets/videoEtPhotoFondEcran/camera-lens-240966_1920.jpg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Vous connecter</h1>
+    <img class="mb-4" src="assets/autres/videoEtPhotoFondEcran/camera-lens-240966_1920.jpg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Connectez vous</h1>
     <label for="inputEmail" class="visually-hidden">Adresse E-mail</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="monadressemail@gmail.com" required autofocus>
     <label for="inputPassword" class="visually-hidden">Mot de passe</label>
@@ -31,8 +31,8 @@
         <input type="checkbox" value="remember-me"> Se souvenir
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-warning" type="submit">Connection</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+    <button class="w-100 btn btn-lg text-white" id="buttonAllPage" type="submit">Connection</button>
+    <p class="mt-5 mb-3 text-muted">&copy; copyright 2020-2021</p>
   </form>
 </main>
 
