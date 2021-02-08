@@ -59,150 +59,109 @@
             </div>
         </nav>
         <!-- fin de la navbar-->
-        <div class="container-fluid row ml-3">
-        <!-- <div class="row ml-5" > -->
-            <div class="justify-content-center mb-3 mlm-3 mr-2">
-                <img src="assets/img/img2/Web 1.png" alt="...">
-            </div>
 
-            <div class="justify-content-center mb-3">
-                <img src="assets/img/img2/Web 1280 – 1.png" alt="...">
+        <!-- premier image de la page -->
+        <div class="containerPageAccueil">
+            <div class="text-center mt-5 mb-3">
+                <img src="assets/img/img2/photoDuSite/Web 1280 – 1.png" alt="image d'une femme">
             </div>
         </div>
-        <section>
+        <!-- fin de l'image -->
 
-            <div id="textCard" class="mb-3 mt-3 ml-5 mr-3 pr-3 pl-3">
-                <h4 class="text-white text-center">A propos de moi</h4>
-                <p class="text-white">
-                <img src="assets/img/img2/card3article.png" alt="photo niouma">
-                    Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en
-                    tout cas comparable avec celle du français standard.
-                    De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
-                    Ipsum leur faux texte par défaut, et une recherche pour
-                    'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de
-                    construction.
-                    Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement
-                    (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</br>
-                    On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
-                    distractions,
-                    et empêche de se concentrer sur la mise en page elle-même.
-                    L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.
-                    Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale,
-                    et en tout cas comparable avec celle du français standard.
-                    De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
-                    Ipsum leur faux texte par défaut,
-                    et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore
-                    qu'à leur phase de construction.
-                    Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement
-                    (histoire d'y rajouter de petits clins d'oeil,
-                    voire des phrases embarassantes).
-                </p>
-                <footer class="blockquote-footer">
-                    Aissétou TOURE <cite title="Source Title">Source Title</cite>
-                </footer>
-                </blockquote>
-            </div>
-        </section>
-
-<div  class="cardArticle">
-        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
-            <div class="col">
-                <div class="card">
-                    <img src="assets/img/img2/card2article.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Article 1</h5>
-                        <p>
-                            Article de mes dernieres réalisation de shooting photo...
-                        </p>
-                    </div>
+        <!-- bloc de presentation  -->
+        <div class="row">
+                <div class="col mb-3 mt-3 text-center">
+                    <img src="assets/img/imageCardApropos.png" alt="">
+                </div>
+                <div id="textColorPageAccueil" class="col mt-5 mr-5">
+                    <h1>A propos de moi!</h1>
+                    <p class="styleTextAccueil">Je suis une jeune entrepreneuse qui à crée son entreprise en juin
+                            2019.
+                            Passionné par la photographie en général.
+                            j'offre mes prestation à travers la région normande.
+                            Mes réalisation sont divers car je peu être appeler pour des services de mariage
+                            des shooting de naissance, baptême, anniversaire....
+                            Vous trouvere sur mon site quelque unes des mes réalisation
+                            une galerie spéciale shooting et une galerie spéciale décoration Intéreure
+                            Je suis également passionné par la décoration intérieure
+                            Actuellement en formation de décoratrice intérieure, je me suis lancé
+                            dans le buisness de décoratrice intérieure chez les personnes.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/img/img2/card3article.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Article 2</h5>
-                        <p>
-                            Article de mes dernieres réalisation de shooting photo...
-                        </p>
-                    </div>
+        <!-- fin de bloc présentation -->
+
+        <!-- bloc des articles -->
+        <div class="article mb-3">
+            <div id="colorTextAllPage" class="text-center text-white">
+                <h3>Mes dernieres réalisations</h3>
+                <h4>Quand les réves devienne réalité !!</h4>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="text-center">
+                    <img src="assets/img/img2/Web 1280 – 1.png" alt="">
+                    <p class="text-center text-white mt-2">Le passage de Lorem Ipsum standard, utilisé depuis 1500</br>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing,</br>
+                        sed do eiusmod tempor incididunt ut labore</br>
+                        et dolore magna aliqua.</br>
+                    </p>
+                    <button type="submit" id="buttonAllPage" class="btn text-white">Lire plus >></button>
+                </div>
+                <div class="text-center">
+                    <img src="assets/img/img2/Web 1280 – 1.png" alt="">
+                    <p class="text-center text-white mt-2">
+                        Le passage de Lorem Ipsum standard, utilisé depuis 1500</br>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing,</br>
+                        sed do eiusmod tempor incididunt ut labore</br>
+                        et dolore magna aliqua.</br>
+                    </p>
+                        <button type="submit" id="buttonAllPage" class="btn text-white">Lire plus >></button>
+                </div>
+                <div class="text-center">
+                    <img src="assets/img/img2/Web 1280 – 1.png" alt="">
+                    <p class="text-center text-white mt-2">
+                        Le passage de Lorem Ipsum standard, utilisé depuis 1500</br>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing,</br>
+                        sed do eiusmod tempor incididunt ut labore</br>
+                        et dolore magna aliqua.</br>
+                    </p>
+                    <button type="submit" id="buttonAllPage" class="btn text-white">Lire plus >></button>
                 </div>
             </div>
-            </div>
         </div>
-        </div>
+        <!-- fin block des articles -->
+
+
+
+
+
 
         <!-- footer  -->
         <footer id="allFooter" class="text-white text-center text-lg-start">
-            <!-- Grid container -->
-            <div class="container p-4">
-                <!--Grid row-->
+            <div class="containerFooter p-4">
                 <div class="row">
-                    <!--Grid column-->
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase">a propos de Kany's</h5>
-
-                        <p>
+                        <p class="text-align-center">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
                             molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
                             voluptatem veniam, est atque cumque eum delectus sint!
                         </p>
                     </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                                <i class="fab fa-facebook"></i>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                        </ul>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase mb-0">Links</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white"></a>
-                            </li>
-                        </ul>
                     </div>
-                    <!--Grid column-->
                 </div>
-                <!--Grid row-->
             </div>
-            <!-- Grid container -->
             <i class="fab fa-facebook"></i>
-            <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2021 Copyright: KanyPhotography
                 <a class="text-white" href="https://mdbootstrap.com/"></a>
             </div>
-            <!-- Copyright -->
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

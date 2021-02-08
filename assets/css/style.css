@@ -219,3 +219,36 @@ h1{
 #tableDashboard{
 margin-left: 15em;
 } 
+
+#colorText404{
+  color: #8C654F;
+}
+/* 
+ #colorTextAllPage{
+  color: #8C654F;
+ } */
+
+ .article{
+   background-color: #D6CABA;
+ }
+
+ .photoPageAccueil{
+   margin-left: 10rem;
+ }
+ 
+ /* #C1AE9D */
+
+ .containerPageAccueil{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: #D6CABA;
+ }
+
+ #textColorPageAccueil{
+   color: #8C654F;
+ }
+
+ /* .styleTextAccueil{
+   
+ } */

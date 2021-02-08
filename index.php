@@ -35,7 +35,7 @@
     <!-- vidéo et message de la page d'accueil -->
     <div id="videoDiv">
         <video id="video1" controls class="min-vh-100 min-vw-100" autoplay="" muted="" playsinline="" loop="" poster="assets/videoEtPhotoFondEcran/camera-2125549_1920.jpg">
-            <source src="assets/videoEtPhotoFondEcran/appareilPhotoEntier.mp4" type="video/mp4">
+            <source src="assets/autres/videoEtPhotoFondEcran/appareilPhotoEntier.mp4" type="video/mp4">
         </video>
         <div id="videoMessage" class="styling">
             <h1 id="titlePageAccueil">KanyPhotography</h1>
