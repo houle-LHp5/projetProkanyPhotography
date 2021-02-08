@@ -42,10 +42,10 @@
     </nav>
     <!-- fin de nav -->
     <div class="container-fluid">
-        <div class="blockPhotoPageAllCategories mb-5">
+        <div class="blockPhotoPageAllCategories mb-3">
             <div class="rowmd-12 mb-3">
                 <div class="bg-image hover-zoom">
-                    <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" id="firstImgAllCategories"
+                    <img src="assets/img/img2/photoDuSite/home.png" id="firstImgAllCategories"
                         class="img-fluid z-depth-1 img-responsive" alt="Responsive image">
                 </div>
             </div>
@@ -160,34 +160,72 @@
 
 
         <!-- fin du corq de  la page -->
-        <footer id="allFooter" class="text-dark text-center text-lg-start">
-            <div class="container-fluid p-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Footer Content</h5>
+        
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                            voluptatem veniam, est atque cumque eum delectus sint!
-                        </p>
-                    </div>
+        <footer id="allFooter" class="text-white text-center text-lg-start">
+                <div class="container-fluid p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer Content</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                                voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <i class="fab fa-facebook"></i>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
 
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0">Links</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase mb-0">Links</h5>
-                    </div>
+                    <!--Grid row-->
                 </div>
-            </div>
+                <!-- Grid container -->
 
-            <div class="text-center p-3">
-                © 2021 Copyright: KanyPhotography
-                <a class="text-dark" href="https://mdbootstrap.com/"></a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    © 2021 Copyright: KanyPhotography
+                    <a class="text-white" href="https://mdbootstrap.com/"></a>
+                </div>
+            </footer>
+
+
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -46,10 +46,10 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="blockPhotoPageAllCategories mb-5">
+                <div class="blockPhotoPageAllCategories mb-2">
                     <div class="row">
                         <div class="bg-image hover-zoom">
-                            <img src="assets/img/ourkty2.png" id="firstImgAllCategories" class="img-fluid z-depth-1"
+                            <img src="assets/img/img2/photoDuSite/photoPortrait.png" id="firstImgAllCategories" class="img-fluid z-depth-1"
                                 alt="Responsive image">
                         </div>
                     </div>

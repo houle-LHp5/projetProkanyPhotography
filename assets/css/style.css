@@ -238,9 +238,7 @@ margin-left: 15em;
  
  /* #C1AE9D */
 
- .containerPageAccueil{
-  width: 300px;
-  height: 300px;
+ .container-fluid{
   text-align: center;
   background-color: #D6CABA;
  }
@@ -252,3 +250,5 @@ margin-left: 15em;
  /* .styleTextAccueil{
    
  } */
+
+ 

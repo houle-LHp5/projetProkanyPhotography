@@ -18,7 +18,7 @@
 
 <body class="text-center">
     <div class="mt-5">
-        <img src="assets/img/img2/PHOTOredimrnsionner/Web 1280 – 1.png" alt="">
+        <img src="assets/img/img2/photoDuSite/error404.png" alt="">
         <h1 id="colorText404" class="fs-1">Sorry !</h1>
         <p class="text-lg">ERROR 404</p>
         <p>Page not found.</p>
