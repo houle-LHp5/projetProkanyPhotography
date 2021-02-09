@@ -62,7 +62,7 @@
 
         <!-- title page accueil -->
         <div id="textColorPageAccueil" class="mt-5">
-            <h1 class="text-center">Accueil</h1>
+            <h1 class="text-center"><B>Accueil</B></h1>
             <div>
 
 
@@ -105,7 +105,7 @@
                     </div>
                     </div>
                 </div>
-                <!-- fin de l'image -->
+                <!-- fin BLOC Numéro 1 -->
 
 
                 <!-- bloc de presentation  -->
@@ -131,42 +131,42 @@
                 <!-- fin de bloc présentation -->
 
                 <!-- bloc des articles -->
-                <div class="article mb-2">
+                <div class="article mb-2 mt-2">
                     <div id="colorTextAllPage" class="text-center text-white">
                         <h3>Mes dernieres réalisations</h3>
                         <h4>Quand les réves devienne réalité !!</h4>
                     </div>
 
                     <div class="row justify-content-center">
-                        <div class="text-center mr-2">
-                            <img src="assets/img/img2/Web 1280 – 1.png" alt="">
-                            <p class="text-center text-white mt-2">Le passage de Lorem Ipsum standard, utilisé depuis
-                                1500</br>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing,</br>
-                                sed do eiusmod tempor incididunt ut labore</br>
-                                et dolore magna aliqua.</br>
-                            </p>
-                            <button type="submit" id="buttonAllPage" class="btn text-white">Lire plus >></button>
-                        </div>
-                        <div class="text-center mr-2">
-                            <img src="assets/img/img2/Web 1280 – 1.png" alt="">
+                        <div class="text-center mr-4">
+                            <img src="assets/img/img2/photoDuSite/article1.png" alt="">
                             <p class="text-center text-white mt-2">
-                                Le passage de Lorem Ipsum standard, utilisé depuis 1500</br>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing,</br>
-                                sed do eiusmod tempor incididunt ut labore</br>
-                                et dolore magna aliqua.</br>
+                            Une préstation trés particuliere pour car </br>
+                                C'était le jour de la Master classe de Brook Devis</br>
+                                Ici elle fessait une démonstration sur sa mannequin</br>
+                                comment bien faire ces silles avec les différents...</br>
                             </p>
-                            <button type="submit" id="buttonAllPage" class="btn text-white">Lire plus >></button>
+                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus >></a>
+                        </div>
+                        <div class="text-center mr-4">
+                            <img src="assets/img/img2/photoDuSite/article2.png" alt="">
+                            <p class="text-center text-white mt-2">
+                            Le shooting avec les mannequins de mla Marque NSNV</br>
+                                c'etait à la foret de mangeons. NSNV étant</br>
+                                la marque de vêtement de mon frére</br>
+                                je m'occupe de la photographie lors des shooting...</br>
+                            </p>
+                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus >></a>
                         </div>
                         <div class="text-center">
-                            <img src="assets/img/img2/Web 1280 – 1.png" alt="">
+                            <img src="assets/img/img2/photoDuSite/article3.png" alt="">
                             <p class="text-center text-white mt-2">
-                                Le passage de Lorem Ipsum standard, utilisé depuis 1500</br>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing,</br>
-                                sed do eiusmod tempor incididunt ut labore</br>
-                                et dolore magna aliqua.</br>
+                               Séance photos en pleine air sur la plage du Havre</br>
+                               les filles ont était maquillé par Brook Devis</br>
+                               Une journée ensoleillé, j'ai pu faire de belle photo</br>
+                               en extérieure...
                             </p>
-                            <button type="submit" id="buttonAllPage" class="btn text-white">Lire plus >></button>
+                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus >></a>
                         </div>
                     </div>
                 </div>
@@ -194,6 +194,29 @@
                     </div>
                 </div>
 
+                <div class="container-fluid">
+                    <div class=" text-center mt-2">
+                        <p>
+                        Vous pouvez me contacter via le formulaire de conatcte ci-joint</br>
+                        ou par les réseau sociaux (Facebook, Instagram) 
+                        N'hésitez pas pour vos reservation à me laisser vos coordonnées en remplir le formulaire . 
+                          </p>
+                    </div>
+                    <div class="col mb-2 mt-3 text-center">
+                        <a type="submit" href="contact.php" id="buttonAllPage" class="btn text-white">Contact</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                <div class="text-center ml-5 mb-2">
+                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" alt="">
+                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
+                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" alt="">
+                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" alt="">
+                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco5.png" alt="">
+                </div>
+                </div>
+
 
                 <footer id="allFooter" class="text-white text-center text-lg-start">
                     <div class="container-fluid p-4">
@@ -207,42 +230,19 @@
                                 </p>
                             </div>
                             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase">Links</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <i class="fab fa-facebook"></i>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="text-white">Link 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="text-white">Link 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="text-white">Link 4</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase mb-0">Links</h5>
-
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#!" class="text-white">Link 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="text-white">Link 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="text-white">Link 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!" class="text-white">Link 4</a>
-                                    </li>
-                                </ul>
+                                <h5>Mes réseaux Sociaux</h5>
+                                <div class="row text-center ml-5">
+                                    <div class="ml-5">
+                                        <a href="https://www.facebook.com/toure.aisettou" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png"></a>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://www.instagram.com/kanysphotographie/" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png"></a>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#!" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
+                                    </div>
+                                    
+                                </div>
                             </div>
                             <!--Grid column-->
                         </div>
