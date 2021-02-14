@@ -51,101 +51,142 @@
             </div>
         </nav>
         <!-- fin de la navbars-->
+
+
+        <!-- title -->
+        <div id="textColorPageAccueil" class="text-center">
+            <h1 class="cardTitle mt-5">Contact</h1>
+        </div>
+        <!-- fin du title -->
+
+        <!-- formulaire de contact -->
         <div id="cardFormContact" class="container-fluid">
-            <div id="textCard" class="card mt-3 mb-3 text-white">
-                    <h1 class="card-title mt-3">Contact</h1>
-                    <form id="formContactPage" class="ml-5 mr-5">
-                        <div class="row mb-4">
-                            <div class="col-8">
-                                <div class="form-outline">
-                                    <label class="form-label" for="form3Example1">Prénom</label>
-                                    <input type="text" id="form3Example1" class="form-control" />
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-outline">
-                                    <label class="form-label" for="form3Example2">Nom</label>
-                                    <input type="text" id="form3Example2" class="form-control" />
-                                </div>
+            <div id="textCard" class="row card mt-3 mb-3 text-white">
+                <form id="formContactPage" class="ml-5 mt-4 mr-5">
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <div class="form-outline">
+                                <label class="form-label" for="flastname">Prénom</label>
+                                <input type="text" id="lastname" class="form-control" name="lastname" />
                             </div>
                         </div>
-                        <div class="form-outline mb-4">
-                            <label class="form-label" for="adressMail">E-mail</label>
-                            <input type="email" id="adressMail" class="form-control" name="adressMail" />
+                        <div class="col-3">
+                            <div class="form-outline">
+                                <label class="form-label" for="firstname">Nom</label>
+                                <input type="text" id="firstname" class="form-control" name="firstname" />
+                            </div>
                         </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="adressMail">E-mail</label>
+                                <input type="email" id="adressMail" class="form-control" name="adressMail" />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-outline">
+                                <label class="form-label" for="phoneNnumber">Télèphone</label>
+                                <input type="number" id="phoneNnumber" class="form-control" name="phoneNnumber" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-outline mr-5">
+                            <label for="select">Selectionner la raison de votre demande</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Ouvrez ce menu de sélection</option>
+                                <option value="1">Shooting photo</option>
+                                <option value="2">Décoration Intérieure</option>
+                                <option value="3">Renseignement</option>
+                                <option value="3">Autres</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
                         <div class="form-outline">
-                        <label class="form-label" for="textAreaExample">Message</label>
+                            <label class="form-label" for="textAreaExample">Message</label>
                             <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-                            <button type="submit" id="buttonAllPage" class="text-center btn justify-content-center">Envoyer</button>
+                            <button type="submit" id="buttonAllPage"
+                                class="text-center btn justify-content-center">Envoyer</button>
                         </div>
-                    </form>
+                    </div>
+                    <div id="imagePageContact" class="text-center">
+                        <img src="assets/img/img2/photoDuSite/imagePageContact.png" alt="">
+                    </div>
             </div>
+            </form>
         </div>
     </div>
-    </div>
 
 
+    <!-- <div>
+        <img src="assets/img/img2/photoDuSite/Web 1280 – 6.png" alt="image de la card contact">
+    </div> -->
+
+    <!-- footer -->
     <footer id="allFooter" class="text-white text-center text-lg-start">
-                <div class="container-fluid p-4">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                            <h5 class="text-uppercase">Footer Content</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                                voluptatem veniam, est atque cumque eum delectus sint!
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase">Links</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <i class="fab fa-facebook"></i>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 4</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--Grid column-->
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                        voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
 
-                        <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-0">Links</h5>
-
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#!" class="text-white">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 4</a>
-                                </li>
-                            </ul>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Mes réseaux Sociaux</h5>
+                    <div class="row text-center ml-5">
+                        <div class="ml-5">
+                            <a href="https://www.facebook.com/toure.aisettou"><img
+                                    src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png"
+                                    class="rounded-circle"></a>
                         </div>
-                        <!--Grid column-->
+                        <div class="ml-3">
+                            <a href="https://www.instagram.com/kanysphotographie/"><img
+                                    src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png"
+                                    class="rounded-circle"></a>
+                        </div>
+                        <div class="ml-3">
+                            <a href="#!"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
+                                    class="rounded-circle"></a>
+                        </div>
                     </div>
-                    <!--Grid row-->
                 </div>
-                <!-- Grid container -->
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
 
-                <!-- Copyright -->
-                <div class="text-center p-3">
-                    © 2021 Copyright: KanyPhotography
-                    <a class="text-white" href="https://mdbootstrap.com/"></a>
-                </div>
-            </footer>
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 Copyright: KanyPhotography
+            <a class="text-white" href="https://mdbootstrap.com/"></a>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

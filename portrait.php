@@ -155,15 +155,14 @@
                                 <h5>Mes réseaux Sociaux</h5>
                                 <div class="row text-center ml-5">
                                     <div class="ml-5">
-                                        <a href="https://www.facebook.com/toure.aisettou" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png"></a>
+                                        <a href="https://www.facebook.com/toure.aisettou" ><img src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png" class="rounded-circle"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="https://www.instagram.com/kanysphotographie/" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png"></a>
+                                        <a href="https://www.instagram.com/kanysphotographie/"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png" class="rounded-circle"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="#!" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
+                                        <a href="#!" ><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png" class="rounded-circle"></a>
                                     </div>
-                                    
                                 </div>
                             </div>
                             <!--Grid column-->
@@ -195,9 +194,6 @@
                 src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
             </script>
             <script src="script.js"></script>
-            <script>
-            AOS.init();
-            </script>
 </body>
 
 </html>

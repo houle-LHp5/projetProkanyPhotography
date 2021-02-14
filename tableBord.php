@@ -6,15 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
@@ -43,12 +34,12 @@
             <div class="col-sm-6 mb-5 mt-5 pl-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Ajouter une Photos</h5>
+                        <h5 class="card-title">Ajouter/Supprimer/Modier une photo</h5>
                         <p class="card-text">
-                            With supporting text below as a natural lead-in to additional content.
+                            With supporting text below as a.
                         </p>
-                        <button id="buttonAllPage" type="button" class="btn text-white" data-toggle="modal"
-                            data-target="#modalAdd">Ajouter</button>
+                        <a href="articles.php" id="buttonAllPage" type="button" class="btn text-white" data-toggle="modal"
+                            data-target="#modalAdd">Ajouter</a>
                     </div>
                 </div>
             </div>
@@ -58,7 +49,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Ajouter/Télècharger</h5>
+                            <h5 class="modal-title">Ajouter/Modifier/Supprimer</h5>
                             <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -82,7 +73,7 @@
             <div class="col-sm-6 mt-5 pl-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Articles</h5>
+                        <h5 class="card-title">Mes Articles</h5>
                         <p class="card-text">
                             With supporting text below as a natural lead-in to additional content.
                         </p>
@@ -152,8 +143,8 @@
                     </div>
                 </div>
             </div>
-            <!-- fin modal suppression -->
 
+            <!-- fin modal suppression -->
                 <div class="col-sm-6 pl-5 mb-2">
                     <div class="card">
                         <div class="card-body">
@@ -161,94 +152,7 @@
                             <p class="card-text">
                                 With supporting text below as a natural lead-in to additional content.
                             </p>
-                            <button type="button" id="buttonAllPage" class="btn text-white" data-toggle="modal"
-                                data-target="#modalForm">Consultez</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- modal formulaire de contact -->
-                <div class="modal" id="modalForm" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Contact</h5>
-                                <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                <div class="mt-5 tablePageTableBord ml-5 mt-3 pr-5 pl-5">
-                                    <h2>Liste des personnes</h2>
-                                    <div id="tableDashboard" class="table-responsive">
-                                        <table class="table table-striped table-sm">
-                                            <thead>
-                                                <tr>
-                                                    <th>Date</th>
-                                                    <th>Nom</th>
-                                                    <th>Prénom</th>
-                                                    <th>Télèphone</th>
-                                                    <th>Adresse E-mail</th>
-                                                    <th>Message</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    </main>
-                                </div>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
-                                    Fermer
-                                </button>
-                                <button type="button" id="buttonAllPage" class="btn text-white">Consultez</button>
-                            </div>
+                            <a href="formulaire_contact.php" type="imput" id="buttonAllPage" class="btn text-white">Consultez</a>
                         </div>
                     </div>
                 </div>

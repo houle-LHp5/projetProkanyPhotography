@@ -55,6 +55,18 @@
                         <a class="nav-link" href="error404.php">
                             <i class="fab fa-instagram"></i>Error 404</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.php">
+                            <i class="fab fa-instagram"></i>articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashbord2.php">
+                            <i class="fab fa-instagram"></i>dashbord2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulaire_contact.php">
+                            <i class="fab fa-instagram"></i>formulaire_contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
