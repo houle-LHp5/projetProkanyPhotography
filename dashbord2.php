@@ -48,42 +48,108 @@
         </nav>
         <!-- fin de la navbar -->
 
+        <div class="container-fluid mt-5">
+            
+            <!-- tableau de gestion des images des bloc photo de contact -->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Texte alternative</th>
+                        <th scope="col">Catégorie</th>
+                        <th scope="col">Modifier</th>
+                        <th scope="col">Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>image.png</td>
+                        <td>photo mannequin de oury</td>
+                        <td>Portrait</td>
+                        <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                        <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>violete.png</td>
+                        <td>image d'une fleur</td>
+                        <td>Décoration Intérieur</td>
+                        <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                        <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button type="submit" class="btn btn-primary text-white">Ajouter  <input type="file" name="fileToUpload" id="fileToUpload"></button>
+                        </td>
+                   </tr>
+                </tbody>
+            </table>
 
+            <!-- tableau de gestion du formulaire de contact -->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Adresse Mail</th>
+                        <th scope="col">Numéro de Télèphone</th>
+                        <th scope="col">Choix du select</th>
+                        <th scope="col">Message</th>
+                        <th scope="col">suppression</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>TOURE</td>
+                        <td>Houléimattou</td>
+                        <td>houle.toure@gmail.com</td>
+                        <td>0627334506</td>
+                        <td>Shooting photo</td>
+                        <td>Bonjour, je souhaiterais prendre un rendez-vous </br> pour une shooting photo.</td>
+                        <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <!-- tableau de gestion des articles de la page d'acceuil -->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Texte</th>
+                        <th scope="col">Accroche</th>
+                        <th scope="col">Photo 1</th>
+                        <th scope="col">Photo 2</th>
+                        <th scope="col">Photo 3</th>
+                        <th scope="col">Modifier</th>
+                        <th scope="col">Suppression</th>
 
-
-        <div class="container-fluid">
-            <div id="textColorPageAccueil" class="text-center">
-                <h1><B>Articles</B></h1>
-            </div>
-            <div class="row mb-2">
-                <div id="cardArticles" class="row">
-
-                    <div>
-                        <div class="modal-body col border-center">
-                            <p><button type="submit" id="buttonAllPage" class="btn text-white">
-                                    <input type="file" name="fileToUpload" id="fileToUpload"></p>
-                        </div>
-                        <p>Télècharger une image ici</p>
-                    </div>
-                    <div class=" col border-dark">
-                        <p>Afficher les photos ici</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col border-dark">
-                        <p>les photos se modifie ici</p>
-                    </div>
-                    <div class="col border-dark">
-                        <p>supprimer une photo</p>
-                    </div>
-                </div>
-            </div>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2020-07-15</td>
+                        <td>Le shooting de Paris</td>
+                        <td>Le texte de mon article</td>
+                        <td>Paris la ville des lumière</td>
+                        <td>l'Arc de Trionphe.png</td>
+                        <td>sousLaTourEffel.png</td>
+                        <td>Le métro parisien</td>
+                        <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                        <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-
-
 
         <!-- footer de la page des  arcticles -->
         <footer id="allFooter" class="text-white text-center text-lg-start">
