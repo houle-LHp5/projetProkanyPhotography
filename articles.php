@@ -43,19 +43,30 @@
                         </ul>
                     </div>
                 </nav>
+                <!-- fin de la navbar -->
 
-        <article class="mt-5">
-            <header>
+        <div class="container">
+        <h2 class="mt-5">Mes articles</h2>
+            <div class="mt-5 border-dark">
                 <h3>mon premier article</h3>
-            </header>
-            <section>
-                <P>le contenu de mon premier article sera noter ici....</P>
-            </section>
-        </article>
+                <img src="assets/img/img2/photoDuSite/" alt="">
+                <p>Le contenu de mon premier article sera afficher ici. </p>
+            </div>
+            <div class="mt-3">
+                <h3>Mon deuxieme article</h3>
+                <img src="assets/img/img2/photoDuSite/" alt="">
+                <p>mon deuxieme article sera afficher ici</p>            
+            </div>
+            <div class="mt-3">
+                <h3>Mon troisieme article</h3>
+                <img src="assets/img/img2/photoDuSite/" alt="">
+                <p>mon troisieme article sera afficher ici</p>            
+            </div>
+        </div>
     </div>
 
-    <footer class="footerPageArticles" id="allFooter" class="text-white text-center text-lg-start">
-        <div class="container-fluid p-4">
+    <footer class="footerPageArticles" id="allFooter" class="text-center text-lg-start">
+        <div class="container-fluid mt-5 p-5">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Footer Content</h5>
