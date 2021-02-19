@@ -41,7 +41,7 @@
             <h1 id="titlePageAccueil">KanyPhotography</h1>
             <h2>Bienvenue sur mon site</h2>
             <p id="enterBtn" class="videoClick">
-                <a type="submit" id="buttonAllPage" class="btn btn-lg" href="pageAccueil">Cliquer ici</a>
+                <a type="submit" id="buttonAllPage" class="btn btn-lg" href="view/pageAccueil.php">Cliquer ici</a>
             </p>
         </div>
     </div>

@@ -1,3 +1,7 @@
+<?php 
+require_once 'controllers/controller_admin.php';
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -11,16 +15,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
 </head>
 
-
-
 <main class="form-signin">
   <form class="mt-5">
-    <img class="mb-4" src="assets/autres/videoEtPhotoFondEcran/camera-lens-240966_1920.jpg" alt="" width="72" height="57">
+    <img class="mb-4" src="../assets/autres/videoEtPhotoFondEcran/camera-lens-240966_1920.jpg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Connectez vous</h1>
     <label for="inputEmail" class="visually-hidden">Adresse E-mail</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="monadressemail@gmail.com" required autofocus>

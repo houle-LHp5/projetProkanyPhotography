@@ -1,3 +1,8 @@
+<?php 
+
+require_once 'controllers/controller_contact.php';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>formulaire de contact</title>
 </head>
 
@@ -36,40 +41,15 @@
                         <td>Je souhainterais une préstations photos</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <?php foreach($allContactArray as $forms){?>
+
+                        <td><?= $forms['lastname'] ?></td>
+                        <td><?= $forms['firstname'] ?></td>
+                        <td><?= $forms['phone'] ?></td>
+                        <td><?= $forms['email'] ?></td>
+                        <td><?= $forms['message'] ?></td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+               <?php } ?>
                 </tbody>
             </table>
         </div>

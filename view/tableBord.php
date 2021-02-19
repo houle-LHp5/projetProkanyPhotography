@@ -10,12 +10,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body id="pageTableBord">
     <header id="navbarAllPage" class="navbar text-white sticky-top flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand text-white col-md-3 col-lg-2 me-0 px-3" href="pageAccueil">KanyPhotgraphy</a>
+        <a class="navbar-brand text-white col-md-3 col-lg-2 me-0 px-3" href="../index.php">KanyPhotgraphy</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
         <input class="form-control form-control-dark w-100" type="text" placeholder="Recherche" aria-label="Search">
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="admin.php">Déconnexion</a>
+                <a class="nav-link text-white" href="../admin.php">Déconnexion</a>
             </li>
         </ul>
     </header>

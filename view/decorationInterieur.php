@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <!--Navbar -->
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
-        <a class="navbar-brand text-white" href="index.php">KANY'S</a>
+        <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
             aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="pageAccueil.php">
-                        <i class="fab fa-instagram"></i>Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="portrait.php">
-                        <i class="fab fa-instagram"></i>Portrait</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="decorationInterieur.php">
-                        <i class="fab fa-instagram"></i>Décoration Intérieur</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.php">
-                        <i class="fab fa-instagram"></i>Contact</a>
-                </li>
+            <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/pageAccueil.php">
+                            <i class="fab fa-instagram"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/portrait.php">
+                            <i class="fab fa-instagram"></i>Portrait</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/decorationInterieur.php">
+                            <i class="fab fa-instagram"></i>Décoration Intérieur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/contact.php">
+                            <i class="fab fa-instagram"></i>Contact</a>
+                    </li>
             </ul>
         </div>
     </nav>
@@ -45,7 +45,7 @@
         <div class="blockPhotoPageAllCategories mb-3">
             <div class="rowmd-12 mb-3">
                 <div class="bg-image hover-zoom">
-                    <img src="assets/img/img2/photoDuSite/home.png" id="firstImgAllCategories"
+                    <img src="../assets/img/img2/photoDuSite/home.png" id="firstImgAllCategories"
                         class="img-fluid z-depth-1 img-responsive" alt="Responsive image">
                 </div>
             </div>
@@ -58,99 +58,99 @@
         <!--premier bloc 5 image -->
         <div class="row" class="imgPagePortrait">
             <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
-                <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/meubleTVetTv.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/meubleTVetTv.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgPagePortrait">
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
         </div>
         <!-- deuxieme bloc 5 image -->
         <div class="row" class="imgPagePortrait">
             <div class="col-lg-4 col-md-12 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/home.jpg" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/homeTransparent.jpg" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/home.jpg" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgPagePortrait">
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/newCanapeDeStoo.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/salon1.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
         </div>
         <!--troisiéme bloc 5 image -->
         <div class="row" class="imgPagePortrait">
             <div class="col-lg-4 col-md-12 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/salon2.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/salon3.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/salon3.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/deco1.png" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgPagePortrait">
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/homeMutiColor.jpg" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/homeMutiColor.jpg" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <div class="col-md-6 mb-3">
-                <img src="assets/img/imagePageDecoInterieur/living-room-2569325_1920.jpg" class="img-fluid z-depth-1"
+                <img src="../assets/img/imagePageDecoInterieur/living-room-2569325_1920.jpg" class="img-fluid z-depth-1"
                     alt="Responsive image">
             </div>
             <!-- dernier bloc image page allCategggories -->
             <div class="row" class="imgPagePortrait">
                 <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
-                    <img src="assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
+                    <img src="../assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
                         alt="Responsive image">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <img src="assets/img/imagePageDecoInterieur/tableWhite.jpg" class="img-fluid z-depth-1"
+                    <img src="../assets/img/imagePageDecoInterieur/tableWhite.jpg" class="img-fluid z-depth-1"
                         alt="Responsive image">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <img src="assets/img/imagePageDecoInterieur/tableAndChaise.jpg" class="img-fluid z-depth-1"
+                    <img src="../assets/img/imagePageDecoInterieur/tableAndChaise.jpg" class="img-fluid z-depth-1"
                         alt="Responsive image">
                 </div>
             </div>
             <div class="row" class="imgPagePortrait">
                 <div class="col-md-6 mb-3">
-                    <img src="assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
+                    <img src="../assets/img/imagePageDecoInterieur/salonBeau.jpg" class="img-fluid z-depth-1"
                         alt="Responsive image">
                 </div>
                 <div class="col-md-6 mb-3">
-                    <img src="assets/img/imagePageDecoInterieur/salonNoirBlanc.jpg" class="img-fluid z-depth-1"
+                    <img src="../assets/img/imagePageDecoInterieur/salonNoirBlanc.jpg" class="img-fluid z-depth-1"
                         alt="Responsive image">
                 </div>
                 <!-- fin de bloc -->
@@ -177,13 +177,13 @@
                                 <h5>Mes réseaux Sociaux</h5>
                                 <div class="row text-center ml-5">
                                     <div class="ml-5">
-                                        <a href="https://www.facebook.com/toure.aisettou" ><img src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png" class="rounded-circle"></a>
+                                        <a href="https://www.facebook.com/toure.aisettou" ><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png" class="rounded-circle"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="https://www.instagram.com/kanysphotographie/"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png" class="rounded-circle"></a>
+                                        <a href="https://www.instagram.com/kanysphotographie/"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png" class="rounded-circle"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="#!" ><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png" class="rounded-circle"></a>
+                                        <a href="#!" ><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png" class="rounded-circle"></a>
                                     </div>
                                 </div>
                             </div>
@@ -199,8 +199,6 @@
                         <a class="text-white" href="https://mdbootstrap.com/"></a>
                     </div>
                 </footer>
-
-
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -10,14 +10,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Mes articles</title>
 </head>
 
 <body>
     <div class="container-fluid ">
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
-                    <a class="navbar-brand text-white" href="index.php">KANY'S</a>
+                    <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -26,19 +26,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="pageAccueil.php">
+                                <a class="nav-link text-white" href="../view/pageAccueil.php">
                                     <i class="fab"></i>Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="portrait.php">
+                                <a class="nav-link text-white" href="../view/portrait.php">
                                     <i class="fab"></i>Portrait</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="decorationInterieur.php">
+                                <a class="nav-link text-white" href="../view/decorationInterieur.php">
                                     <i class="fab"></i>Décoration Intérieur</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="contact.php">
+                                <a class="nav-link text-white" href="../view/contact.php">
                                     <i class="fab"></i>Contact</a>
                         </ul>
                     </div>
@@ -49,17 +49,17 @@
         <h2 class="mt-5">Mes articles</h2>
             <div class="mt-5 border-dark">
                 <h3>mon premier article</h3>
-                <img src="assets/img/img2/photoDuSite/" alt="">
+                <img src="../assets/img/img2/photoDuSite/" alt="">
                 <p>Le contenu de mon premier article sera afficher ici. </p>
             </div>
             <div class="mt-3">
                 <h3>Mon deuxieme article</h3>
-                <img src="assets/img/img2/photoDuSite/" alt="">
+                <img src="../assets/img/img2/photoDuSite/" alt="">
                 <p>mon deuxieme article sera afficher ici</p>            
             </div>
             <div class="mt-3">
                 <h3>Mon troisieme article</h3>
-                <img src="assets/img/img2/photoDuSite/" alt="">
+                <img src="../assets/img/img2/photoDuSite/" alt="">
                 <p>mon troisieme article sera afficher ici</p>            
             </div>
         </div>
@@ -81,23 +81,23 @@
                     <div class="row text-center ml-5">
                         <div class="ml-5">
                             <a href="https://www.facebook.com/toure.aisettou"><img
-                                    src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png"
+                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"
                                     class="rounded-circle"></a>
                         </div>
                         <div class="ml-3">
                             <a href="https://www.instagram.com/kanysphotographie/"><img
-                                    src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png"
+                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png"
                                     class="rounded-circle"></a>
                         </div>
                         <div class="ml-3">
-                            <a href="#!"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
+                            <a href="#!"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
                                     class="rounded-circle"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center p-3">
+        <div class="text-center text-white p-3">
             © 2021 Copyright: KanyPhotography
             <a class="text-white" href="https://mdbootstrap.com/"></a>
         </div>

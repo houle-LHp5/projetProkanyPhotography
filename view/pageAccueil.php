@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
 </head>
@@ -20,7 +20,7 @@
     <div class="containeur-fluid">
         <!--Navbar -->
         <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
-            <a class="navbar-brand text-white" href="index.php">KANY'S</a>
+            <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
                 aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,43 +28,43 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="pageAccueil.php">
+                        <a class="nav-link text-white" href="../view/pageAccueil.php">
                             <i class="fab fa-instagram"></i>Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="portrait.php">
+                        <a class="nav-link text-white" href="../view/portrait.php">
                             <i class="fab fa-instagram"></i>Portrait</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="decorationInterieur.php">
+                        <a class="nav-link text-white" href="../view/decorationInterieur.php">
                             <i class="fab fa-instagram"></i>Décoration Intérieur</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.php">
+                        <a class="nav-link text-white" href="../view/contact.php">
                             <i class="fab fa-instagram"></i>Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="admin.php">
+                        <a class="nav-link text-white" href="../view/view_admin.php">
                             <i class="fab fa-instagram"></i>Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tableBord.php">
+                        <a class="nav-link text-white" href="../view/tableBord.php">
                             <i class="fab fa-instagram"></i>Tableau de Bord</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="error404.php">
+                        <a class="nav-link text-white" href="../view/error404.php">
                             <i class="fab fa-instagram"></i>Error 404</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="articles.php">
+                        <a class="nav-link text-white" href="../view/articles.php">
                             <i class="fab fa-instagram"></i>articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="dashbord2.php">
+                        <a class="nav-link text-white" href="../view/dashbord2.php">
                             <i class="fab fa-instagram"></i>dashbord2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="formulaire_contact.php">
+                        <a class="nav-link text-white" href="../view/afficheList_contact.php">
                             <i class="fab fa-instagram"></i>formulaire_contact</a>
                     </li>
                 </ul>
@@ -74,14 +74,12 @@
 
         <!-- title page accueil -->
         <div id="textColorPageAccueil" class="mt-5">
-            <h1 class="text-center"><B>Accueil</B></h1>
             <div>
-
 
                 <!-- premier text de la page -->
                 <div class="container-fluid">
                 <div class="row" >
-                    <div id="blocOne" class="text-center mt-3 mb-2 ml-5">
+                    <!-- <div id="blocOne" class="text-center mt-3 mb-2 ml-5">
                     <p>L'extrait standard de Lorem Ipsum utilisé depuis</br>
                             le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
                             Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
@@ -114,7 +112,7 @@
                             Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
                             de Cicéron sont aussi reproduites dans leur version originale,</br>
                             accompagnée de la traduction anglaise de H. Rackham (1914).</p>
-                    </div>
+                    </div> -->
                     </div>
                 </div>
                 <!-- fin BLOC Numéro 1 -->
@@ -123,7 +121,7 @@
                 <!-- bloc de presentation  -->
                 <div class="row">
                     <div class="col mb-2 mt-3 text-center">
-                        <img src="assets/img/img2/photoDuSite/portraitNb.png" alt="">
+                        <img src="../assets/img/img2/photoDuSite/portraitNb.png" alt="">
                     </div>
                     <div id="textColorPageAccueil" class="col mt-5 mr-5">
                         <h1>A propos de moi!</h1>
@@ -151,34 +149,34 @@
 
                     <div class="row justify-content-center">
                         <div class="text-center mr-4">
-                            <img src="assets/img/img2/photoDuSite/article1.png" alt="">
+                            <img src="../assets/img/img2/photoDuSite/article1.png" alt="">
                             <p class="text-center text-white mt-2">
                             Une préstation trés particuliere pour car </br>
                                 C'était le jour de la Master classe de Brook Devis</br>
                                 Ici elle fessait une démonstration sur sa mannequin</br>
                                 comment bien faire ces silles avec les différents...</br>
                             </p>
-                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus >></a>
+                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                         <div class="text-center mr-4">
-                            <img src="assets/img/img2/photoDuSite/article2.png" alt="">
+                            <img src="../assets/img/img2/photoDuSite/article2.png" alt="">
                             <p class="text-center text-white mt-2">
                             Le shooting avec les mannequins de mla Marque NSNV</br>
                                 c'etait à la foret de mangeons. NSNV étant</br>
                                 la marque de vêtement de mon frére</br>
                                 je m'occupe de la photographie lors des shooting...</br>
                             </p>
-                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus >></a>
+                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                         <div class="text-center">
-                            <img src="assets/img/img2/photoDuSite/article3.png" alt="">
+                            <img src="../assets/img/img2/photoDuSite/article3.png" alt="">
                             <p class="text-center text-white mt-2">
                                Séance photos en pleine air sur la plage du Havre</br>
                                les filles ont était maquillé par Brook Devis</br>
                                Une journée ensoleillé, j'ai pu faire de belle photo</br>
                                en extérieure...
                             </p>
-                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus >></a>
+                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +200,7 @@
                             dans le buisness de décoratrice intérieure chez les personnes.</p>
                     </div>
                     <div class="col mb-2 mt-3 ">
-                        <img src="assets/img/img2/PHOTOredimrnsionner/Web 1280 – 1.png" alt="">
+                        <img src="../assets/img/img2/PHOTOredimrnsionner/Web 1280 – 1.png" alt="">
                     </div>
                 </div>
 
@@ -221,11 +219,10 @@
 
                 <div class="row">
                 <div class="text-center ml-5 mb-2">
-                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" alt="">
-                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
-                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" alt="">
-                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" alt="">
-                <img src="assets/img/imagePageDecoInterieur/décoRedimensionner/déco5.png" alt="">
+                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" alt="">
+                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
+                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" alt="">
+                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" alt="">
                 </div>
                 </div>
 
@@ -245,13 +242,13 @@
                                 <h5>Mes réseaux Sociaux</h5>
                                 <div class="row text-center ml-5">
                                     <div class="ml-5">
-                                        <a href="https://www.facebook.com/toure.aisettou" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 11.png"></a>
+                                        <a href="https://www.facebook.com/toure.aisettou" class="text-white"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="https://www.instagram.com/kanysphotographie/" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 12.png"></a>
+                                        <a href="https://www.instagram.com/kanysphotographie/" class="text-white"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="#!" class="text-white"><img src="assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
+                                        <a href="#!" class="text-white"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
                                     </div>
                                     
                                 </div>
