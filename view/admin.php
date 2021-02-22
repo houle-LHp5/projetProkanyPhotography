@@ -4,54 +4,62 @@ require_once 'controllers/controller_admin.php';
 
 <!doctype html>
 <html lang="fr">
-
-<head>
-    <title>KanysPhotoGraphie</title>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Admin</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="signin.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
 
-    </script>
-</head>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+
+  <body class="text-center">
+    
 <main class="form-signin">
-  <form class="mt-5">
-    <img class="mb-4" src="../assets/autres/videoEtPhotoFondEcran/camera-lens-240966_1920.jpg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Connectez vous</h1>
-    <label for="inputEmail" class="visually-hidden">Adresse E-mail</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="monadressemail@gmail.com" required autofocus>
+  <form>
+    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <label for="inputEmail" class="visually-hidden">E-mail</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
     <label for="inputPassword" class="visually-hidden">Mot de passe</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="1246757e76G" required>
+    <input type="password" id="inputPassword" class="form-control" placeholder="dzhdbjz45hgg" required>
     <div class="checkbox mb-3">
       <label>
-        <input type="checkbox" value="remember-me"> Se souvenir
+        <input type="checkbox" value="remember-me"> Se souvenir de moi
       </label>
     </div>
-    <button class="w-100 btn btn-lg text-white" id="buttonAllPage" type="submit">Connection</button>
-    <p class="mt-5 mb-3 text-muted">&copy; copyright 2020-2021</p>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Connection </button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2019-2021</p>
   </form>
 </main>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
-        </script>
-        <script src="script.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
-
+    
+  </body>
 </html>

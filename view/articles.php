@@ -1,72 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>articles</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Mes articles</title>
+
+    <style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid ">
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
-                    <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../view/pageAccueil.php">
-                                    <i class="fab"></i>Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../view/portrait.php">
-                                    <i class="fab"></i>Portrait</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../view/decorationInterieur.php">
-                                    <i class="fab"></i>Décoration Intérieur</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../view/contact.php">
-                                    <i class="fab"></i>Contact</a>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- fin de la navbar -->
+
+    <header class="site-header sticky-top py-1">
+        <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/pageAccueil.php">
+                            <i class="fab fa-instagram"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/portrait.php">
+                            <i class="fab fa-instagram"></i>Portrait</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/decorationInterieur.php">
+                            <i class="fab fa-instagram"></i>Décoration Intérieur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/contact.php">
+                            <i class="fab fa-instagram"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">Mes articles</h1>
+                <p class="lead fw-normal">Retrouver sur cette page les articles dédiés à mes derniéres réalisation ou
+                    préstations.</p>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
 
         <div class="container">
-        <h2 class="mt-5">Mes articles</h2>
-            <div class="mt-5 border-dark">
-                <h3>mon premier article</h3>
-                <img src="../assets/img/img2/photoDuSite/" alt="">
-                <p>Le contenu de mon premier article sera afficher ici. </p>
-            </div>
-            <div class="mt-3">
-                <h3>Mon deuxieme article</h3>
-                <img src="../assets/img/img2/photoDuSite/" alt="">
-                <p>mon deuxieme article sera afficher ici</p>            
-            </div>
-            <div class="mt-3">
-                <h3>Mon troisieme article</h3>
-                <img src="../assets/img/img2/photoDuSite/" alt="">
-                <p>mon troisieme article sera afficher ici</p>            
-            </div>
-        </div>
-    </div>
+            <div>
+                <div class="row">
+                    <img src="../assets/img/img2/photoDuSite/masterClassOury.png" alt="">
+                    <p></p>
+                </div>
+                <div class="row">
+                    <h3>NSNV (Nul Sacrifice Nulle Victoire</h3>
+                        <img src="../assets/img/img2/photoDuSite/shootingNsnv.png" alt="">
+                    <p>Contrairement à la croyance populaire, Lorem Ipsum n'est pas simplement un texte aléatoire.
+                        Il a ses racines dans un morceau de littérature latine classique de 45 avant JC,
+                        ce qui en fait plus de 2000 ans. Richard McClintock, professeur de latin au Hampden-Sydney
+                        College en Virginie,
+                        a recherché l'un des mots latins les plus obscurs, consectetur, d'un passage du Lorem Ipsum,
+                        et en parcourant les citations du mot dans la littérature classique, a découvert la source
+                        indubitable.
+                        Lorem Ipsum provient des sections 1.10.32 et 1.10.33 de "de Finibus Bonorum et Malorum" (Les
+                        Extrêmes du Bien et du Mal) de Cicéron, écrit en 45 av.
+                        Ce livre est un traité sur la théorie de l'éthique, très populaire à la Renaissance. La première
+                        ligne du Lorem Ipsum, "Lorem ipsum dolor sit amet ..",
+                        provient d'une ligne de la section 1.10.32.</p>
+                </div>
+                <div class="row">
 
-    <footer class="footerPageArticles" id="allFooter" class="text-center text-lg-start">
-        <div class="container-fluid mt-5 p-5">
+                    <img src="../assets/img/img2/photoDuSite/photoPortrait.png" alt="" width="">
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <nav aria-label="navigation">
+  <ul class="pager">
+    <li><a href="#" title="Précédent">Précédent</a></li>
+    <li><a href="#" title="Suivant">Suivant</a></li>
+  </ul>
+</nav>
+
+    <!-- footer -->
+    <footer id="allFooter" class="text-dark text-center text-lg-start">
+        <div class="container-fluid p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Footer Content</h5>
@@ -95,27 +151,24 @@
                         </div>
                     </div>
                 </div>
+                <!--Grid column-->
             </div>
+            <!--Grid row-->
         </div>
-        <div class="text-center text-white p-3">
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white">
             © 2021 Copyright: KanyPhotography
-            <a class="text-white" href="https://mdbootstrap.com/"></a>
+            <a href="https://mdbootstrap.com/"></a>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
-    </script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="script.js"></script>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

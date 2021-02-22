@@ -21,145 +21,76 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Recherche" aria-label="Search">
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../admin.php">Déconnexion</a>
+                <a class="nav-link text-white" href="../view/view_admin.php">Déconnexion</a>
             </li>
         </ul>
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 mb-5 mt-5 pl-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ajouter/Supprimer/Modier une photo</h5>
+        <div class="justify-content-center">
+            <div class="row">
+                <div class="col-sm-3 mb-3 mt-5 pl-5">
+                    <div class="card">
+                        <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
+                        <h5 class="card-title">Ajouter/Modifier une image</h5>
                         <p class="card-text">
-                            With supporting text below as a.
                         </p>
-                        <a href="articles.php" id="buttonAllPage" type="button" class="btn text-white" data-toggle="modal"
-                            data-target="#modalAdd">Ajouter</a>
+                        <a href="articles.php" id="buttonAllPage" type="button" class="btn text-white"
+                            data-toggle="modal" data-target="#modalAdd">Ajouter</a>
                     </div>
                 </div>
-            </div>
 
-            <!-- card modal ajouter -->
-            <div class="modal" id="modalAdd" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Ajouter/Modifier/Supprimer</h5>
-                            <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p><button type="submit" id="buttonAllPage" class="btn text-white">
-                                    <input type="file" name="fileToUpload" id="fileToUpload"></p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
-                                Fermer
-                            </button>
-                            <button type="button" id="buttonAllPage" class="btn text-white">Télècharger</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin modal ajouter -->
+                <div class="col-sm-3 pl-5 mt-5 mb-2">
+                    <div class="card">
+                        <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
 
-
-            <!-- card correspondant à la modal des articles -->
-            <div class="col-sm-6 mt-5 pl-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mes Articles</h5>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in to additional content.
-                        </p>
-                        <button data-toggle="modal" data-target="#modal" id="buttonAllPage" class=" btn text-white">Mes
-                            articles</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- fin de card -->
-        <!-- modal -->
-        <div class="modal" id="modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Mes articles</h5>
-                        <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Je saisi ici mon articles</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" id="buttonAllPage" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
-                            Fermer
-                        </button>
-                        <button type="button" id="buttonAllPage" class="btn text-white">Modifier mes articles</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- fin modal -->
-
-
-        <div class="row">
-            <div class="col-sm-6 pl-5 mb-2">
-                <div class="card">
-                    <div class="card-body">
                         <h5 class="card-title">Supprimer une image</h5>
                         <p class="card-text">
-                            With supporting text below as a natural lead-in to additional content.
                         </p>
                         <button type="button" id="buttonAllPage" class="btn text-white" data-toggle="modal"
                             data-target="#myModal">Supprimer</button>
                     </div>
                 </div>
+                
             </div>
+            <!-- fin de card -->
 
-            <!-- modal suppression -->
-            <div class="modal" id="myModal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Suppresion</h5>
-                            <button type="button" id="buttonAllPage" class="btn-close" data-mdb-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Ici mon image à supprimer</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="buttonAllPage" class="btn btn-dark" data-mdb-dismiss="modal" data-dismiss="modal">
-                                Fermer
-                            </button>
-                            <button type="button" id="buttonAllPage" class="btn text-white">Confirmer la suppression</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- fin modal suppression -->
-                <div class="col-sm-6 pl-5 mb-2">
+            <div class="row">
+                <div class="col-sm-3 mt-3 pl-5">
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Formulaire de contact</h5>
-                            <p class="card-text">
-                                With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="formulaire_contact.php" type="imput" id="buttonAllPage" class="btn text-white">Consultez</a>
-                        </div>
+                        <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
+                        <h5 class="card-title">Mes Articles</h5>
+                        <p class="card-text">
+                        </p>
+                        <button data-toggle="modal" data-target="#modal" id="buttonAllPage" class=" btn text-white">Mes
+                            articles</button>
                     </div>
                 </div>
+
+                <div class="col-sm-3 pl-5 mt-3 mb-3">
+                    <div class="card">
+                        <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
+
+                        <h5 class="card-title">Formulaire de contact</h5>
+                        <p class="card-text">
+                        </p>
+                        <a href="../view/afficheList_contact.php" type="imput" id="buttonAllPage"
+                            class="btn text-white">Consultez</a>
+                        <imput type="button" value="Retour" class="text-white" onclick="history.go(-1)">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-  
+
+    <nav aria-label="navigation">
+  <ul class="pager">
+    <li><a href="#" title="Précédent">Précédent</a></li>
+    <li><a href="#" title="Suivant">Suivant</a></li>
+  </ul>
+</nav>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

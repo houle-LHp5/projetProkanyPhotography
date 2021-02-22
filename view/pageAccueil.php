@@ -143,40 +143,40 @@
                 <!-- bloc des articles -->
                 <div class="article mb-2 mt-2">
                     <div id="colorTextAllPage" class="text-center text-white">
-                        <h3>Mes dernieres réalisations</h3>
-                        <h4>Quand les réves devienne réalité !!</h4>
+                        <h3 class="mt-3 mb-3">Mes dernieres réalisations</h3>
                     </div>
-
                     <div class="row justify-content-center">
                         <div class="text-center mr-4">
-                            <img src="../assets/img/img2/photoDuSite/article1.png" alt="">
+                        <title>MasterClass</title>
+                            <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="">
                             <p class="text-center text-white mt-2">
-                            Une préstation trés particuliere pour car </br>
-                                C'était le jour de la Master classe de Brook Devis</br>
-                                Ici elle fessait une démonstration sur sa mannequin</br>
-                                comment bien faire ces silles avec les différents...</br>
+                            MasterClass de brook'devis, qui c'est déroulé</br>
+                            en éxtérieur, j'ai réaliser la totalité des photos</br>
+                            Cette master classe était ma premier préstation.</br>
+                                Comment bien faire ces silles avec les différents...</br>
                             </p>
-                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                         <div class="text-center mr-4">
-                            <img src="../assets/img/img2/photoDuSite/article2.png" alt="">
+                        <title>NSNV</title>
+                            <img src="../assets/img/img2/photoDuSite/nsnsMara.png" alt="">
                             <p class="text-center text-white mt-2">
                             Le shooting avec les mannequins de mla Marque NSNV</br>
                                 c'etait à la foret de mangeons. NSNV étant</br>
                                 la marque de vêtement de mon frére</br>
-                                je m'occupe de la photographie lors des shooting...</br>
+                                je m'occupe de la partie photographie lors des shooting...</br>
                             </p>
+                    
                             <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                         <div class="text-center">
-                            <img src="../assets/img/img2/photoDuSite/article3.png" alt="">
+                        <title>Shooting à PARIS</title>
+                            <img src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="">
                             <p class="text-center text-white mt-2">
                                Séance photos en pleine air sur la plage du Havre</br>
                                les filles ont était maquillé par Brook Devis</br>
                                Une journée ensoleillé, j'ai pu faire de belle photo</br>
                                en extérieure...
                             </p>
-                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                     </div>
                 </div>

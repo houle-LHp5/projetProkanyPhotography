@@ -24,7 +24,7 @@ require_once '../controllers/controller-formContact.php';
 
 <body>
     <thead>
-        <div class="containeur-fluid">
+        <div class="container-fluid">
             <!--Navbar -->
             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
                 <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -59,13 +59,13 @@ require_once '../controllers/controller-formContact.php';
     <main>
         <div class="py-5 text-center mt-5">
             <h2>Formulaire de Contact</h2>
-            <p class="lead">Vous trouverez ci dessous un formmulaire de contact pour me joindre, Veuillez indiquer
-                la raison de votre contact précissement dans la partie message d'édier à cela. </p>
+            <p class="lead">Vous trouverez ci dessous un formmulaire de contact pour me contacter, Veuillez indiquer
+                la raison de votre message précissement dans la partie message d'édier en bas du  formulaire. </p>
         </div>
 
         <div class="row g-3">
             <div class="col-md-5 col-lg-4 order-md-last">
-                <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
+                <img src="../assets/autres/videoEtPhotoFondEcran/imageForm.png" alt="">
             </div>
             <div class="col-md-7 col-lg-8 ml-3">
                 <h4 class="mb-3">Vos Coordonnées</h4>
@@ -110,8 +110,10 @@ require_once '../controllers/controller-formContact.php';
                                 id="floatingTextarea" required></textarea>
                             <label for="floatingTextarea">Message</label>
                         </div>
-
-
+                    </div>
+                    <div class="mt-5">
+                        <button type="submit" id="buttonAllPage" class="btn text-white center mb-2"
+                            name="addVisitorBtn">Envoyer</button>
                     </div>
 
                     <hr class="my-4">
@@ -126,19 +128,52 @@ require_once '../controllers/controller-formContact.php';
 
             </div>
         </div>
-        <button type="submit" id="buttonAllPage" class="btn text-white center" name="addVisitorBtn">Envoyer</button>
         </form>
         </div>
         </div>
     </main>
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2019–2021 Kanyphotography</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
-        </ul>
+    <footer id="allFooter" class="text-white text-center text-lg-start">
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                        voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <div class="col-lg-3 mb-4 mb-md-0">
+                    <h5>Mes réseaux Sociaux</h5>
+                    <div class="row text-center ml-5">
+                        <div class="ml-5 mb-1">
+                            <a href="https://www.facebook.com/toure.aisettou"><img
+                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"
+                                    class="rounded-circle"></a>
+                        </div>
+                        <div class="ml-3 mb-1">
+                            <a href="https://www.instagram.com/kanysphotographie/"><img
+                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png"
+                                    class="rounded-circle"></a>
+                        </div>
+                        <div class="ml-3">
+                            <a href="#!"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
+                                    class="rounded-circle"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 Copyright: KanyPhotography
+            <a class="text-white" href="https://mdbootstrap.com/"></a>
+        </div>
     </footer>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="form-validation.js"></script>

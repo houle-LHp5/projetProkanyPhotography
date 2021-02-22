@@ -1,6 +1,6 @@
 <?php 
 
-require_once 'controllers/controller_contact.php';
+require_once '../controller_contact.php';
 
 ?>
 <!DOCTYPE html>
@@ -31,15 +31,6 @@ require_once 'controllers/controller_contact.php';
                     </tr>
                 </thead>
                 <tbody>
-
-                    <tr>
-                        <td>14/02/2021</td>
-                        <td>houléimattou</td>
-                        <td>TOURE</td>
-                        <td>0627334506</td>
-                        <td>houle.toure@gmail.com</td>
-                        <td>Je souhainterais une préstations photos</td>
-                    </tr>
                     <tr>
                     <?php foreach($allContactArray as $forms){?>
 
