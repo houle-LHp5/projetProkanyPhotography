@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
@@ -20,18 +21,13 @@
 </head>
 <body class="overflow-hidden">
     <thead>
-        <div class="containeur-fluid">
             <!--Navbar -->
-            <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarPageAccueil">
+             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
                 <a class="navbar-brand text-white" href="index.php">KANY'S</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                </div>
-            </nav>
+            </nav> 
     </thead>
     <!--/.Navbar -->
+
     <!-- vidéo et message de la page d'accueil -->
     <div id="videoDiv">
         <video id="video1" controls class="min-vh-100 min-vw-100" autoplay="" muted="" playsinline="" loop="" poster="assets/videoEtPhotoFondEcran/camera-2125549_1920.jpg">

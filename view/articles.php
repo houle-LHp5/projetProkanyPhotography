@@ -62,6 +62,10 @@
                             <i class="fab fa-instagram"></i>Décoration Intérieur</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/articles.php">
+                            <i class="fab fa-instagram"></i>Articles</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="../view/contact.php">
                             <i class="fab fa-instagram"></i>Contact</a>
                     </li>
@@ -114,11 +118,13 @@
     </main>
 
     <nav aria-label="navigation">
-  <ul class="pager">
-    <li><a href="#" title="Précédent">Précédent</a></li>
-    <li><a href="#" title="Suivant">Suivant</a></li>
-  </ul>
-</nav>
+                <div class="float-left">
+                    <a href="decorationInterieur.php" class="bg-dark text-white" title="Précédent">Précédent</a>
+                </div>
+                <div class="float-right">
+                    <a href="contact.php" class="bg-dark text-white" title="Suivant">Suivant</a>
+                </div>
+            </nav>
 
     <!-- footer -->
     <footer id="allFooter" class="text-dark text-center text-lg-start">
@@ -146,7 +152,7 @@
                                     class="rounded-circle"></a>
                         </div>
                         <div class="ml-3">
-                            <a href="#!"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
+                            <a href="mailto:aisetoutoure@gmail.com"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
                                     class="rounded-circle"></a>
                         </div>
                     </div>

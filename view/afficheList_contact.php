@@ -1,8 +1,3 @@
-<?php 
-
-require_once '../controller_contact.php';
-
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -32,15 +27,12 @@ require_once '../controller_contact.php';
                 </thead>
                 <tbody>
                     <tr>
-                    <?php foreach($allContactArray as $forms){?>
-
-                        <td><?= $forms['lastname'] ?></td>
-                        <td><?= $forms['firstname'] ?></td>
-                        <td><?= $forms['phone'] ?></td>
-                        <td><?= $forms['email'] ?></td>
-                        <td><?= $forms['message'] ?></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
-               <?php } ?>
                 </tbody>
             </table>
         </div>

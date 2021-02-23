@@ -171,7 +171,7 @@ if(isset($_FILES["fileExercice"])){
 
     <nav aria-label="navigation">
         <ul class="pager">
-            <li><a href="tableBord.php" title="Précédent">Précédent</a></li>
+            <li><a href="tableBord.php" class="bg-dark text-white" title="Précédent">Précédent</a></li>
         </ul>
     </nav>
 

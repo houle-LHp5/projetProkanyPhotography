@@ -37,8 +37,7 @@
                         <h5 class="card-title">Ajouter/Modifier une image</h5>
                         <p class="card-text">
                         </p>
-                        <a href="articles.php" id="buttonAllPage" type="button" class="btn text-white"
-                            data-toggle="modal" data-target="#modalAdd">Ajouter</a>
+                        <a href="dashbord2.php" id="buttonAllPage" type="button" class="btn text-white">Ajouter</a>
                     </div>
                 </div>
 
@@ -64,8 +63,8 @@
                         <h5 class="card-title">Mes Articles</h5>
                         <p class="card-text">
                         </p>
-                        <button data-toggle="modal" data-target="#modal" id="buttonAllPage" class=" btn text-white">Mes
-                            articles</button>
+                        <a id="buttonAllPage" href="dashbord2.php" class=" btn text-white">Mes
+                            articles</a>
                     </div>
                 </div>
 
@@ -87,8 +86,7 @@
 
     <nav aria-label="navigation">
   <ul class="pager">
-    <li><a href="#" title="Précédent">Précédent</a></li>
-    <li><a href="#" title="Suivant">Suivant</a></li>
+    <li><a href="view_admin.php" class="bg-dark text-white" title="Précédent">Précédent</a></li>
   </ul>
 </nav>
 

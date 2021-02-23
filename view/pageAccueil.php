@@ -40,6 +40,10 @@
                             <i class="fab fa-instagram"></i>Décoration Intérieur</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="../view/articles.php">
+                            <i class="fab fa-instagram"></i>Articles</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="../view/contact.php">
                             <i class="fab fa-instagram"></i>Contact</a>
                     </li>
@@ -54,10 +58,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../view/error404.php">
                             <i class="fab fa-instagram"></i>Error 404</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../view/articles.php">
-                            <i class="fab fa-instagram"></i>articles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../view/dashbord2.php">
@@ -78,8 +78,8 @@
 
                 <!-- premier text de la page -->
                 <div class="container-fluid">
-                <div class="row" >
-                    <!-- <div id="blocOne" class="text-center mt-3 mb-2 ml-5">
+                    <div class="row">
+                        <!-- <div id="blocOne" class="text-center mt-3 mb-2 ml-5">
                     <p>L'extrait standard de Lorem Ipsum utilisé depuis</br>
                             le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
                             Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
@@ -143,39 +143,39 @@
                 <!-- bloc des articles -->
                 <div class="article mb-2 mt-2">
                     <div id="colorTextAllPage" class="text-center text-white">
-                        <h3 class="mt-3 mb-3">Mes dernieres réalisations</h3>
+                        <h3 class="mt-3 mb-3">Mes derniers articles</h3>
                     </div>
                     <div class="row justify-content-center">
                         <div class="text-center mr-4">
-                        <title>MasterClass</title>
+                            <title>MasterClass</title>
                             <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="">
                             <p class="text-center text-white mt-2">
-                            MasterClass de brook'devis, qui c'est déroulé</br>
-                            en éxtérieur, j'ai réaliser la totalité des photos</br>
-                            Cette master classe était ma premier préstation.</br>
+                                MasterClass de brook'devis, qui c'est déroulé</br>
+                                en éxtérieur, j'ai réaliser la totalité des photos</br>
+                                Cette master classe était ma premier préstation.</br>
                                 Comment bien faire ces silles avec les différents...</br>
                             </p>
                         </div>
                         <div class="text-center mr-4">
-                        <title>NSNV</title>
+                            <title>NSNV</title>
                             <img src="../assets/img/img2/photoDuSite/nsnsMara.png" alt="">
                             <p class="text-center text-white mt-2">
-                            Le shooting avec les mannequins de mla Marque NSNV</br>
+                                Le shooting avec les mannequins de mla Marque NSNV</br>
                                 c'etait à la foret de mangeons. NSNV étant</br>
                                 la marque de vêtement de mon frére</br>
                                 je m'occupe de la partie photographie lors des shooting...</br>
                             </p>
-                    
+
                             <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
                         <div class="text-center">
-                        <title>Shooting à PARIS</title>
+                            <title>Shooting à PARIS</title>
                             <img src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="">
                             <p class="text-center text-white mt-2">
-                               Séance photos en pleine air sur la plage du Havre</br>
-                               les filles ont était maquillé par Brook Devis</br>
-                               Une journée ensoleillé, j'ai pu faire de belle photo</br>
-                               en extérieure...
+                                Séance photos en pleine air sur la plage du Havre</br>
+                                les filles ont était maquillé par Brook Devis</br>
+                                Une journée ensoleillé, j'ai pu faire de belle photo</br>
+                                en extérieure...
                             </p>
                         </div>
                     </div>
@@ -205,12 +205,12 @@
                 </div>
 
                 <div class="container-fluid">
-                    <div class=" text-center mt-2">
+                    <div class="text-center mt-2">
                         <p>
-                        Vous pouvez me contacter via le formulaire de conatcte ci-joint</br>
-                        ou par les réseau sociaux (Facebook, Instagram) 
-                        N'hésitez pas pour vos reservation à me laisser vos coordonnées en remplir le formulaire . 
-                          </p>
+                            Vous pouvez me contacter via le formulaire de conatcte ci-joint</br>
+                            ou par les réseau sociaux (Facebook, Instagram)
+                            N'hésitez pas pour vos reservation à me laisser vos coordonnées en remplir le formulaire .
+                        </p>
                     </div>
                     <div class="col mb-2 mt-3 text-center">
                         <a type="submit" href="contact.php" id="buttonAllPage" class="btn text-white">Contact</a>
@@ -218,13 +218,21 @@
                 </div>
 
                 <div class="row">
-                <div class="text-center ml-5 mb-2">
-                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" alt="">
-                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
-                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" alt="">
-                <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" alt="">
+                    <div class="align-center ml-5 mb-2">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" alt="image décoration salon meuble tv et tv">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="image table à manger déco salon">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" alt="image canapé de salon">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" alt="image salon meuble tv">
+                    </div>
                 </div>
-                </div>
+
+                <nav aria-label="navigation">
+                    <div class="pager">
+                        <p><a href="../index.php" class="bg-dark text-white float-left" title="Précédent">Précédent</a>
+                        <p><a href="portrait.php" class="bg-dark text-white float-right" title="Suivant">Suivant</a>
+                        </p>
+                    </div>
+                </nav>
 
 
                 <footer id="allFooter" class="text-white text-center text-lg-start">
@@ -242,15 +250,18 @@
                                 <h5>Mes réseaux Sociaux</h5>
                                 <div class="row text-center ml-5">
                                     <div class="ml-5">
-                                        <a href="https://www.facebook.com/toure.aisettou" class="text-white"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png"></a>
+                                        <a href="https://www.facebook.com/toure.aisettou" class="rounded-circle"><img
+                                                src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="https://www.instagram.com/kanysphotographie/" class="text-white"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"></a>
+                                        <a href="https://www.instagram.com/kanysphotographie/" class="rounded-circle"><img
+                                                src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"></a>
                                     </div>
                                     <div class="ml-3">
-                                        <a href="#!" class="text-white"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
+                                        <a href="mailto:aisetoutoure@gmail.com" class="rounded-circle"><img
+                                                src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <!--Grid column-->

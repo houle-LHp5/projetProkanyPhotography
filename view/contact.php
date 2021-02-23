@@ -60,7 +60,7 @@ require_once '../controllers/controller-formContact.php';
         <div class="py-5 text-center mt-5">
             <h2>Formulaire de Contact</h2>
             <p class="lead">Vous trouverez ci dessous un formmulaire de contact pour me contacter, Veuillez indiquer
-                la raison de votre message précissement dans la partie message d'édier en bas du  formulaire. </p>
+                la raison de votre message précissement dans la partie message d'édier en bas du formulaire. </p>
         </div>
 
         <div class="row g-3">
@@ -133,6 +133,12 @@ require_once '../controllers/controller-formContact.php';
         </div>
     </main>
 
+    <nav aria-label="navigation">
+        <div class="pager">
+            <p><a href="articles.php" class="bg-dark text-white float-left" title="Précédent">Précédent</a></p>
+        </div>
+    </nav>
+
     <footer id="allFooter" class="text-white text-center text-lg-start">
         <div class="container-fluid p-4">
             <div class="row">
@@ -158,7 +164,7 @@ require_once '../controllers/controller-formContact.php';
                                     class="rounded-circle"></a>
                         </div>
                         <div class="ml-3">
-                            <a href="#!"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
+                            <a href="mailto:aisetoutoure@gmail.com"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
                                     class="rounded-circle"></a>
                         </div>
                     </div>

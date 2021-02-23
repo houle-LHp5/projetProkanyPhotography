@@ -140,3 +140,8 @@ margin-left: 15em;
   margin-top: 10px;
  } 
 
+.imageOnePagePortrait{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
