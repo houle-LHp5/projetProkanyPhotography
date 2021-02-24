@@ -73,51 +73,9 @@
         <!-- fin de la navbar-->
 
         <!-- title page accueil -->
+        <div>
         <div id="textColorPageAccueil" class="mt-5">
-            <div>
-
-                <!-- premier text de la page -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- <div id="blocOne" class="text-center mt-3 mb-2 ml-5">
-                    <p>L'extrait standard de Lorem Ipsum utilisé depuis</br>
-                            le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
-                            Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
-                            de Cicéron sont aussi reproduites dans leur version originale,</br>
-                            accompagnée de la traduction anglaise de H. Rackham (1914)</br>
-                            L'extrait standard de Lorem Ipsum utilisé depuis</br>
-                            le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
-                            Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
-                            de Cicéron sont aussi reproduites dans leur version originale,</br>
-                            accompagnée de la traduction anglaise de H. Rackham (1914)</br>
-                            L'extrait standard de Lorem Ipsum utilisé depuis</br>
-                            le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
-                            Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
-                            de Cicéron sont aussi reproduites dans leur version originale,</br>
-                            accompagnée de la traduction anglaise de H. Rackham (1914).</p>
-                    </div>
-                    <div id="blockTwo" class=" text-center ml-5 mt-3">
-                        <p>L'extrait standard de Lorem Ipsum utilisé depuis</br>
-                            le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
-                            Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
-                            de Cicéron sont aussi reproduites dans leur version originale,</br>
-                            accompagnée de la traduction anglaise de H. Rackham (1914)</br>
-                            L'extrait standard de Lorem Ipsum utilisé depuis</br>
-                            le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
-                            Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
-                            de Cicéron sont aussi reproduites dans leur version originale,</br>
-                            accompagnée de la traduction anglaise de H. Rackham (1914)</br>
-                            L'extrait standard de Lorem Ipsum utilisé depuis</br>
-                            le XVIè siècle est reproduit ci-dessous pour les curieux.</br>
-                            Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"</br> 
-                            de Cicéron sont aussi reproduites dans leur version originale,</br>
-                            accompagnée de la traduction anglaise de H. Rackham (1914).</p>
-                    </div> -->
-                    </div>
-                </div>
-                <!-- fin BLOC Numéro 1 -->
-
-
+            <div class="container">
                 <!-- bloc de presentation  -->
                 <div class="row">
                     <div class="col mb-2 mt-3 text-center">
@@ -131,8 +89,8 @@
                             j'offre mes prestation à travers la région normande.
                             Mes réalisation sont divers car je peu être appeler pour des services de mariage
                             des shooting de naissance, baptême, anniversaire....
-                            Vous trouvere sur mon site quelque unes des mes réalisation
-                            une galerie spéciale shooting et une galerie spéciale décoration Intéreure
+                            Vous trouverez sur mon site quelque unes des mes réalisation
+                            une galerie spéciale shooting et une galerie spéciale décoration Intéreure.
                             Je suis également passionné par la décoration intérieure
                             Actuellement en formation de décoratrice intérieure, je me suis lancé
                             dans le buisness de décoratrice intérieure chez les personnes.</p>
@@ -143,7 +101,7 @@
                 <!-- bloc des articles -->
                 <div class="article mb-2 mt-2">
                     <div id="colorTextAllPage" class="text-center text-white">
-                        <h3 class="mt-3 mb-3">Mes derniers articles</h3>
+                        <h3 class="mt-3 mb-3">Mes articles</h3>
                     </div>
                     <div class="row justify-content-center">
                         <div class="text-center mr-4">
@@ -166,9 +124,9 @@
                                 je m'occupe de la partie photographie lors des shooting...</br>
                             </p>
 
-                            <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-white">Lire plus</a>
                         </div>
-                        <div class="text-center">
+                        <div class="row mt-3">
+                        <div class="text-center mr-5">
                             <title>Shooting à PARIS</title>
                             <img src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="">
                             <p class="text-center text-white mt-2">
@@ -178,33 +136,43 @@
                                 en extérieure...
                             </p>
                         </div>
+                        <div class="text-center ml-1 mr-5">
+                            <title>Shooting à PARIS</title>
+                            <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
+                            <p class="text-center text-white mt-2">
+                                Séance photos en pleine air sur la plage du Havre</br>
+                                les filles ont était maquillé par Brook Devis</br>
+                                Une journée ensoleillé, j'ai pu faire de belle photo</br>
+                                en extérieure...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                    <a type="submit" href="articles.php" id="buttonAllPage" class="btn text-center text-white">Lire plus</a>
                     </div>
                 </div>
                 <!-- fin block des articles -->
 
 
 
-
+<!-- a propos de moi 2éme partie -->
                 <div class="row">
                     <div id="textColorPageAccueil" class=" text-center col mt-5 mr-5">
-                        <p class="styleTextAccueil">Je suis une jeune entrepreneuse qui à crée son entreprise en juin
-                            2019.
-                            Passionné par la photographie en général.
-                            j'offre mes prestation à travers la région normande.
-                            Mes réalisation sont divers car je peu être appeler pour des services de mariage
-                            des shooting de naissance, baptême, anniversaire....
-                            Vous trouvere sur mon site quelque unes des mes réalisation
-                            une galerie spéciale shooting et une galerie spéciale décoration Intéreure
-                            Je suis également passionné par la décoration intérieure
-                            Actuellement en formation de décoratrice intérieure, je me suis lancé
-                            dans le buisness de décoratrice intérieure chez les personnes.</p>
+                        <p class="styleTextAccueil">Vous pouvez découvrir su mon site une rubrique dédier à la photographie,
+                        avec les réalisations que j'ai pu faire depuis mon commencement. Il y a également une rubrique dédier 
+                        à la décoration intérieure (Maison, appartement ...). Je propose mes services pour la décotation de vos demeure,
+                        Que vous soyez en cours de construction ou  que vous avec envie de changer votre intérieur, je suis la pour donner une nouvelle vie ou 
+                        un renouveau à  votre intérieur. 
+         </p>
                     </div>
                     <div class="col mb-2 mt-3 ">
                         <img src="../assets/img/img2/PHOTOredimrnsionner/Web 1280 – 1.png" alt="">
                     </div>
                 </div>
 
-                <div class="container-fluid">
+                <!-- contact -->
+                <div class="container-fluid containerFooters text-white">
                     <div class="text-center mt-2">
                         <p>
                             Vous pouvez me contacter via le formulaire de conatcte ci-joint</br>
@@ -217,26 +185,31 @@
                     </div>
                 </div>
 
+                <!-- galerie image aligner -->
                 <div class="row">
-                    <div class="align-center ml-5 mb-2">
-                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" alt="image décoration salon meuble tv et tv">
-                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="image table à manger déco salon">
-                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" alt="image canapé de salon">
-                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" alt="image salon meuble tv">
+                    <div class="align-center ml-2 mb-2">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png" class="ml-2 mt-2 mr-1" style="width: 22rem;" style="height: 16rem;" alt="image décoration salon meuble tv et tv">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" class="ml-2 mt-2 mr-1" style="width: 22rem;" style="height: 16rem;" alt="image table à manger déco salon">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" class="ml-2 mt-2 mr-1" style="width: 22rem;" style="height: 16rem;" alt="image canapé de salon">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png" class="ml-2 mt-3 mr-1" style="width: 22rem;" style="height: 16rem;" alt="image salon meuble tv">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" class="ml-2 mt-3 mr-1" style="width: 22rem;" style="height: 16rem;" alt="image canapé de salon">
+                        <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png" class="ml-2 mt-3 mr-1" style="width: 22rem;" style="height: 16rem;" alt="image décoration salon meuble tv et tv">
                     </div>
                 </div>
 
+                <!-- boutton préceédent et suivant -->
                 <nav aria-label="navigation">
                     <div class="pager">
-                        <p><a href="../index.php" class="bg-dark text-white float-left" title="Précédent">Précédent</a>
-                        <p><a href="portrait.php" class="bg-dark text-white float-right" title="Suivant">Suivant</a>
+                        <p><a href="../index.php" class=" float-left" title="Précédent"><i class="material-icons">keyboard_arrow_left</i>Précédent</a>
+                        <p><a href="portrait.php" class="float-right" title="Suivant">Suivant<i class="material-icons">keyboard_arrow_right</i></a>
                         </p>
                     </div>
                 </nav>
+                </div>
 
-
+<!-- footer -->
                 <footer id="allFooter" class="text-white text-center text-lg-start">
-                    <div class="container-fluid p-4">
+                    <div class="containerFooters p-4">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                                 <h5 class="text-uppercase">Footer Content</h5>
@@ -261,7 +234,6 @@
                                         <a href="mailto:aisetoutoure@gmail.com" class="rounded-circle"><img
                                                 src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"></a>
                                     </div>
-
                                 </div>
                             </div>
                             <!--Grid column-->

@@ -24,7 +24,7 @@ require_once '../controllers/controller-formContact.php';
 
 <body>
     <thead>
-        <div class="container-fluid">
+        <div class="container">
             <!--Navbar -->
             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
                 <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -46,6 +46,10 @@ require_once '../controllers/controller-formContact.php';
                         <li class="nav-item">
                             <a class="nav-link text-white" href="../view/decorationInterieur.php">
                                 <i class="fab fa-instagram"></i>Décoration Intérieur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../view/articles.php">
+                                <i class="fab fa-instagram"></i>Articles</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="../view/contact.php">
@@ -140,9 +144,9 @@ require_once '../controllers/controller-formContact.php';
     </nav>
 
     <footer id="allFooter" class="text-white text-center text-lg-start">
-        <div class="container-fluid p-4">
+        <div class="containerFooters p-4">
             <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
                     <h5 class="text-uppercase">Footer Content</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis

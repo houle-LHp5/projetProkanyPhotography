@@ -33,7 +33,7 @@ if(isset($_FILES["fileExercice"])){
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <!--Navbar -->
         <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -66,7 +66,7 @@ if(isset($_FILES["fileExercice"])){
 
 
         <!-- tableau de gestion des images des bloc photo de contact -->
-        <table class="table table-dark mt-5">
+        <table class="table containerFooters mt-5">
             <thead>
                 <h2 class="h3">Tableau de gestion des photos</h2>
                 <tr>
@@ -106,7 +106,7 @@ if(isset($_FILES["fileExercice"])){
         </table>
 
         <!-- tableau de gestion des articles de la page d'acceuil -->
-        <table class="table table-dark">
+        <table class="table containerFooters">
             <thead>
                 <h2 class="h3">Tableau de gestion des articles</h2>
                 <tr>
@@ -140,7 +140,7 @@ if(isset($_FILES["fileExercice"])){
         </table>
 
         <!-- tableau de gestion du formulaire de contact -->
-        <table class="table table-dark">
+        <table class="table containerFooters">
             <thead>
                 <h2 class="h3">Tableau de gestion du formulaire de contact</h2>
                 <tr>
@@ -176,8 +176,8 @@ if(isset($_FILES["fileExercice"])){
     </nav>
 
     <!-- footer de la page des  arcticles -->
-    <footer id="allFooter" class="text-dark text-center text-lg-start">
-        <div class="container-fluid p-4">
+    <footer id="allFooter" class="text-white text-center text-lg-start">
+        <div class="containerFooters p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Footer Content</h5>

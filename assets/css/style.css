@@ -3,7 +3,7 @@
     background: transparent;
 }
 
-/* video fond d'ecran page d'acceuil 1*/
+/* video fond d'ecran page couverture*/
 video {
     background-size: cover;
     position: fixed;
@@ -41,17 +41,13 @@ video {
   font-size: 6em;
 }
 
-/* page d'acceuil */
-
 #navbarAllPage{
   background-color: #8C654F;
 }
 
-
 #allFooter{
   background-color: #8C654F;
 }
-
 
 #textCard{
   background-color: #BDA68F;
@@ -92,10 +88,6 @@ margin-left: 15em;
 #colorText404{
   color: #8C654F;
 }
-/* 
- #colorTextAllPage{
-  color: #8C654F;
- } */
 
  .article{
    background-color: #D6CABA;
@@ -105,20 +97,14 @@ margin-left: 15em;
    margin-left: 10rem;
  }
  
- /* #C1AE9D */
 
- .container-fluid{
-  text-align: center;
-  background-color: #D6CABA;
+ .containerFooters{
+  background-color: #b8aa98;
  }
 
  #textColorPageAccueil{
    color: #8C654F;
  }
-
- /* .styleTextAccueil{
-   
- } */
 
 
  .cardTitle{

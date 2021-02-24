@@ -28,13 +28,13 @@
         </ul>
     </header>
 
-    <div class="container-fluid">
-        <div class="justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center text-center">
             <div class="row">
                 <div class="col-sm-3 mb-3 mt-5 pl-5">
                     <div class="card">
                         <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
-                        <h5 class="card-title">Ajouter/Modifier une image</h5>
+                        <h5 class="card-title mt-3">Ajouter/Modifier une image</h5>
                         <p class="card-text">
                         </p>
                         <a href="dashbord2.php" id="buttonAllPage" type="button" class="btn text-white">Ajouter</a>
@@ -45,7 +45,7 @@
                     <div class="card">
                         <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
 
-                        <h5 class="card-title">Supprimer une image</h5>
+                        <h5 class="card-title mt-3">Supprimer une image</h5>
                         <p class="card-text">
                         </p>
                         <button type="button" id="buttonAllPage" class="btn text-white" data-toggle="modal"
@@ -55,12 +55,11 @@
                 
             </div>
             <!-- fin de card -->
-
             <div class="row">
                 <div class="col-sm-3 mt-3 pl-5">
                     <div class="card">
                         <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
-                        <h5 class="card-title">Mes Articles</h5>
+                        <h5 class="card-title mt-3">Mes Articles</h5>
                         <p class="card-text">
                         </p>
                         <a id="buttonAllPage" href="dashbord2.php" class=" btn text-white">Mes
@@ -72,7 +71,7 @@
                     <div class="card">
                         <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
 
-                        <h5 class="card-title">Formulaire de contact</h5>
+                        <h5 class="card-title mt-3">Formulaire de contact</h5>
                         <p class="card-text">
                         </p>
                         <a href="../view/afficheList_contact.php" type="imput" id="buttonAllPage"
@@ -85,9 +84,9 @@
     </div>
 
     <nav aria-label="navigation">
-  <ul class="pager">
-    <li><a href="view_admin.php" class="bg-dark text-white" title="Précédent">Précédent</a></li>
-  </ul>
+  <div class="pager">
+    <a href="view_admin.php" class="bg-dark text-white ml-2" title="Précédent">Précédent</a>
+</div>
 </nav>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

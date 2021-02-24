@@ -14,7 +14,6 @@
 
 <body>
     <thead>
-        <div class="containeur-fluid">
             <!--Navbar -->
             <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
                 <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -51,6 +50,7 @@
     </thead>
 
     <!--premier bloc 5 image -->
+    <div class="container">
     <div class="mt-5">
         <div class="row" class="imgPagePortrait">
             <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
@@ -144,18 +144,20 @@
             </div>
             <!-- fin de bloc -->
         </div>
-
+</div>
+</div>
         <nav aria-label="navigation">
-            <div class="float-left">
-                <a href="../index.php" class="bg-dark text-white" title="Précédent">Précédent</a>
+            <div class="float-left ml-3">
+                <a href="pageAccueil.php" class="bg-dark text-white" title="Précédent">Précédent</a>
             </div>
-            <div class="float-right">
+            <div class="float-right ml-5">
                 <a href="decorationInterieur.php" class="bg-dark text-white" title="Suivant">Suivant</a>
             </div>
         </nav>
+    
 
         <footer id="allFooter" class="text-white text-center text-lg-start">
-            <div class="container-fluid p-4">
+            <div class="containerFooters p-4">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Footer Content</h5>

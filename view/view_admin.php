@@ -17,37 +17,29 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <style>
-
-    </style>
-    <!-- Custom styles for this template -->
-
 </head>
 
 
 <body>
-<div class="container-fluid">
-    <main class="form-signin">
-        <form class="mt-5">
-            <div class="center">
-                <img class="mb-4" src="../assets/autres/videoEtPhotoFondEcran/imageAdmin.png" alt="">
-                <div class="center">
-                    <label for="inputEmail" class="w-25 mb-2 mt-1">E-mail</label>
-                    <input type="email" id="inputEmail" class="form-control w-25" placeholder="Email address" required
-                        autofocus>
-                    <label for="inputPassword" class="w-25 mb-2 mt-1">Mot de passe</label>
-                    <input type="password" id="inputPassword" class="form-control w-25 ml-5" placeholder="12455pass9621"
-                        required>
+    <div class="container">
+        <main>
+            <div class="card mt-5" style="width: 30rem;" style="height: 40rem;">
+            <form class="mt-5 ml-5">
+                        <div class="ml-5">
+                            <img class="mb-4 align-center" src="../assets/autres/videoEtPhotoFondEcran/imageAdmin.png" alt="">
+                            <div class="center">
+                                <label for="inputEmail" class="w-50 mb-2 mt-1">E-mail</label>
+                                <input type="email" id="inputEmail" class="form-control w-25"
+                                    placeholder="Email address" required autofocus>
+                                <label for="inputPassword" class="w-50 mb-2 mt-1">Mot de passe</label>
+                                <input type="password" id="inputPassword" class="form-control w-25 ml-5"
+                                    placeholder="12455pass9621" required>
+                            </div>
+                        </div>
+                        <button id="buttonAllPage" class="btn mt-3 text-white" type="submit">Connexion </button>
+                    </form>
                 </div>
-            </div>
-            <button id="buttonAllPage" class="btn btn-lg mt-3" type="submit">Connection </button>
-        </form>
-    </main>
-
-    <footer id="allFooter">
-    <p class="mt-5 mb-3 w-100 text-white">&copy; Copyright Kanyphotography 2019-2021</p>
-    </footer>
-
+        </main>
     </div>
 </body>
 

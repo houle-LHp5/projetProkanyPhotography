@@ -16,30 +16,10 @@
     </script>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-
-    <style>
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-    }
-
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
-    }
-    </style>
-
-
-    <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
 </head>
 
 <body>
-
     <header class="site-header sticky-top py-1">
         <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -47,7 +27,7 @@
                 aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <div class="collapse navbar-collapse float-right" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../view/pageAccueil.php">
@@ -74,63 +54,120 @@
         </nav>
     </header>
 
-    <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal">Mes articles</h1>
-                <p class="lead fw-normal">Retrouver sur cette page les articles dédiés à mes derniéres réalisation ou
-                    préstations.</p>
-            </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-        </div>
-
+    
         <div class="container">
-            <div>
-                <div class="row">
-                    <img src="../assets/img/img2/photoDuSite/masterClassOury.png" alt="">
-                    <p></p>
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+                <div class="col-md-5 p-lg-5 mx-auto my-5">
+                    <h1 class="display-4 fw-normal">Mes articles</h1>
+                    <p class="lead fw-normal">Retrouver sur cette page les articles dédiés à mes derniéres réalisation
+                        ou
+                        préstations.</p>
                 </div>
-                <div class="row">
-                    <h3>NSNV (Nul Sacrifice Nulle Victoire</h3>
-                        <img src="../assets/img/img2/photoDuSite/shootingNsnv.png" alt="">
-                    <p>Contrairement à la croyance populaire, Lorem Ipsum n'est pas simplement un texte aléatoire.
-                        Il a ses racines dans un morceau de littérature latine classique de 45 avant JC,
-                        ce qui en fait plus de 2000 ans. Richard McClintock, professeur de latin au Hampden-Sydney
-                        College en Virginie,
-                        a recherché l'un des mots latins les plus obscurs, consectetur, d'un passage du Lorem Ipsum,
-                        et en parcourant les citations du mot dans la littérature classique, a découvert la source
-                        indubitable.
-                        Lorem Ipsum provient des sections 1.10.32 et 1.10.33 de "de Finibus Bonorum et Malorum" (Les
-                        Extrêmes du Bien et du Mal) de Cicéron, écrit en 45 av.
-                        Ce livre est un traité sur la théorie de l'éthique, très populaire à la Renaissance. La première
-                        ligne du Lorem Ipsum, "Lorem ipsum dolor sit amet ..",
-                        provient d'une ligne de la section 1.10.32.</p>
-                </div>
-                <div class="row">
-
-                    <img src="../assets/img/img2/photoDuSite/photoPortrait.png" alt="" width="">
-                    <p></p>
-                </div>
+                <div class="product-device shadow-sm d-none d-md-block"></div>
+                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
             </div>
 
-        </div>
-    </main>
+            <hr class="center">
 
-    <nav aria-label="navigation">
-                <div class="float-left">
-                    <a href="decorationInterieur.php" class="bg-dark text-white" title="Précédent">Précédent</a>
+            <div class="articles">
+                <div class="mb-2">
+                    <div class="row">
+                        <h3>Brook'Devis (MasterClass)</h3>
+                        <div class="row ml-1 mt-2 mb-2">
+                            <img class="img-responsive" src="../assets/img/biggyEtSaMannequin.png" alt=""
+                                style="width: 18rem;" style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/biggyEtSaMannequin3.png" alt=""
+                                style="width: 18rem;" style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/Mannequin3.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/mannequin5.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                        </div>
+                        <p>Une préstation photo lors d'une master class de Brook'Devis, le théme du jour "comment bien
+                            faire ses ciles"
+                            avec différents matériaux. Brook'devis est une spécialiste des soins du visage, du
+                            maquillage au dermaplaning
+                            elle à crée sa micro entreprise il ya maintenant 4ans. Elle c'est fait un nom dans la ville
+                            auprés d'un public jeune.
+                            La master classe c'est dérouler dans le jardin de la maison de son frére. Un théme tout en
+                            blanc, une décoration au top,
+                            j'ai pu prendre de belle photo. Une de ses mannequin était présente se jour pour la
+                            démonstration.
+                        </p>
+                        <p class="float-right">
+                            Posté le
+                            <time datetime="2021-02-23 16:29">23 Février 2021</time>
+                            par Aïssétou.
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <h3>NSNV (Nul Sacrifice Nulle Victoire)</h3>
+                        <div class="row ml-1 mt-2 mb-2">
+                            <img class="img-responsive" src="../assets/img/mara.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/toubab.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/toubab2.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/bandeNsnv2.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                        </div>
+                        <p>Le shooting photo des mannequins de la marque NSNV, une marque de vêtement de mon frére, NSNV
+                            est une marque
+                            de vêtement de tout type, t-shirt, pull, sweat, bonnet, gant, doudoune..., le photos ont étè
+                            prise à la fôret de mengeaon.
+                            Si vous souhaitez visiter sont site <a href="https://nsnv.fr/">NSNV</a> il à toute une
+                            collection pour Hommes, Femmes et enfant.
+
+                        </p>
+                        <p class="float-right">
+                            Posté le
+                            <time datetime="2021-02-23 16:29">23 Février 2021</time>
+                            par Aïssétou.
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <h3>Shooting à PARIS</h3>
+                        <div class="row ml-1 mt-2 mb-2">
+                            <img class="img-responsive" src="../assets/img/MannequinSoeursVoile.png" alt=""
+                                style="width: 18rem;" style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/soeurVoiture4.png" alt=""
+                                style="width: 18rem;" style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/ourkty9.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                            <img class="img-responsive" src="../assets/img/ourkty2.png" alt="" style="width: 18rem;"
+                                style="height: 12rem;">
+                        </div>
+                        <p>shooting photo sur paris, c'était ma grande premiere. séance photos pour un groupe d'amies,
+                            le soleil était au rendez-vous.
+                        </p>
+                        <p class="float-right">
+                            Posté le
+                            <time datetime="2021-02-23 16:29">23 Février 2021</time>
+                            par Aïssétou.
+                        </p>
+                    </div>
                 </div>
-                <div class="float-right">
-                    <a href="contact.php" class="bg-dark text-white" title="Suivant">Suivant</a>
-                </div>
-            </nav>
+
+            </div>
+        </div>
+
+    <div>
+        <a class="float-left" href="decorationInterieur.php" title="Précédent">Précédent</a>
+        <a class="float-right" href="contact.php" title="Suivant">Suivant</a>
+    </div>
 
     <!-- footer -->
-    <footer id="allFooter" class="text-dark text-center text-lg-start">
-        <div class="container-fluid p-4">
+    <footer id="allFooter" class="text-white text-center text-lg-start">
+        <div class="containerFooters p-4">
             <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
                     <h5 class="text-uppercase">Footer Content</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
@@ -140,7 +177,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5>Mes réseaux Sociaux</h5>
-                    <div class="row text-center ml-5">
+                    <div class="row ml-5">
                         <div class="ml-5">
                             <a href="https://www.facebook.com/toure.aisettou"><img
                                     src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"
@@ -152,7 +189,8 @@
                                     class="rounded-circle"></a>
                         </div>
                         <div class="ml-3">
-                            <a href="mailto:aisetoutoure@gmail.com"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
+                            <a href="mailto:aisetoutoure@gmail.com"><img
+                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
                                     class="rounded-circle"></a>
                         </div>
                     </div>
