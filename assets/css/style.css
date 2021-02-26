@@ -129,5 +129,19 @@ margin-left: 15em;
 .imageOnePagePortrait{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
+
+.imputFormAdmin{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.buttonFormAdmin{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.tableDashboard{
+  background-color: #D6CABA;
+}
+

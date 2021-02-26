@@ -29,10 +29,10 @@
     </header>
 
     <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="row">
+        <div class="">
+            <div class="row row justify-content-center">
                 <div class="col-sm-3 mb-3 mt-5 pl-5">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
                         <h5 class="card-title mt-3">Ajouter/Modifier une image</h5>
                         <p class="card-text">
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="col-sm-3 pl-5 mt-5 mb-2">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
 
                         <h5 class="card-title mt-3">Supprimer une image</h5>
@@ -52,12 +52,12 @@
                             data-target="#myModal">Supprimer</button>
                     </div>
                 </div>
-                
+
             </div>
             <!-- fin de card -->
-            <div class="row">
+            <div class="row row justify-content-center">
                 <div class="col-sm-3 mt-3 pl-5">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
                         <h5 class="card-title mt-3">Mes Articles</h5>
                         <p class="card-text">
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="col-sm-3 pl-5 mt-3 mb-3">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
 
                         <h5 class="card-title mt-3">Formulaire de contact</h5>
@@ -82,12 +82,6 @@
             </div>
         </div>
     </div>
-
-    <nav aria-label="navigation">
-  <div class="pager">
-    <a href="view_admin.php" class="bg-dark text-white ml-2" title="Précédent">Précédent</a>
-</div>
-</nav>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

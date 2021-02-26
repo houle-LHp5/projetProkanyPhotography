@@ -1,19 +1,3 @@
-<?php 
-
-if(isset($_FILES["fileExercice"])){
-  $pathInfoFile = pathinfo($_FILES["fileExercice"]["name"]);
-  var_dump($pathInfoFile);
-  $filesExtension = $pathInfoFile["extension"];
-  if($filesExtension == "pdf"){
-      $extentionValidation = "Vous avez envoyé un fichier PDF.";
-  } else {
-      $extentionValidation = "Veuillez envoyer un fichier PDF.";
-  }
-}
-?>
-
-
-
 <!doctype html>
 <html lang="fr">
 
@@ -27,6 +11,7 @@ if(isset($_FILES["fileExercice"])){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
@@ -64,118 +49,124 @@ if(isset($_FILES["fileExercice"])){
         </nav>
         <!-- fin de la navbar -->
 
+        <div class="container">
+            <div class="mt-5">
+                <!-- tableau de gestion des galeries -->
+            <table class="table tableDashboard mt-5">
+                <thead>
+                    <caption id="textColorPageAccueil" class="h3 mt-5">Tableau de gestion des galeries photos</caption>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nom de l'image</th>
+                        <th scope="col">Catégorie</th>
+                        <th scope="col">Modifier</th>
+                        <th scope="col">suppression</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>nsnv.png</td>
+                        <td>Portrait</td>
+                        <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                        <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table des articles -->
+                <table class="table tableDashboard">
+                    <thead>
+                        <caption id="textColorPageAccueil" class="h3 mt-5">Tableau de gestion des articles</caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <form method="POST" action="dashbord2.php" class="needs-validation" novalidate>
+                                    <div>
+                                        <div>
+                                            <label for="nameArticles" class="form-label">Titre de l'aricle</label>
+                                            <input type="text" class="form-control" name="articles" placeholder=""
+                                                value="" required>
+                                        </div>
+                                        <div>
+                                            <label for="dateArticles" class="form-label">Date</label>
+                                            <input type="date" class="form-control" placeholder="23-02-2021"
+                                                name="dateArticles" required>
+                                        </div>
+                                    </div>
 
-        <!-- tableau de gestion des images des bloc photo de contact -->
-        <table class="table containerFooters mt-5">
-            <thead>
-                <h2 class="h3">Tableau de gestion des photos</h2>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Texte alternative</th>
-                    <th scope="col">Catégorie</th>
-                    <th scope="col">Modifier</th>
-                    <th scope="col">Supprimer</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>image.png</td>
-                    <td>photo mannequin de oury</td>
-                    <td>Portrait</td>
-                    <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <!-- Le type d'encodage des données, enctype, DOIT être spécifié comme ce qui suit -->
-                        <form enctype="multipart/form-data" action="articles.php" method="post">
-                            <!-- MAX_FILE_SIZE doit précéder le champ input de type file -->
-                            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-                            <!-- Le nom de l'élément input détermine le nom dans le tableau $_FILES -->
-                            Envoyez ce fichier : <input name="userfile" type="file" />
-                            <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
-                        </form>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+                                    <div class="form-floating mt-4">
+                                    <label for="floatingTextarea">Contenu de l'article</label>
+                                        <textarea class="form-control" placeholder=""
+                                            id="floatingTextarea" name="textArticles"></textarea>
+                                    </div>
 
-        <!-- tableau de gestion des articles de la page d'acceuil -->
-        <table class="table containerFooters">
-            <thead>
-                <h2 class="h3">Tableau de gestion des articles</h2>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Texte</th>
-                    <th scope="col">Accroche</th>
-                    <th scope="col">Photo 1</th>
-                    <th scope="col">Photo 2</th>
-                    <th scope="col">Photo 3</th>
-                    <th scope="col">Modifier</th>
-                    <th scope="col">Suppression</th>
+                                    <div class="">
+                                        <p class="mt-4">Télècharger une image</p>
+                                        <form enctype="multipart/form-data" action="dashbord2.php" method="post">
+                                            <input type="file" name="MAX_FILE_SIZE" value="50000" />
+                                            <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
+                                            <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
+                                        </form>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col-2">Date</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Texte</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Modifier</th>
+                            <th scope="col">Suppression</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>2020-07-15</td>
-                    <td>Le shooting de Paris</td>
-                    <td>Le texte de mon article</td>
-                    <td>Paris la ville des lumière</td>
-                    <td>l'Arc de Trionphe.png</td>
-                    <td>sousLaTourEffel.png</td>
-                    <td>Le métro parisien</td>
-                    <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                </tr>
-            </tbody>
-        </table>
+            <hr>
 
-        <!-- tableau de gestion du formulaire de contact -->
-        <table class="table containerFooters">
-            <thead>
-                <h2 class="h3">Tableau de gestion du formulaire de contact</h2>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Prénom</th>
-                    <th scope="col">Adresse Mail</th>
-                    <th scope="col">Numéro de Télèphone</th>
-                    <th scope="col">Choix du select</th>
-                    <th scope="col">Message</th>
-                    <th scope="col">suppression</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>TOURE</td>
-                    <td>Houléimattou</td>
-                    <td>houle.toure@gmail.com</td>
-                    <td>0627334506</td>
-                    <td>Shooting photo</td>
-                    <td>Bonjour, je souhaiterais prendre un rendez-vous </br> pour une shooting photo.</td>
-                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            <!-- tableau de gestion du formulaire de contact -->
+            <table class="table tableDashboard">
+                <thead>
+                    <caption id="textColorPageAccueil" class="h3">Tableau de gestion du formulaire de contact</caption>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Adresse Mail</th>
+                        <th scope="col">Numéro de Télèphone</th>
+                        <th scope="col">Message</th>
+                        <th scope="col">suppression</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>TOURE</td>
+                        <td>Houléimattou</td>
+                        <td>houle.toure@gmail.com</td>
+                        <td>0627334506</td>
+                        <td>Bonjour, je souhaiterais prendre un rendez-vous </br> pour une shooting photo.</td>
+                        <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <nav aria-label="navigation">
-        <ul class="pager">
-            <li><a href="tableBord.php" class="bg-dark text-white" title="Précédent">Précédent</a></li>
-        </ul>
-    </nav>
 
-    <!-- footer de la page des  arcticles -->
     <footer id="allFooter" class="text-white text-center text-lg-start">
         <div class="containerFooters p-4">
             <div class="row">
@@ -191,18 +182,13 @@ if(isset($_FILES["fileExercice"])){
                     <h5>Mes réseaux Sociaux</h5>
                     <div class="row text-center ml-5">
                         <div class="ml-5">
-                            <a href="https://www.facebook.com/toure.aisettou"><img
-                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 12.png"
-                                    class="rounded-circle"></a>
+                            <a href="https://www.facebook.com/toure.aisettou"><i class="bi bi-facebook"></i></a>
                         </div>
                         <div class="ml-3">
-                            <a href="https://www.instagram.com/kanysphotographie/"><img
-                                    src="../assets/autres/iconesReseauSociaux/Web 1280 – 11.png"
-                                    class="rounded-circle"></a>
+                            <a href="https://www.instagram.com/kanysphotographie/"><i class="bi bi-instagram"></i></a>
                         </div>
                         <div class="ml-3">
-                            <a href="#!"><img src="../assets/autres/iconesReseauSociaux/Web 1280 – 13.png"
-                                    class="rounded-circle"></a>
+                            <a href="#!"><i class="bi bi-envelope"></i></a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +204,8 @@ if(isset($_FILES["fileExercice"])){
             <a class="text-white" href="https://mdbootstrap.com/"></a>
         </div>
     </footer>
-
+    </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

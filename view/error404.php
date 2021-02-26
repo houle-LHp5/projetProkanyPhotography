@@ -11,17 +11,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     </script>
 </head>
 
-<body class="text-center">
-    <div class="mt-5">
-        <img src="assets/img/img2/photoDuSite/error404.png" alt="">
-        <h1 id="colorText404" class="fs-1">Sorry !</h1>
-        <p class="text-lg">ERROR 404</p>
-        <p>Page not found.</p>
+<body>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
+        <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center mt-5" style="font-size: 200%;">
+        <img src="../assets/img/img2/photoDuSite/emoji404.png" alt="">
+            <p>ERROR</p>
+            <p>404</p>
+            <p>Oops, page not found</p>
+
+        </div>
+        
     </div>
 </body>
 

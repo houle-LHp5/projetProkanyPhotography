@@ -22,21 +22,22 @@
 
 <body>
     <div class="container">
-        <main>
+        <main class="row justify-content-center align-items-center">
             <div class="card mt-5" style="width: 30rem;" style="height: 40rem;">
+            <h1 class="mt-3">Kany's</h1>
             <form class="mt-5 ml-5">
-                        <div class="ml-5">
+                        <div class="text-center ml-5">
                             <img class="mb-4 align-center" src="../assets/autres/videoEtPhotoFondEcran/imageAdmin.png" alt="">
                             <div class="center">
                                 <label for="inputEmail" class="w-50 mb-2 mt-1">E-mail</label>
-                                <input type="email" id="inputEmail" class="form-control w-25"
-                                    placeholder="Email address" required autofocus>
+                                <input type="email" id="inputEmail" class="imputFormAdmin form-control w-50"
+                                    placeholder="kanyphotography@img.fr" required autofocus>
                                 <label for="inputPassword" class="w-50 mb-2 mt-1">Mot de passe</label>
-                                <input type="password" id="inputPassword" class="form-control w-25 ml-5"
-                                    placeholder="12455pass9621" required>
+                                <input type="password" id="inputPassword" class="imputFormAdmin form-control w-50 ml-5"
+                                    placeholder="65334KTRU98" required>
                             </div>
                         </div>
-                        <button id="buttonAllPage" class="btn mt-3 text-white" type="submit">Connexion </button>
+                        <button id="buttonAllPage" class="buttonFormAdmin btn mt-3 mb-3 text-white" type="submit">Connexion </button>
                     </form>
                 </div>
         </main>
