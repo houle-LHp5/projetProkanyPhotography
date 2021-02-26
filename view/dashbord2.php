@@ -18,7 +18,6 @@
 </head>
 
 <body>
-    <div class="container">
         <!--Navbar -->
         <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -50,30 +49,67 @@
         <!-- fin de la navbar -->
 
         <div class="container">
+            <!-- tableau de gestion des galeries -->
             <div class="mt-5">
-                <!-- tableau de gestion des galeries -->
-            <table class="table tableDashboard mt-5">
-                <thead>
-                    <caption id="textColorPageAccueil" class="h3 mt-5">Tableau de gestion des galeries photos</caption>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Nom de l'image</th>
-                        <th scope="col">Catégorie</th>
-                        <th scope="col">Modifier</th>
-                        <th scope="col">suppression</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>nsnv.png</td>
-                        <td>Portrait</td>
-                        <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                        <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table tableDashboard">
+                    <thead>
+                        <caption id="textColorPageAccueil" class="h3 mt-5">Tableau de gestion des galeries photo</caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <form method="POST" action="dashbord2.php" class="needs-validation" novalidate>
+                                    <div>
+                                        <div>
+                                            <label for="nameArticles" class="form-label">Nom de la photo</label>
+                                            <input type="text" class="form-control" name="articles" placeholder=""
+                                                value="" required>
+                                        </div>
+                                        <div class="mt-5">
+                                        <select>
+                                            <option selected>Veuillez choisir une catégorie</option>
+                                            <option value="1">Portrait</option>
+                                            <option value="2">Décoration Intérieure</option>
+                                        </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <p class="mt-4">Télècharger une image</p>
+                                        <form enctype="multipart/form-data" action="dashbord2.php" method="post">
+                                            <input type="file" name="MAX_FILE_SIZE" value="50000" />
+                                            <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
+                                            <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
+                                        </form>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col-2">Nom de la photo</th>
+                            <th scope="col">Catégorie</th>
+                            <th scope="col">Modifier</th>
+                            <th scope="col">Suppression</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            </div>
             <!-- table des articles -->
+            <div class="table-responsive">
                 <table class="table tableDashboard">
                     <thead>
                         <caption id="textColorPageAccueil" class="h3 mt-5">Tableau de gestion des articles</caption>
@@ -99,9 +135,9 @@
                                     </div>
 
                                     <div class="form-floating mt-4">
-                                    <label for="floatingTextarea">Contenu de l'article</label>
-                                        <textarea class="form-control" placeholder=""
-                                            id="floatingTextarea" name="textArticles"></textarea>
+                                        <label for="floatingTextarea">Contenu de l'article</label>
+                                        <textarea class="form-control" placeholder="" id="floatingTextarea"
+                                            name="textArticles"></textarea>
                                     </div>
 
                                     <div class="">
@@ -118,7 +154,7 @@
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col-2">Date</th>
-                            <th scope="col">Title</th>
+                            <th scope="col">Titre</th>
                             <th scope="col">Texte</th>
                             <th scope="col">Image</th>
                             <th scope="col">Modifier</th>
@@ -137,75 +173,77 @@
                 </table>
             </div>
 
-            <hr>
 
             <!-- tableau de gestion du formulaire de contact -->
-            <table class="table tableDashboard">
-                <thead>
-                    <caption id="textColorPageAccueil" class="h3">Tableau de gestion du formulaire de contact</caption>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Nom</th>
-                        <th scope="col">Prénom</th>
-                        <th scope="col">Adresse Mail</th>
-                        <th scope="col">Numéro de Télèphone</th>
-                        <th scope="col">Message</th>
-                        <th scope="col">suppression</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>TOURE</td>
-                        <td>Houléimattou</td>
-                        <td>houle.toure@gmail.com</td>
-                        <td>0627334506</td>
-                        <td>Bonjour, je souhaiterais prendre un rendez-vous </br> pour une shooting photo.</td>
-                        <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-    <footer id="allFooter" class="text-white text-center text-lg-start">
-        <div class="containerFooters p-4">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                        voluptatem veniam, est atque cumque eum delectus sint!
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5>Mes réseaux Sociaux</h5>
-                    <div class="row text-center ml-5">
-                        <div class="ml-5">
-                            <a href="https://www.facebook.com/toure.aisettou"><i class="bi bi-facebook"></i></a>
-                        </div>
-                        <div class="ml-3">
-                            <a href="https://www.instagram.com/kanysphotographie/"><i class="bi bi-instagram"></i></a>
-                        </div>
-                        <div class="ml-3">
-                            <a href="#!"><i class="bi bi-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
+            <div class="table-responsive">
+                <table class="table tableDashboard">
+                    <thead>
+                        <caption id="textColorPageAccueil" class="h3">Tableau de gestion du formulaire de contact
+                        </caption>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prénom</th>
+                            <th scope="col">Adresse Mail</th>
+                            <th scope="col">Numéro de Télèphone</th>
+                            <th scope="col">Message</th>
+                            <th scope="col">suppression</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>TOURE</td>
+                            <td>Houléimattou</td>
+                            <td>houle.toure@gmail.com</td>
+                            <td>0627334506</td>
+                            <td>Bonjour, je souhaiterais prendre un rendez-vous </br> pour une shooting photo.</td>
+                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <!--Grid row-->
-        </div>
-        <!-- Grid container -->
 
-        <!-- Copyright -->
-        <div class="text-center p-3">
-            © 2021 Copyright: KanyPhotography
-            <a class="text-white" href="https://mdbootstrap.com/"></a>
+
+            <footer id="allFooter" class="text-white text-center text-lg-start">
+                <div class="containerFooters p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer Content</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                                voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Mes réseaux Sociaux</h5>
+                            <div class="row text-center ml-5">
+                                <div class="ml-5">
+                                    <a href="https://www.facebook.com/toure.aisettou"><i class="bi bi-facebook"></i></a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="https://www.instagram.com/kanysphotographie/"><i
+                                            class="bi bi-instagram"></i></a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#!"><i class="bi bi-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    © 2021 Copyright: KanyPhotography
+                    <a class="text-white" href="https://mdbootstrap.com/"></a>
+                </div>
+            </footer>
         </div>
-    </footer>
-    </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <thead>
         <!--Navbar -->
         <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top" id="navbarAllPage">
             <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
@@ -46,7 +45,6 @@
                 </ul>
             </div>
         </nav>
-    </thead>
 
     <!--premier bloc 5 image -->
     <div class="container">
