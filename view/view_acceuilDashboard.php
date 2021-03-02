@@ -14,19 +14,33 @@
 </head>
 
 <body id="pageTableBord">
-    <header id="navbarAllPage" class="navbar text-white sticky-top flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand text-white col-md-3 col-lg-2 me-0 px-3" href="../index.php">KanyPhotgraphy</a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-            aria-label="Toggle navigation">
+<nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
+            </li>
+        <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
+            </li>
+        <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries photos</a>
+            </li>
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_admin.php">Déconnexion</a>
+                <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
+            </li>
+            <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
+            </li>
+            <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/error404.php">error 404</a>
             </li>
         </ul>
-    </header>
+</nav>
 
     <div class="container">
         <div class="">
@@ -34,10 +48,10 @@
                 <div class="col-sm-3 mb-3 mt-5 pl-5">
                     <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
-                        <h5 class="card-title mt-3">Ajouter/Modifier une image</h5>
+                        <h5 class="card-title mt-3">Gestion des galeries photo</h5>
                         <p class="card-text">
                         </p>
-                        <a href="dashbord2.php" id="buttonAllPage" type="button" class="btn text-white">Ajouter</a>
+                        <a href="../view/view_gestionGaleriePhoto.php" id="buttonAllPage" type="button" class="btn text-white">Consultez</a>
                     </div>
                 </div>
 
@@ -48,8 +62,7 @@
                         <h5 class="card-title mt-3">Supprimer une image</h5>
                         <p class="card-text">
                         </p>
-                        <button type="button" id="buttonAllPage" class="btn text-white" data-toggle="modal"
-                            data-target="#myModal">Supprimer</button>
+                        <button type="button" id="buttonAllPage" class="btn text-white">Supprimer</button>
                     </div>
                 </div>
 
@@ -59,11 +72,10 @@
                 <div class="col-sm-3 mt-3 pl-5">
                     <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
-                        <h5 class="card-title mt-3">Mes Articles</h5>
+                        <h5 class="card-title mt-3">Gestion des articles</h5>
                         <p class="card-text">
                         </p>
-                        <a id="buttonAllPage" href="dashbord2.php" class=" btn text-white">Mes
-                            articles</a>
+                        <a id="buttonAllPage" href="../view/view_gestionArticles.php" class=" btn text-white">Consultez</a>
                     </div>
                 </div>
 
@@ -71,10 +83,10 @@
                     <div class="card text-center">
                         <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
 
-                        <h5 class="card-title mt-3">Formulaire de contact</h5>
+                        <h5 class="card-title mt-3">Gestion des contact</h5>
                         <p class="card-text">
                         </p>
-                        <a href="../view/afficheList_contact.php" type="imput" id="buttonAllPage"
+                        <a href="../view/view_listContact.php" type="imput" id="buttonAllPage"
                             class="btn text-white">Consultez</a>
                         <imput type="button" value="Retour" class="text-white" onclick="history.go(-1)">
                     </div>

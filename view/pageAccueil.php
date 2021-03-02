@@ -12,7 +12,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
@@ -50,20 +49,8 @@
                             <i class="fab fa-instagram"></i>Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="../view/view_admin.php">
-                            <i class="fab fa-instagram"></i>Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../view/tableBord.php">
-                            <i class="fab fa-instagram"></i>Tableau de Bord</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../view/error404.php">
-                            <i class="fab fa-instagram"></i>Error 404</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../view/dashbord2.php">
-                            <i class="fab fa-instagram"></i>dashbord2</a>
+                        <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">
+                            <i class="fab fa-instagram"></i>dasboard</a>
                     </li>
                 </ul>
             </div>
