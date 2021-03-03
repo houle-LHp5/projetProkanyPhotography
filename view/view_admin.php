@@ -1,3 +1,6 @@
+<?php
+require_once '../controllers/controller_admin.php';
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -24,20 +27,27 @@
     <div class="container">
         <main class="row justify-content-center align-items-center">
             <div class="card mt-5" style="width: 30rem;" style="height: 40rem;">
-            <h1 class="mt-3">Kany's</h1>
-            <form class="mt-5 ml-5">
+            <h1 class="mt-3">Connexion</h1>
+            <form action="../view/view_admin.php" method="POST" class="mt-5 ml-5">
                         <div class="text-center ml-5">
                             <img class="mb-4 align-center" src="../assets/autres/videoEtPhotoFondEcran/imageAdmin.png" alt="">
                             <div class="center">
-                                <label for="inputEmail" class="w-50 mb-2 mt-1">E-mail</label>
-                                <input type="email" id="inputEmail" class="imputFormAdmin form-control w-50"
-                                    placeholder="kanyphotography@img.fr" required autofocus>
+                                <label for="username" class="w-50 mb-2 mt-1">Nom d'utlilisateur</label>
+                                <input type="text" id="username" class="imputFormAdmin form-control w-50"
+                                    placeholder="mon nom d'utilisateur" required autofocus>
                                 <label for="inputPassword" class="w-50 mb-2 mt-1">Mot de passe</label>
                                 <input type="password" id="inputPassword" class="imputFormAdmin form-control w-50 ml-5"
                                     placeholder="65334KTRU98" required>
                             </div>
                         </div>
                         <button id="buttonAllPage" class="buttonFormAdmin btn mt-3 mb-3 text-white" type="submit">Connexion </button>
+                        <?php 
+                        if(isset($_GET['erreur'])){
+                            $err = $_GET['erreur'];
+                                if($err==1 || $err==2)
+                                    echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                        }
+                        ?>
                     </form>
                 </div>
         </main>
@@ -45,3 +55,4 @@
 </body>
 
 </html>
+

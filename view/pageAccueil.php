@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>KanysPhotoGraphie</title>
+    <title>Accueil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -177,29 +177,40 @@
                         </div>
                     </div>
 
-                    <!-- galerie image aligner -->
-                    <div class="row">
-                        <div class="align-center ml-2 mb-2">
+                    <!-- galerie image page d'accueil -->
+                        <div class="row align-center ml-2 mb-2">
+                            <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png"
-                                class="ml-2 mt-2 mr-1" style="width: 22rem;" style="height: 16rem;"
+                                class="ml-2 mt-2 mr-1 " style="width: 22rem;" style="height: 16rem;"
                                 alt="image décoration salon meuble tv et tv">
+                            </div>
+                            <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png"
-                                class="ml-2 mt-2 mr-1" style="width: 22rem;" style="height: 16rem;"
+                                class="ml-2 mt-2 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image table à manger déco salon">
+                            </div>
+                            <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png"
-                                class="ml-2 mt-2 mr-1" style="width: 22rem;" style="height: 16rem;"
+                                class="ml-2 mt-2 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image canapé de salon">
+                            </div>
+                            <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png"
-                                class="ml-2 mt-3 mr-1" style="width: 22rem;" style="height: 16rem;"
+                                class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image salon meuble tv">
+                            </div>
+                            <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png"
-                                class="ml-2 mt-3 mr-1" style="width: 22rem;" style="height: 16rem;"
+                                class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image canapé de salon">
+                            </div>
+                            <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png"
-                                class="ml-2 mt-3 mr-1" style="width: 22rem;" style="height: 16rem;"
+                                class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image décoration salon meuble tv et tv">
+                            </div>
                         </div>
-                    </div>
+                    
 
                     <!-- boutton préceédent et suivant -->
                     <!-- <nav aria-label="navigation">

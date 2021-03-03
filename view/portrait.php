@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>KanysPhotoGraphie</title>
+    <title>Portrait</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -50,21 +50,21 @@
     <div class="container">
         <div class="mt-5">
             <div class="row" class="imgPagePortrait">
-                <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
+                <div class="col-lg-4 col-md-12 mb-3 zoom colonne">
                     <img src="../assets/img/ourkty4.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/lesFillesMannequin.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/soeurVoileVoiture2.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
             </div>
             <div class="row" class="imgPagePortrait">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/ourkty6.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/bintaHatouma.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
             </div>
@@ -72,21 +72,21 @@
 
         <!-- deuxieme bloc 5 image -->
         <div class="row" class="imgPagePortrait">
-            <div class="col-lg-4 col-md-12 mb-3">
+            <div class="col-lg-4 col-md-12 mb-3 zoom colonne">
                 <img src="../assets/img/biggyEtOumou.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/hawaSawane1.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/lesFillesPlage.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgPagePortrait">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/mara.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/groupeDesGarcon.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
@@ -94,7 +94,7 @@
         <!-- image grand format -->
         <div class="blockPhotoPageAllCategories mb-2">
             <div class="row">
-                <div class="bg-image hover-zoom imageOnePagePortrait ">
+                <div class="bg-image imageOnePagePortrait zoom colonne">
                     <img src="../assets/img/img2/photoDuSite/photoPortrait.png" class="img-fluid z-depth-1"
                         alt="image quatre femmes portrait">
                 </div>
@@ -103,40 +103,40 @@
 
         <!--troisiéme bloc 5 image -->
         <div class="row" class="imgPagePortrait">
-            <div class="col-lg-4 col-md-12 mb-3">
+            <div class="col-lg-4 col-md-12 mb-3 zoom colonne">
                 <img src="../assets/img/hawaSawane2.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/oumouEtBiggy3.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/silakré.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
         </div>
         <div class="row" class="imgPagePortrait">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/MannequinBiggy.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 zoom colonne">
                 <img src="../assets/img/ourkty10.png" class="img-fluid z-depth-1" alt="Responsive image">
             </div>
             <!-- dernier bloc image page allCategggories -->
             <div class="row" class="imgPagePortrait">
-                <div class="col-lg-4 col-md-12 mb-3 hover-zoom">
+                <div class="col-lg-4 col-md-12 mb-3 zoom colonne">
                     <img src="../assets/img/biggyCasquette.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/lasderEtIsmael.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/toubab.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
             </div>
             <div class="row" class="imgPagePortrait">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/lesFillesPlage.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 zoom colonne">
                     <img src="../assets/img/lesFilles2.png" class="img-fluid z-depth-1" alt="Responsive image">
                 </div>
                 <!-- fin de bloc -->

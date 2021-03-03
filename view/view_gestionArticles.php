@@ -62,29 +62,27 @@ require_once '../controllers/controller_articles.php';
         <div class="mt-5">
             <!-- table des articles -->
             <div class="table-responsive">
-                <caption id="textColorPageAccueil" class="h3 mt-5">Tableau de gestion des articles</caption>
-                <table class="table tableDashboard">
-                    <tbody>
+                <table class="table tableArticle">
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td>
-                                <form method="POST" action="dashbord2.php" class="needs-validation" novalidate>
+                                <form method="POST" action="../view/view_gestionArticles.php" class="needs-validation" novalidate>
                                     <div>
-                                        <div>
+                                        <div class="w-50">
                                             <label for="nameArticles" class="form-label">Titre de l'aricle</label>
                                             <input type="text" class="form-control" name="articles" placeholder=""
                                                 value="" required>
                                         </div>
-                                        <div>
+                                        <div class="w-50">
                                             <label for="dateArticles" class="form-label">Date</label>
                                             <input type="date" class="form-control" placeholder="23-02-2021"
                                                 name="dateArticles" required>
                                         </div>
                                     </div>
 
-                                    <div class="form-floating mt-4">
+                                    <div class="form-floating mt-4 w-50">
                                         <label for="floatingTextarea">Contenu de l'article</label>
                                         <textarea class="form-control" placeholder="" id="floatingTextarea"
                                             name="textArticles"></textarea>
@@ -92,89 +90,62 @@ require_once '../controllers/controller_articles.php';
 
                                     <div class="">
                                         <p class="mt-4">Télècharger une image</p>
-                                        <form enctype="multipart/form-data" action="dashbord2.php" method="post">
+                                        <form enctype="multipart/form-data" action="../view/view_gestionArticles.php" method="post">
                                             <input type="file" name="MAX_FILE_SIZE" value="50000" />
                                             <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
-                                            <button id="allFooter" type="submit" name="btnAddArticle"
-                                                value="<?= $articles['id_articles'] ?>"
+                                            <button id="allFooter" type="submit" name="btnAddArticle" value=""
                                                 class="btn text-white">Envoyer</button>
                                         </form>
                                     </div>
                                 </form>
                             </td>
                         </tr>
-
-                        
-
-                        <hr>
-
-                    </tbody>
                 </table>
 
-                <!-- tableau avec la liste des photo -->
+
+                <!-- Tableau qui liste les articles afficher -->
                 <table>
+            <h1 class="text-dark">Liste des articles</h1>
+            <tbody>
                 <tr>
-                            <th scope="col">id</th>
-                            <th scope="col-2">Titre de l'article</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Contenu</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">Modifier</th>
-                            <th scope="col">Suppression</th>
-                        </tr>
-                        <?php foreach ($articlesDetails as $articles){ ?>
-                        <tr>
-                            <td><?= $articles['id_articles']?></td>
-                            <td><?= $articles['titleArticles']?></td>
-                            <td><?= $articles['dateArtciles']?></td>
-                            <td><?= $articles['textArtciles']?></td>
-                            <td><?= $articles['imageArticle']?></td>
-                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                        </tr>
-                        <?php } ?>
-                </table>
+                    <th>id</th>
+                    <th>Titre</th>
+                    <th>Date</th>
+                    <th>Contenu</th>
+                    <th>Image</th>
+                    <th>Modifier</th>
+                    <th>Sup.</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MasterClass</td>
+                    <td>30-08-2020</td>
+                    <td>Ici le texte de l'article</td>
+                    <td>Portrait</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>NSNV</td>
+                    <td>12-01-2021</td>
+                    <td>Ici le texte de l'article</td>
+                    <td>groupeNsnv.png</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shooting PARIS</td>
+                    <td>15-07-2020</td>
+                    <td>Ici le texte de l'article</td>
+                    <td>filleVoiture.jpeg</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
             </div>
-
-
-            <footer id="allFooter" class="text-white text-center text-lg-start">
-                <div class="containerFooters p-4">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                            <h5 class="text-uppercase">Footer Content</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                                voluptatem veniam, est atque cumque eum delectus sint!
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5>Mes réseaux Sociaux</h5>
-                            <div class="row text-center ml-5">
-                                <div class="ml-5">
-                                    <a href="https://www.facebook.com/toure.aisettou"><i class="bi bi-facebook"></i></a>
-                                </div>
-                                <div class="ml-3">
-                                    <a href="https://www.instagram.com/kanysphotographie/"><i
-                                            class="bi bi-instagram"></i></a>
-                                </div>
-                                <div class="ml-3">
-                                    <a href="#!"><i class="bi bi-envelope"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                    <!--Grid row-->
-                </div>
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center p-3">
-                    © 2021 Copyright: KanyPhotography
-                    <a class="text-white" href="https://mdbootstrap.com/"></a>
-                </div>
-            </footer>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

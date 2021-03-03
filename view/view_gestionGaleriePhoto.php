@@ -53,132 +53,90 @@
     <!-- fin de la navbar -->
 
     <div class="container">
-        <div class="mt-5">
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Télèchargement des photos</div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table tableDashboard">
-                            <tbody>
-                                <h1>Télècharger des images</h1>
-                                <tr>
-                                    <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation"
-                                        novalidate>
-                                        <div>
-                                            <div>
-                                                <label for="nameArticles" class="form-label">Nom de la photo</label>
-                                                <input type="text" class="form-control w-50" name="articles"
-                                                    placeholder="" value="" required>
-                                            </div>
-                                            <div class="mt-5">
-                                                <select>
-                                                    <option selected>Veuillez choisir une catégorie</option>
-                                                    <option value="1">Portrait</option>
-                                                    <option value="2">Décoration Intérieure</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="">
-                                            <p class="mt-4">Télècharger une image</p>
-                                            <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php"
-                                                method="post">
-                                                <input type="file" name="MAX_FILE_SIZE" value="50000" />
-                                                <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
-                                                <button id="allFooter" type="submit"
-                                                    class="btn text-white">Envoyer</button>
-                                            </form>
-                                        </div>
-                                    </form>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-
-
-            <div class="container">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">nom de la photo</th>
-                            <th scope="col">Catégorie</th>
-                            <th scope="col">Modifier</th>
-                            <th scope="col">Supprimer</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <h1>Liste des contacts</h1>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>image.png</td>
-                            <td>Décoration Intérieure</td>
-                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>image.png</td>
-                            <td>Décoration Intérieure</td>
-                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>image.png</td>
-                            <td>Décoration Intérieure</td>
-                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                            <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </div>
-        </div>
-
-        <footer id="allFooter" class="text-white text-center text-lg-start">
-            <div class="containerFooters p-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Footer Content</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                            voluptatem veniam, est atque cumque eum delectus sint!
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5>Mes réseaux Sociaux</h5>
-                        <div class="row text-center ml-5">
-                            <div class="ml-5">
-                                <a href="https://www.facebook.com/toure.aisettou"><i class="bi bi-facebook"></i></a>
-                            </div>
-                            <div class="ml-3">
-                                <a href="https://www.instagram.com/kanysphotographie/"><i
-                                        class="bi bi-instagram"></i></a>
-                            </div>
-                            <div class="ml-3">
-                                <a href="#!"><i class="bi bi-envelope"></i></a>
-                            </div>
+        <div class="card d-flex mt-5 w-50">
+            <div class="card-body">
+                <h5 class="card-title">Télècharger des images</h5>
+                <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation" novalidate>
+                    <div>
+                        <div>
+                            <label for="nameArticles" class="form-label">Nom de la photo</label>
+                            <input type="text" class="form-control w-50" name="articles" placeholder="" value=""
+                                required>
+                        </div>
+                        <div class="mt-5">
+                            <select>
+                                <option selected>Veuillez choisir une catégorie</option>
+                                <option value="1">Portrait</option>
+                                <option value="2">Décoration Intérieure</option>
+                            </select>
                         </div>
                     </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </div>
-            <!-- Grid container -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2021 Copyright: KanyPhotography
-                <a class="text-white" href="https://mdbootstrap.com/"></a>
+                    <div class="">
+                        <p class="mt-4">Télècharger une image</p>
+                        <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php" method="post">
+                            <input type="file" name="MAX_FILE_SIZE" value="50000" />
+                            <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
+                            <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
+                        </form>
+                    </div>
+                </form>
             </div>
-        </footer>
+        </div>
+    </div>
+
+
+
+    <!-- tableau de gestion du formulaire de contact -->
+    <div class="table-responsive">
+        <table>
+            <h1 class="text-dark">Liste des images des galleries</h1>
+            <tbody>
+                <tr>
+                    <th>id</th>
+                    <th>photo</th>
+                    <th>Catégorie</th>
+                    <th>Modifier</th>
+                    <th>Sup.</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>marie.jpeg</td>
+                    <td>Portrait</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>lesFleurs.png</td>
+                    <td>Déco Intérieur</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Immeuble.jpeg</td>
+                    <td>Déco Intérieur</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Oury.png</td>
+                    <td>Portrait</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>moi.png</td>
+                    <td>Portrait</td>
+                    <td><button type="button" class="btn btn-light">Modif.</button></td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

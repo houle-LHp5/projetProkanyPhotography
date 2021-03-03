@@ -141,7 +141,132 @@ margin-left: 15em;
   transform: translateX(-50%);
 }
 
-.tableDashboard{
-  background-color: #D6CABA;
+
+/* effet au survol de la galerie images portrait */
+.zoom div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom div:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+/* fin du css d'effet de survol */
+
+
+/* Rotation */
+.rotate div img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+.rotate div:hover img {
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
+
+ /* Dézoomer grande photo déco intérieure */
+.zoom-out div img {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out div:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/* tableau de la liste des contact du dashboard */
+
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Open+Sans);
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+
+
+table {
+  border-collapse: separate;
+  background:#fff;
+  border-radius: 5px;
+  margin:50px auto;
+  box-shadow: 0px 0px 5px rgba(68, 50, 50, 0.3);
+}
+
+thead {
+  border-radius(5px);
+}
+
+thead th {
+  font-family: 'Patua One', cursive;
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  text-align:left;
+  padding:20px;
+  background-image(linear-gradient(#646f7f, #4a5564));
+  border-top:1px solid #858d99;
+  
+  &:first-child {
+   border-top-left-radius: 5px; 
+  }
+
+  &:last-child {
+    border-top-right-radius: 5px; 
+  }
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+  
+}
+
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+
+tbody tr:last-child td {
+  border-bottom:none;
+  &:first-child {
+  border-bottom-left-radius: 5px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+  }
+
+
+tbody:hover > tr td {
+  opacity: 0.5;
+  
+  /* uncomment for blur effect */
+  /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+
+tbody:hover > tr:hover td {
+  text-shadow: none;
+  color:#2d2d2d;
+  opacity: 1.0;
+}
+
+
+.tableArticle{
+    margin: auto;
+}

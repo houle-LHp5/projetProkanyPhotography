@@ -39,6 +39,9 @@
             <li class="nav-item text-nowrap">
                 <a class="nav-link text-white" href="../view/error404.php">error 404</a>
             </li>
+            <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="#">Déconnexion</a>
+            </li>
         </ul>
 </nav>
 
@@ -88,7 +91,7 @@
                         </p>
                         <a href="../view/view_listContact.php" type="imput" id="buttonAllPage"
                             class="btn text-white">Consultez</a>
-                        <imput type="button" value="Retour" class="text-white" onclick="history.go(-1)">
+                        <imput type="button" value="Retour" class="text-white">
                     </div>
                 </div>
             </div>

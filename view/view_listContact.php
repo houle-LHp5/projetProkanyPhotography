@@ -32,94 +32,78 @@
                         <i class="fab fa-instagram"></i>Aller sur le site</a>
                 </li>
                 <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
-            </li>
-        <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
-            </li>
-        <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries photos</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
-            </li>
+                    <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
+                        photos</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
+                </li>
             </ul>
         </div>
     </nav>
     <!-- fin de la navbar -->
 
-     <!-- tableau de gestion du formulaire de contact -->
-     <div class="table-responsive">
-            <caption id="textColorPageAccueil" class="h3">Tableau de gestion du formulaire de contact
-            </caption>
-            <table class="table tableDashboard">
-                <thead>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Nom</th>
-                        <th scope="col">Prénom</th>
-                        <th scope="col">Adresse Mail</th>
-                        <th scope="col">Numéro de Télèphone</th>
-                        <th scope="col">Message</th>
-                        <th scope="col">suppression</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>TOURE</td>
-                        <td>Houléimattou</td>
-                        <td>houle.toure@gmail.com</td>
-                        <td>0627334506</td>
-                        <td>Bonjour, je souhaiterais prendre un rendez-vous </br> pour une shooting photo.</td>
-                        <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <!-- tableau de gestion du formulaire de contact -->
+    <div class="table-responsive">
+        <table>
+            <thead>
 
-
-        <footer id="allFooter" class="text-white text-center text-lg-start">
-            <div class="containerFooters p-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Footer Content</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                            voluptatem veniam, est atque cumque eum delectus sint!
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5>Mes réseaux Sociaux</h5>
-                        <div class="row text-center ml-5">
-                            <div class="ml-5">
-                                <a href="https://www.facebook.com/toure.aisettou"><i class="bi bi-facebook"></i></a>
-                            </div>
-                            <div class="ml-3">
-                                <a href="https://www.instagram.com/kanysphotographie/"><i
-                                        class="bi bi-instagram"></i></a>
-                            </div>
-                            <div class="ml-3">
-                                <a href="#!"><i class="bi bi-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </div>
-            <!-- Grid container -->
-
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2021 Copyright: KanyPhotography
-                <a class="text-white" href="https://mdbootstrap.com/"></a>
-            </div>
-        </footer>
+            </thead>
+            <tbody>
+                <h1 class="text-dark">Liste des contacts</h1>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse</th>
+                    <th>Message</th>
+                    <th>Sup.</th>
+                </tr>
+                <tr>
+                    <td>Carolina </td>
+                    <td>Biggleswade</td>
+                    <td>65 rue des rêves</td>
+                    <td>Ici mon message</td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>Harry </td>
+                    <td>Sparrowhead</td>
+                    <td>89 rue des enfants</td>
+                    <td>Ici mon message</td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>Marjorie </td>
+                    <td>Doors</td>
+                    <td>76 rue de la femme</td>
+                    <td>Ici mon message</td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>Earnest </td>
+                    <td>Piggington-Smithe</td>
+                    <td>98 avenue des malices</td>
+                    <td>Ici mon message</td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>Earnest </td>
+                    <td>Piggington-Smithe</td>
+                    <td>98 avenue de l'alchimie</td>
+                    <td>Ici mon message</td>
+                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
