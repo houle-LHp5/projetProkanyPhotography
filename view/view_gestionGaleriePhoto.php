@@ -53,35 +53,32 @@
     <!-- fin de la navbar -->
 
     <div class="container">
-        <div class="card d-flex mt-5 w-50">
-            <div class="card-body">
-                <h5 class="card-title">Télècharger des images</h5>
-                <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation" novalidate>
+        <div class="">
+            <h5 class="card-title">Télècharger des images</h5>
+            <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation formGalerie" novalidate>
+                <div>
                     <div>
-                        <div>
-                            <label for="nameArticles" class="form-label">Nom de la photo</label>
-                            <input type="text" class="form-control w-50" name="articles" placeholder="" value=""
-                                required>
-                        </div>
-                        <div class="mt-5">
-                            <select>
-                                <option selected>Veuillez choisir une catégorie</option>
-                                <option value="1">Portrait</option>
-                                <option value="2">Décoration Intérieure</option>
-                            </select>
-                        </div>
+                        <label for="nameArticles" class="form-label">Nom de la photo</label>
+                        <input type="text" class="form-control w-50" name="articles" placeholder="" value="" required>
                     </div>
+                    <div class="mt-5">
+                        <select>
+                            <option selected>Veuillez choisir une catégorie</option>
+                            <option value="1">Portrait</option>
+                            <option value="2">Décoration Intérieure</option>
+                        </select>
+                    </div>
+                </div>
 
-                    <div class="">
-                        <p class="mt-4">Télècharger une image</p>
-                        <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php" method="post">
-                            <input type="file" name="MAX_FILE_SIZE" value="50000" />
-                            <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
-                            <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
-                        </form>
-                    </div>
-                </form>
-            </div>
+                <div class="">
+                    <p class="mt-4">Télècharger une image</p>
+                    <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php" method="post">
+                        <input type="file" name="MAX_FILE_SIZE" value="50000" />
+                        <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
+                        <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
+                    </form>
+                </div>
+            </form>
         </div>
     </div>
 

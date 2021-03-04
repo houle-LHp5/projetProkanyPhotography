@@ -2,7 +2,6 @@
 require_once '../controllers/controller_articles.php';
 ?>
 
-
 <!doctype html>
 <html lang="fr">
 
@@ -68,39 +67,52 @@ require_once '../controllers/controller_articles.php';
                             <td></td>
                             <td></td>
                             <td>
-                                <form method="POST" action="../view/view_gestionArticles.php" class="needs-validation" novalidate>
+                                <form method="POST" action="view_gestionArticles.php" class="needs-validation" enctype="multipart/form-data">
                                     <div>
                                         <div class="w-50">
                                             <label for="nameArticles" class="form-label">Titre de l'aricle</label>
-                                            <input type="text" class="form-control" name="articles" placeholder=""
-                                                value="" required>
+                                            <span class="error"><?= $errors['titleArticles'] ?? '' ?></span>
+                                            <input type="text" class="form-control" name="titleArticles" placeholder=""
+                                                value="<?= isset($_POST['titleArticles']) ? htmlspecialchars($_POST['titleArticles']) : '' ?>" required>
                                         </div>
                                         <div class="w-50">
                                             <label for="dateArticles" class="form-label">Date</label>
                                             <input type="date" class="form-control" placeholder="23-02-2021"
-                                                name="dateArticles" required>
+                                                name="dateArticles" value="<?= isset($_POST['dateArticles']) ? htmlspecialchars($_POST['dateArticles']) : '' ?>" required>
                                         </div>
                                     </div>
 
                                     <div class="form-floating mt-4 w-50">
                                         <label for="floatingTextarea">Contenu de l'article</label>
                                         <textarea class="form-control" placeholder="" id="floatingTextarea"
-                                            name="textArticles"></textarea>
+                                            name="textArticles" value="<?= isset($_POST['textArticles']) ? htmlspecialchars($_POST['textArticles']) : '' ?>"></textarea>
                                     </div>
 
                                     <div class="">
                                         <p class="mt-4">Télècharger une image</p>
-                                        <form enctype="multipart/form-data" action="../view/view_gestionArticles.php" method="post">
-                                            <input type="file" name="MAX_FILE_SIZE" value="50000" />
-                                            <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
-                                            <button id="allFooter" type="submit" name="btnAddArticle" value=""
+                                            <input type="file" name="imageArticle">
+                                            <button id="allFooter" type="submit" name="btnAddArticle"
                                                 class="btn text-white">Envoyer</button>
-                                        </form>
                                     </div>
                                 </form>
                             </td>
                         </tr>
                 </table>
+
+                <?php
+         // Mise en place d'une condition pour ne plus afficher le formulaire quand l'article a bien été enregistré
+         if (!$addArticlesInBase) { ?>
+            <!-- si le patient n'est pas enregistré nous indiquons l'utilisateur via un message -->
+            <p class="h5 text-center text-danger"><?= $messages['addArticles'] ?? '' ?></p>
+
+            <!-- si l'article a bien été enregistré nous indiquons l'utilisateur via un message -->
+            <p class="h5 text-center text-info"><?= $messages['addArticles'] ?? '' ?></p>
+            <div class="text-center mt-4">
+               <a type="button" href="../view/view_gestionArticles.php" class="btn btn-sm btn-outline-primary">Liste des articles</a>
+            </div>
+
+         <?php
+         } ?>
 
 
                 <!-- Tableau qui liste les articles afficher -->
@@ -116,35 +128,25 @@ require_once '../controllers/controller_articles.php';
                     <th>Modifier</th>
                     <th>Sup.</th>
                 </tr>
+                <?php foreach($allArticlesArray as $articles){?>
+
+                
                 <tr>
-                    <td>1</td>
-                    <td>MasterClass</td>
-                    <td>30-08-2020</td>
-                    <td>Ici le texte de l'article</td>
-                    <td>Portrait</td>
+                    <td><?= $articles['id_articles'] ?></td>
+                    <td><?= $articles['titleArticles'] ?></td>
+                    <td><?= $articles['dateArticles'] ?></td>
+                    <td><?= $articles['textArticles'] ?></td>
+                    <td><?= $articles['imageArticle'] ?></td>
                     <td><button type="button" class="btn btn-light">Modif.</button></td>
                     <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>NSNV</td>
-                    <td>12-01-2021</td>
-                    <td>Ici le texte de l'article</td>
-                    <td>groupeNsnv.png</td>
-                    <td><button type="button" class="btn btn-light">Modif.</button></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Shooting PARIS</td>
-                    <td>15-07-2020</td>
-                    <td>Ici le texte de l'article</td>
-                    <td>filleVoiture.jpeg</td>
-                    <td><button type="button" class="btn btn-light">Modif.</button></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                </tr>
+                <?php } ?>
+          
             </tbody>
         </table>
+         <!-- Mise en place d'une ternaire pour permettre d'afficher un message si jamais le tableau est vide -->
+         <?= count($allArticlesArray) == 0 ? '<p class="h6 text-center">Vous n\'avez pas d\'article d\'enregistrés<p>' : '' ?>
+
             </div>
         </div>
 

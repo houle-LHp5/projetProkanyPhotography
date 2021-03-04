@@ -2,6 +2,19 @@
 
 class Articles extends Database
 {
+
+    public function listArticles() {
+        $query = "SELECT * FROM `articlesactuality`;";
+        $listArticlesQuery = $this->dataBase->prepare($query);
+        $listArticlesQuery->execute();
+        $results = $listArticlesQuery->fetchAll(PDO::FETCH_ASSOC);
+        if(!empty($results)) {
+            return $results;
+        } else {
+            return false;
+        }
+    }
+
     /**
      * Methode permettant de rajouter un patient dans notre base de donnée.
      *
@@ -11,16 +24,15 @@ class Articles extends Database
     public function addArticles(array $articlesDetails)
     {
         // Je mets en place des marqueurs nominatifs pour preparer ma requête avec des valeurs recuperées via form
-        $query = 'INSERT INTO `articlesactuality` (`id_articles`, `titleArticles`, `dateArtciles`, `textArticles`, `imageArticle`)
-        VALUES (:titleArticles, :dateArtciles, :textArticles, :imageArticle)';
+        $query = 'INSERT INTO `articlesactuality` (`titleArticles`, `dateArticles`, `textArticles`, `imageArticle`)
+        VALUES (:titleArticles, :dateArticles, :textArticles, :imageArticle)';
 
         // Nous preparons notre requete à l'aide de la methode prepare
         $addArticlesQuery = $this->dataBase->prepare($query);
 
         // je bind mes valeurs à l'aide de la methode bindvalue()
-        $addArticlesQuery->bindValue(':id_articles', $articlesDetails['id_articles'], PDO::PARAM_STR);
         $addArticlesQuery->bindValue(':titleArticles', $articlesDetails['titleArticles'], PDO::PARAM_STR);
-        $addArticlesQuery->bindValue(':dateArtciles', $articlesDetails['dateArtciles'], PDO::PARAM_STR);
+        $addArticlesQuery->bindValue(':dateArticles', $articlesDetails['dateArticles'], PDO::PARAM_STR);
         $addArticlesQuery->bindValue(':textArticles', $articlesDetails['textArticles'], PDO::PARAM_STR);
         $addArticlesQuery->bindValue(':imageArticle', $articlesDetails['imageArticle'], PDO::PARAM_STR);
 
@@ -33,20 +45,37 @@ class Articles extends Database
     }
 
 
-    /**
-     * Méthode permettant d'obtenir la liste de tous les patients
-     *
-     * @return array
+     /**
+     * Methode permettant de mettre à jour un patient
+     * 
+     * @param array contenant les infos du patient
+     * @return boolean permettant de savoir si la requête s'est bien déroulée
      */
-    public function getAllArticles()
+    public function updateArticle(array $articlesDetails)
     {
-        // Nous stockons ici notre requête pour permettre d'obtenir tous nos patients
-        $query = 'SELECT `id_articles`, `titleArticles`, `dateArtciles`, `textArticles`, `imageArticle` FROM `articlesactuality` ORDER BY `id_articles` DESC';
+        // requete me permettant de modifier mon user
+        $query = 'UPDATE `articlesactuality` SET
+        `titleArticles` = :titleArticles,
+        `dateArticles` = :dateArticles,
+        `textArticles` = :textArticles,
+        `imageArticle` = :imageArticle
+        WHERE id = :id';
 
-        // Nous executons notre requête à l'aide de la méthode query
-        $getAllArticlesQuery = $this->dataBase->query($query);
+        // je prepare requête à l'aide de la methode prepare pour me premunir des injections SQL 
+        $updateArticleQuery = $this->dataBase->prepare($query);
 
-        // j'effectue la methode fetchAll pour obtenir le resultat sous forme de tableau
-        return $getAllArticlesQuery->fetchAll();
+        // je bind mes valeurs à l'aide de la methode bindvalue()
+        $updateArticleQuery->bindValue(':titleArticles', $articlesDetails['titleArticles'], PDO::PARAM_STR);
+        $updateArticleQuery->bindValue(':dateArticles', $articlesDetails['dateArticles'], PDO::PARAM_STR);
+        $updateArticleQuery->bindValue(':textArticles', $articlesDetails['textArticles'], PDO::PARAM_STR);
+        $updateArticleQuery->bindValue(':imageArticle', $articlesDetails['imageArticle'], PDO::PARAM_STR);
+        $updateArticleQuery->bindValue(':id', $articlesDetails['id'], PDO::PARAM_STR);
+
+        if ($updateArticleQuery->execute()) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
 }

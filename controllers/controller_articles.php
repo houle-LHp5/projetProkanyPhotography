@@ -2,18 +2,19 @@
 
 require_once '../model/dataBase.php';
 require_once '../model/Articles.php';
+                                                         
+// Creation d'un tableau contenant nos articles avec comme info : id, nom, date, contenu et image
+//$articlesObj = new Articles;
+//$allArticlesArray = $articlesObj->getAllArticles();
 
-// Creation d'un tableau contenant nos patients avec comme info : id, nom, prénom
-$articlesObj = new Articles;
-$allArticlesArray = $articlesObj->getAllArticles();
-
+$articlesObj = new Articles();
 
 // Regex Perso
-$regexName = '/^[a-zA-Zéèê\-]+$/';
-$regexNumber = '/^0[0-9]{9}$/';
+$regexName = '/^[a-zA-Zéèê\- \'\.\?\!]+$/';
 
 // mise en place d'une variable permettant de savoir si nous avons inscrit le patient dans la base
 $addArticlesInBase = false;
+
 
 // mise en place d'un tableau d'erreurs
 $errors = [];
@@ -52,21 +53,21 @@ if (isset($_POST['btnAddArticle'])) {
 
     // Je verifie s'il n'y a pas d'erreurs afin de lancer ma requete
     if (empty($errors)) {
-        $articlesObj = new Articles;
 
         // Création d'un tableau contenant toutes les infos du formulaire
         $articlesDetails = [
             'titleArticles' => htmlspecialchars($_POST['titleArticles']),
-            'dateArtciles' => htmlspecialchars($_POST['dateArtciles']),
+            'dateArticles' => htmlspecialchars($_POST['dateArticles']),
             'textArticles' => htmlspecialchars($_POST['textArticles']),
-            'imageArticle' => htmlspecialchars($_POST['imageArticle']),
+            'imageArticle' => htmlspecialchars($_FILES['imageArticle']['name'])
         ];
 
         if ($articlesObj->addArticles($articlesDetails)) {
             $addArticlesInBase = true;
-            $messages['addPatient'] = 'Patient enregistré';
+            $messages['addArticles'] = 'Article enregistré';
         } else {
-            $messages['addPatient'] = 'Erreur de connexion lors de l\'enregistrement';
+            $messages['addArticle'] = 'Erreur d\'envoi lors de l\'enregistrement';
         }
     }
 }
+$allArticlesArray = $articlesObj->listArticles();
