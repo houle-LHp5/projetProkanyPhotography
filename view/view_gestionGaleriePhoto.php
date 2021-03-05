@@ -1,3 +1,9 @@
+<?php 
+
+require_once '../controllers/controller_gestionGalleriePhoto.php';
+
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -52,14 +58,18 @@
     </nav>
     <!-- fin de la navbar -->
 
+    <!-- formulaire de contact -->
     <div class="container">
-        <div class="">
-            <h5 class="card-title">Télècharger des images</h5>
+    <div class="row justify-content-center mt-5">
+    <div class="card mt-5 w-50">
+    <h1 class="card-title h4 mt-5">Télècharger des images</h1>
+        <div class=" row justify-content-center ml-5 mb-3">
             <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation formGalerie" novalidate>
                 <div>
                     <div>
-                        <label for="nameArticles" class="form-label">Nom de la photo</label>
-                        <input type="text" class="form-control w-50" name="articles" placeholder="" value="" required>
+                        <label for="name_image" class="form-label">Nom de la photo</label>
+                        <input type="text" class="form-control w-75" name="name_image" placeholder="" value="<?= isset($_POST['name_image']) ? htmlspecialchars($_POST['name_image']) : '' ?>" required>
+                        <span class="error"><?= $errors['name_image'] ?? '' ?></span>
                     </div>
                     <div class="mt-5">
                         <select>
@@ -78,16 +88,20 @@
                         <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
                     </form>
                 </div>
+                <p class="h5 text-danger"><?= $messages['addPhoto'] ?? '' ?></p>
             </form>
         </div>
+        </div>
+        </div>
     </div>
+    <!--fin du formulaire de contact -->
 
 
 
     <!-- tableau de gestion du formulaire de contact -->
     <div class="table-responsive">
         <table>
-            <h1 class="text-dark">Liste des images des galleries</h1>
+            <h1 class="h4 mt-5">Liste des images dans les galleries</h1>
             <tbody>
                 <tr>
                     <th>id</th>

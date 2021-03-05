@@ -53,13 +53,11 @@
     <!-- fin de la navbar -->
 
     <!-- tableau de gestion du formulaire de contact -->
-    <div class="table-responsive">
+    <div class="table-responsive mt-5">
+    <div class="mt-5">
         <table>
-            <thead>
-
-            </thead>
             <tbody>
-                <h1 class="text-dark">Liste des contacts</h1>
+                <h1 class="h4 text-center">Liste des contacts</h1>
                 <tr>
                     <th>Nom</th>
                     <th>Prénom</th>
@@ -104,6 +102,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -50,6 +50,7 @@
 
     <!--premier bloc 5 image -->
     <div class="container">
+        <div class="">
         <div class="mt-5">
             <div class="row" class="imgPagePortrait">
                 <div class="col-lg-4 col-md-12 mb-3 rotate">
@@ -164,9 +165,7 @@
                 <!-- fin de bloc -->
             </div>
         </div>
-
-        <!-- fin du corq de  la page -->
-
+        </div>
     </div>
     <div>
 

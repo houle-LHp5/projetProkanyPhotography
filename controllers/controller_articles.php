@@ -1,7 +1,7 @@
 <?php
 
 require_once '../model/dataBase.php';
-require_once '../model/Articles.php';
+require_once '../model/modalArticles.php';
                                                          
 // Creation d'un tableau contenant nos articles avec comme info : id, nom, date, contenu et image
 //$articlesObj = new Articles;
@@ -10,7 +10,7 @@ require_once '../model/Articles.php';
 $articlesObj = new Articles();
 
 // Regex Perso
-$regexName = '/^[a-zA-Zéèê\- \'\.\?\!]+$/';
+$regexTitle = '/^[a-zA-Zéèê\- \'\.\?\!]+$/';
 
 // mise en place d'une variable permettant de savoir si nous avons inscrit le patient dans la base
 $addArticlesInBase = false;
@@ -27,7 +27,7 @@ if (isset($_POST['btnAddArticle'])) {
     // check input lastname
     if (isset($_POST['titleArticles'])) {
 
-        if (!preg_match($regexName, $_POST['titleArticles'])) {
+        if (!preg_match($regexTitle, $_POST['titleArticles'])) {
             $errors['titleArticles'] = 'Veuillez respecter le format ex. La guerre des Titans';
         }
 
@@ -39,7 +39,7 @@ if (isset($_POST['btnAddArticle'])) {
         // check input text-
         if (isset($_POST['textArticles'])) {
 
-            if (!preg_match($regexName, $_POST['textArticles'])) {
+            if (!preg_match($regexTitle, $_POST['textArticles'])) {
                 $errors['textArticles'] = 'Veuillez respecter le format ex. La guerre des Titans';
             }
     
@@ -49,8 +49,6 @@ if (isset($_POST['btnAddArticle'])) {
 
         }
     
-
-
     // Je verifie s'il n'y a pas d'erreurs afin de lancer ma requete
     if (empty($errors)) {
 
@@ -70,4 +68,7 @@ if (isset($_POST['btnAddArticle'])) {
         }
     }
 }
+
+
 $allArticlesArray = $articlesObj->listArticles();
+

@@ -58,15 +58,15 @@
         <!-- fin de la navbar-->
 
         <!-- title page accueil -->
-        <div>
+        <main>
             <div id="textColorPageAccueil" class="mt-5">
                 <div class="container">
                     <!-- bloc de presentation  -->
-                    <div class="row">
-                        <div class="col mb-2 mt-3 text-center">
+                    <section class="row ">
+                        <div class="col mb-2 mt-5 text-center">
                             <img src="../assets/img/img2/photoDuSite/portraitNb.png" alt="">
                         </div>
-                        <div id="textColorPageAccueil" class="col mt-5 mr-5">
+                        <div id="textColorPageAccueil" class="col mt-4 mr-5">
                             <h1>A propos de moi!</h1>
                             <p class="styleTextAccueil">Je suis une jeune entrepreneuse qui à crée son entreprise en
                                 juin
@@ -81,19 +81,19 @@
                                 Actuellement en formation de décoratrice intérieure, je me suis lancé
                                 dans le buisness de décoratrice intérieure chez les personnes.</p>
                         </div>
-                    </div>
+                    </section>
                     <!-- fin de bloc présentation -->
 
                     <!-- bloc des articles -->
-                    <div class="article mb-2 mt-2">
+                    <section class="article mb-2 mt-2 ">
                         <div id="colorTextAllPage" class="text-center text-white">
-                            <h3 class="mt-3 mb-3">Mes articles</h3>
+                            <h2 class="h2 mt-3 pt-4 pb-3 mb-3">Mes articles</h2>
                         </div>
                         <div class="row justify-content-center">
                             <div class="text-center mr-4">
                                 <title>MasterClass</title>
                                 <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="">
-                                <p class="text-center text-white mt-2">
+                                <p class="text-center text-white mt-2 mb-5">
                                     MasterClass de brook'devis, qui c'est déroulé</br>
                                     en éxtérieur, j'ai réaliser la totalité des photos</br>
                                     Cette master classe était ma premier préstation.</br>
@@ -103,7 +103,7 @@
                             <div class="text-center mr-4">
                                 <title>NSNV</title>
                                 <img src="../assets/img/img2/photoDuSite/nsnsMara.png" alt="">
-                                <p class="text-center text-white mt-2">
+                                <p class="text-center text-white mt-2 mb-5">
                                     Le shooting avec les mannequins de mla Marque NSNV</br>
                                     c'etait à la foret de mangeons. NSNV étant</br>
                                     la marque de vêtement de mon frére</br>
@@ -115,7 +115,7 @@
                                 <div class="text-center mr-5">
                                     <title>Shooting à PARIS</title>
                                     <img src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="">
-                                    <p class="text-center text-white mt-2">
+                                    <p class="text-center text-white mt-2 mb-5">
                                         Séance photos en pleine air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
                                         Une journée ensoleillé, j'ai pu faire de belle photo</br>
@@ -125,7 +125,7 @@
                                 <div class="text-center ml-1 mr-5">
                                     <title>Shooting à PARIS</title>
                                     <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
-                                    <p class="text-center text-white mt-2">
+                                    <p class="text-center text-white mt-2 mb-5">
                                         Séance photos en pleine air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
                                         Une journée ensoleillé, j'ai pu faire de belle photo</br>
@@ -134,19 +134,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center">
+                        <div class="text-center pb-3">
                             <a type="submit" href="articles.php" id="buttonAllPage"
                                 class="btn text-center text-white">Lire plus</a>
                         </div>
-                    </div>
+                    </section>
                     <!-- fin block des articles -->
 
 
 
                     <!-- a propos de moi 2éme partie -->
-                    <div class="row">
+                    <section class="row">
                         <div id="textColorPageAccueil" class=" text-center col mt-5 mr-5">
-                            <p class="styleTextAccueil">Vous pouvez découvrir su mon site une rubrique dédier à la
+                            <p class="styleTextAccueil pt-3">Vous pouvez découvrir su mon site une rubrique dédier à la
                                 photographie,
                                 avec les réalisations que j'ai pu faire depuis mon commencement. Il y a également une
                                 rubrique dédier
@@ -160,25 +160,25 @@
                         <div class="col mb-2 mt-3 ">
                             <img src="../assets/img/img2/PHOTOredimrnsionner/Web 1280 – 1.png" alt="">
                         </div>
-                    </div>
+                    </section>
 
                     <!-- contact -->
-                    <div class="container-fluid containerFooters text-white">
+                    <section class="container-fluid containerFooters text-white">
                         <div class="text-center mt-2">
-                            <p>
+                            <p class="pt-4">
                                 Vous pouvez me contacter via le formulaire de conatcte ci-joint</br>
                                 ou par les réseau sociaux (Facebook, Instagram)
                                 N'hésitez pas pour vos reservation à me laisser vos coordonnées en remplir le formulaire
                                 .
                             </p>
                         </div>
-                        <div class="col mb-2 mt-3 text-center">
+                        <div class="col mb-2 mt-3 pb-3 text-center">
                             <a type="submit" href="contact.php" id="buttonAllPage" class="btn text-white">Contact</a>
                         </div>
-                    </div>
+                    </section>
 
                     <!-- galerie image page d'accueil -->
-                        <div class="row align-center ml-2 mb-2">
+                        <section class="row align-center ml-2 mb-2">
                             <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png"
                                 class="ml-2 mt-2 mr-1 " style="width: 22rem;" style="height: 16rem;"
@@ -209,7 +209,8 @@
                                 class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image décoration salon meuble tv et tv">
                             </div>
-                        </div>
+                        </section>
+                        </main>
                     
 
                     <!-- boutton préceédent et suivant -->

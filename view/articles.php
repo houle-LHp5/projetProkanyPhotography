@@ -71,28 +71,25 @@
         <div class="articles">
             <div class="mb-2">
                 <div class="row">
-                    <h3>Master Class (Brook'Devis)</h3>
-                    <div class="row ml-1 mt-2 mb-3">
+                    <h3 class="text-center pt-3 pb-3">Master Class (Brook'Devis)</h3>
+                    
+                    <div class="row text-center">
+                    <div class="ml-1 mt-2 mb-3">
                         <img class="img-responsive" src="../assets/img/biggyEtSaMannequin.png" alt=""
                             style="width: 18rem;" style="height: 12rem;">
                         <img class="img-responsive" src="../assets/img/biggyEtSaMannequin3.png" alt=""
                             style="width: 18rem;" style="height: 12rem;">
                         <img class="img-responsive" src="../assets/img/Mannequin3.png" alt="" style="width: 18rem;"
                             style="height: 12rem;">
-                        <img class="img-responsive" src="../assets/img/mannequin5.png" alt="" style="width: 18rem;"
-                            style="height: 12rem;">
                     </div>
-                    <p class="text-justify">Une préstation photo lors d'une Master Class de Brook'Devis, le théme du
-                        jour "comment bien
-                        faire ses ciles"
-                        avec différents matériaux. Brook'devis est une spécialiste des soins du visage, du
-                        maquillage au dermaplaning
-                        elle à crée sa micro entreprise il ya maintenant 4ans. Elle c'est fait un nom dans la ville
-                        auprés d'un public jeune.
-                        La master classe c'est dérouler dans le jardin de la maison de son frére. Un théme tout en
-                        blanc, une décoration au top,
-                        j'ai pu prendre de belle photo. Une de ses mannequin était présente se jour pour la
-                        démonstration.
+                    </div>
+                    <p class="text-justify">
+                        Une prestation photo lors d'une Master Class de Brook 'Devis, le thème du jour "comment bien
+                        faire ses cilles" avec différents matériaux. Brook 'devis est une spécialiste des soins du
+                        visage, du maquillage au dermaplanning elle à crée sa micro entreprise il y a maintenant 4ans.
+                        Elle c'est fait un nom dans la ville auprès d'un public jeune. La master classe c'est dérouler
+                        dans le jardin de la maison de son frère. Un thème tout en blanc, une décoration au top, j'ai pu
+                        prendre de belle photo. Une de ses mannequin était présente se jour pour la démonstration.
                     </p>
                     <p class="text-right">
                         Posté le
@@ -104,24 +101,25 @@
                 <hr>
 
                 <div class="row">
-                    <h3>NSNV (Nul Sacrifice Nulle Victoire)</h3>
-                    <div class="row ml-1 mt-2 mb-3">
+                    <h3 class="text-center pt-3 pb-3">NSNV (Nul Sacrifice Nulle Victoire)</h3>
+                    <div class="row text-center">
+                    <div class="ml-1 mt-2 mb-3">
                         <img class="img-responsive" src="../assets/img/mara.png" alt="" style="width: 18rem;"
                             style="height: 12rem;">
                         <img class="img-responsive" src="../assets/img/toubab.png" alt="" style="width: 18rem;"
                             style="height: 12rem;">
                         <img class="img-responsive" src="../assets/img/toubab2.png" alt="" style="width: 18rem;"
                             style="height: 12rem;">
-                        <img class="img-responsive" src="../assets/img/bandeNsnv2.png" alt="" style="width: 18rem;"
-                            style="height: 12rem;">
                     </div>
-                    <p class="text-justify">Le shooting photo des mannequins de la marque NSNV, une marque de vêtement
-                        de mon frére, NSNV
-                        est une marque
-                        de vêtement de tout type, t-shirt, pull, sweat, bonnet, gant, doudoune..., le photos ont étè
-                        prise à la fôret de mengeon.
-                        Si vous souhaitez visiter sont site <a href="https://nsnv.fr/">NSNV</a> il à toute une
-                        collection pour Hommes, Femmes et enfant.
+                    </div>
+                    <p class="text-justify">
+                        Le shooting photo des mannequins de la marque NSNV, une marque de vêtement de mon frère, NSNV
+                        est une marque de vêtement de tout type, t-shirt, pull, sweat, bonnet, gant, doudoune…, les
+                        photos ont était prise à la forêt de mangeons. Si vous souhaitez visiter sont site NSNV il à
+                        toute une collection pour Hommes, Femmes et enfant.
+                        <a href="https://nsnv.fr/">NSNV</a>
+
+
 
                     </p>
                     <p class="text-right">
@@ -135,25 +133,23 @@
 
                 <div class="row">
                     <div>
-                      <h3>Shooting à PARIS</h3>  
+                        <h3 class="text-center pt-3 pb-3">Shooting à PARIS</h3>
                     </div>
-                    
-                    <div class="row ml-1 mt-2 mb-3">
+                    <div class="row text-center">
+                    <div class="ml-1 mt-2 mb-3">
                         <img class="img-responsive" src="../assets/img/MannequinSoeursVoile.png" alt=""
                             style="width: 18rem;" style="height: 12rem;">
                         <img class="img-responsive" src="../assets/img/soeurVoiture4.png" alt="" style="width: 18rem;"
                             style="height: 12rem;">
                         <img class="img-responsive" src="../assets/img/ourkty9.png" alt="" style="width: 18rem;"
                             style="height: 12rem;">
-                        <img class="img-responsive" src="../assets/img/ourkty2.png" alt="" style="width: 18rem;"
-                            style="height: 12rem;">
                     </div>
-
+                    </div>
                     <div class="text-justify">
-                    <p>shooting photo sur paris, c'était ma grande premiere. séance photos pour un
-                        groupe d'amies,
-                        le soleil était au rendez-vous.
-                    </p>
+                        <p>shooting photo sur paris, c'était ma grande première. séance photos pour un
+                            groupe d'amies,
+                            le soleil était au rendez-vous.
+                        </p>
                     </div>
 
                     <div class="text-right">

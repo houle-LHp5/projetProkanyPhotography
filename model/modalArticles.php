@@ -3,17 +3,7 @@
 class Articles extends Database
 {
 
-    public function listArticles() {
-        $query = "SELECT * FROM `articlesactuality`;";
-        $listArticlesQuery = $this->dataBase->prepare($query);
-        $listArticlesQuery->execute();
-        $results = $listArticlesQuery->fetchAll(PDO::FETCH_ASSOC);
-        if(!empty($results)) {
-            return $results;
-        } else {
-            return false;
-        }
-    }
+
 
     /**
      * Methode permettant de rajouter un patient dans notre base de donnée.
@@ -44,11 +34,24 @@ class Articles extends Database
         }
     }
 
+// la requéte pour afficher mes articles 
+    public function listArticles() {
+        $query = "SELECT * FROM `articlesactuality`;";
+        $listArticlesQuery = $this->dataBase->prepare($query);
+        $listArticlesQuery->execute();
+        $results = $listArticlesQuery->fetchAll(PDO::FETCH_ASSOC);
+        if(!empty($results)) {
+            return $results;
+        } else {
+            return false;
+        }
+    }
+
 
      /**
-     * Methode permettant de mettre à jour un patient
+     * Methode permettant de modifier un article
      * 
-     * @param array contenant les infos du patient
+     * @param array contenant les infos de l'article
      * @return boolean permettant de savoir si la requête s'est bien déroulée
      */
     public function updateArticle(array $articlesDetails)

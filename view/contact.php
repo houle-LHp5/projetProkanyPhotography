@@ -1,6 +1,3 @@
-<?php 
-require_once '../controllers/controller-formContact.php';
-?>
 
 <!doctype html>
 <html lang="fr">
@@ -80,7 +77,7 @@ require_once '../controllers/controller-formContact.php';
                             <label for="lastname" class="form-label">Nom</label>
                             <input type="text" class="form-control" id="lastname" placeholder="DUPOND" name="lastname"
                                 value="" required>
-                            <div class="errors"><?= $error['lastname']?? ''?>
+                            <div class="errors">
                             </div>
                         </div>
 
@@ -88,7 +85,7 @@ require_once '../controllers/controller-formContact.php';
                             <label for="firstname" class="form-label">Prénom</label>
                             <input type="text" class="form-control" id="firstname" placeholder="Marie" name="firstname"
                                 value="" required>
-                            <div class="errors"><?= $error['firstname']?? ''?>
+                            <div class="errors">
                             </div>
                         </div>
 
@@ -97,7 +94,7 @@ require_once '../controllers/controller-formContact.php';
                                 <label for="phone" class="form-label">Télèphone</label>
                                 <input type="text" class="form-control" id="phone" placeholder="1234 Main St"
                                     name="phone" value="" required>
-                                <div class="errors"><?= $error['phone']?? ''?>
+                                <div class="errors">
                                 </div>
                             </div>
 
@@ -105,7 +102,7 @@ require_once '../controllers/controller-formContact.php';
                                 <label for="email" class="form-label">E-mail</label>
                                 <input type="email" class="form-control" id="email" placeholder="you@example.com"
                                     name="message" value="" required>
-                                <div class="error"><?= $errors['email']?? ''?>
+                                <div class="error">
                                 </div>
                             </div>
                         </div>

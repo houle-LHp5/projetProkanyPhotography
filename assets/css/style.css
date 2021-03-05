@@ -265,10 +265,12 @@ tbody:hover > tr:hover td {
 }
 
 
-.tableArticle{
+.formArticles{
     margin: auto;
 }
 .formGalerie{
   margin-top: 5rem;
   margin: auto;
 }
+
+
