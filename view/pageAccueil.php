@@ -87,7 +87,7 @@
                     <!-- bloc des articles -->
                     <section class="article mb-2 mt-2 ">
                         <div id="colorTextAllPage" class="text-center text-white">
-                            <h2 class="h2 mt-3 pt-4 pb-3 mb-3">Mes articles</h2>
+                            <h2 class="h2 mt-3 pt-4 pb-3 mb-3">Dernières réalisations</h2>
                         </div>
                         <div class="row justify-content-center">
                             <div class="text-center mr-4">
@@ -151,10 +151,10 @@
                                 avec les réalisations que j'ai pu faire depuis mon commencement. Il y a également une
                                 rubrique dédier
                                 à la décoration intérieure (Maison, appartement ...). Je propose mes services pour la
-                                décotation de vos demeure,
-                                Que vous soyez en cours de construction ou que vous avec envie de changer votre
-                                intérieur, je suis la pour donner une nouvelle vie ou
-                                un renouveau à votre intérieur.
+                                décotation Intérieure de vos maison ,
+                                que vous soyez en cours de construction ou que vous avez juste envie de changer votre
+                                intérieur, je suis la pour donner du renouveau 
+                                 à votre intérieur.
                             </p>
                         </div>
                         <div class="col mb-2 mt-3 ">

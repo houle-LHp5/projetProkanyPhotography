@@ -14,21 +14,22 @@
 </head>
 
 <body id="pageTableBord">
-<nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
             aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
+            <li class="nav-item text-nowrap">
                 <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
             </li>
-        <li class="nav-item text-nowrap">
+            <li class="nav-item text-nowrap">
                 <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
             </li>
-        <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries photos</a>
+            <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
+                    photos</a>
             </li>
             <li class="nav-item text-nowrap">
                 <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
@@ -43,10 +44,17 @@
                 <a class="nav-link text-white" href="#">Déconnexion</a>
             </li>
         </ul>
-</nav>
+    </nav>
 
     <div class="container">
-        <div class="">
+
+        <h1 class="ml14">
+            <span class="text-wrapper">
+                <span class="letters text-dark">Tableau de bord</span>
+                <span class="line dark"></span>
+            </span>
+        </h1>
+
             <div class="row row justify-content-center">
                 <div class="col-sm-3 mb-3 mt-5 pl-5">
                     <div class="card text-center">
@@ -54,7 +62,8 @@
                         <h5 class="card-title mt-3">Gestion des galeries photo</h5>
                         <p class="card-text">
                         </p>
-                        <a href="../view/view_gestionGaleriePhoto.php" id="buttonAllPage" type="button" class="btn text-white">Consultez</a>
+                        <a href="../view/view_gestionGaleriePhoto.php" id="buttonAllPage" type="button"
+                            class="btn text-white">Consultez</a>
                     </div>
                 </div>
 
@@ -78,7 +87,8 @@
                         <h5 class="card-title mt-3">Gestion des articles</h5>
                         <p class="card-text">
                         </p>
-                        <a id="buttonAllPage" href="../view/view_gestionArticles.php" class=" btn text-white">Consultez</a>
+                        <a id="buttonAllPage" href="../view/view_gestionArticles.php"
+                            class=" btn text-white">Consultez</a>
                     </div>
                 </div>
 
@@ -96,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -115,5 +125,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
         integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
     </script>
-    <script src="dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>

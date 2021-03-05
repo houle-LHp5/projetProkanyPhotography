@@ -16,6 +16,8 @@ require_once '../controllers/controller_articles.php';
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
@@ -94,18 +96,37 @@ require_once '../controllers/controller_articles.php';
                     <td><?= $articles['textArticles'] ?></td>
                     <td><?= $articles['imageArticle'] ?></td>
                     <td><a type="button" class="btn btn-light" href="../view/form_articles.php">Modifier</a></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#supArticle" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
                 </tr>
                 <?php } ?>
-            </tbody>
-        </table>
+
+                <div class="modal" id="supArticle" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Supprimer</h5>
+                                <button type="button" class="btn-close" data-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Etês vous sur de vouloir supprimer cet article?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Fermer</button>
+                                <button type="button" class="btn btn-danger">Supprimer</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                
+            </tbody>
+        </table>
+    </div>
         <!-- Mise en place d'une ternaire pour permettre d'afficher un message si jamais le tableau est vide -->
         <?= count($allArticlesArray) == 0 ? '<p class="h6 text-center">Vous n\'avez pas d\'article d\'enregistrés<p>' : '' ?>
     </div>
 
+<!-- card création d'article -->
     <div class="row justify-content-center mt-5">
         <div class="card mt-3 w-50">
             <div class="mt-5">
@@ -149,7 +170,8 @@ require_once '../controllers/controller_articles.php';
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="script.js"></script>
 

@@ -18,6 +18,8 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
@@ -60,38 +62,40 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
 
     <!-- formulaire de contact -->
     <div class="container">
-    <div class="row justify-content-center mt-5">
-    <div class="card mt-5 w-50">
-    <h1 class="card-title h4 mt-5">Télècharger des images</h1>
-        <div class=" row justify-content-center ml-5 mb-3">
-            <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation formGalerie" novalidate>
-                <div>
-                    <div>
-                        <label for="name_image" class="form-label">Nom de la photo</label>
-                        <input type="text" class="form-control w-75" name="name_image" placeholder="" value="<?= isset($_POST['name_image']) ? htmlspecialchars($_POST['name_image']) : '' ?>" required>
-                        <span class="error"><?= $errors['name_image'] ?? '' ?></span>
-                    </div>
-                    <div class="mt-5">
-                        <select>
-                            <option selected>Veuillez choisir une catégorie</option>
-                            <option value="1">Portrait</option>
-                            <option value="2">Décoration Intérieure</option>
-                        </select>
-                    </div>
-                </div>
+        <div class="row justify-content-center mt-5">
+            <div class="card mt-5 w-50">
+                <h1 class="card-title h4 mt-5">Télècharger des images</h1>
+                <div class=" row justify-content-center ml-5 mb-3">
+                    <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation formGalerie"
+                        novalidate>
+                        <div>
+                            <div>
+                                <label for="name_image" class="form-label">Nom de la photo</label>
+                                <input type="text" class="form-control w-75" name="name_image" placeholder=""
+                                    value="<?= isset($_POST['name_image']) ? htmlspecialchars($_POST['name_image']) : '' ?>"
+                                    required>
+                                <span class="error"><?= $errors['name_image'] ?? '' ?></span>
+                            </div>
+                            <div class="mt-5">
+                                <select>
+                                    <option selected>Veuillez choisir une catégorie</option>
+                                    <option value="1">Portrait</option>
+                                    <option value="2">Décoration Intérieure</option>
+                                </select>
+                            </div>
+                        </div>
 
-                <div class="">
-                    <p class="mt-4">Télècharger une image</p>
-                    <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php" method="post">
-                        <input type="file" name="MAX_FILE_SIZE" value="50000" />
-                        <input type="submit" value="Envoyer le fichier" id="fileToUpload" />
-                        <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
+                        <div class="">
+                            <p class="mt-4">Télècharger une image</p>
+                            <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php" method="post">
+                                <input type="file" name="MAX_FILE_SIZE" value="50000" />
+                                <button id="allFooter" type="submit" class="btn text-white">Envoyer</button>
+                            </form>
+                        </div>
+                        <p class="h5 text-danger"><?= $messages['addPhoto'] ?? '' ?></p>
                     </form>
                 </div>
-                <p class="h5 text-danger"><?= $messages['addPhoto'] ?? '' ?></p>
-            </form>
-        </div>
-        </div>
+            </div>
         </div>
     </div>
     <!--fin du formulaire de contact -->
@@ -115,33 +119,30 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
                     <td>marie.jpeg</td>
                     <td>Portrait</td>
                     <td><button type="button" class="btn btn-light">Modif.</button></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#sup" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
                 </tr>
+                <div class="modal" id="sup" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Supprimer</h5>
+                                <button type="button" class="btn-close" data-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Etês vous sur de vouloir supprimer la photo?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Fermer</button>
+                                <button type="button" class="btn btn-danger">Supprimer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <tr>
                     <td>2</td>
                     <td>lesFleurs.png</td>
                     <td>Déco Intérieur</td>
-                    <td><button type="button" class="btn btn-light">Modif.</button></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Immeuble.jpeg</td>
-                    <td>Déco Intérieur</td>
-                    <td><button type="button" class="btn btn-light">Modif.</button></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Oury.png</td>
-                    <td>Portrait</td>
-                    <td><button type="button" class="btn btn-light">Modif.</button></td>
-                    <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>moi.png</td>
-                    <td>Portrait</td>
                     <td><button type="button" class="btn btn-light">Modif.</button></td>
                     <td><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
                 </tr>
@@ -162,6 +163,9 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
     </script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+     crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
 </body>
