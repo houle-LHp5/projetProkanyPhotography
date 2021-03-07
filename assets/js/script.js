@@ -1,43 +1,16 @@
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml14 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
 anime.timeline({loop: true})
   .add({
-    targets: '.ml14 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.ml14 .letter',
+    targets: '.ml15 .word',
+    scale: [14,1],
     opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
+    easing: "easeOutCirc",
     duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
+    delay: (el, i) => 800 * i
   }).add({
-    targets: '.ml14',
+    targets: '.ml15',
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
   });
-//  La sourceTHURSréUNEOui
-//  La sourceSunny mornjengs
-//  La sourceG r e a t T h i n k e r s
-//  La sourcePrêtEnsembleAller!
-//  La sourceSignal & Bruit
-//  La sourceBeuneutjeFul Questjeons
-//  La sourceReuneljety jes broken
-//  La sourcesalut !
-//  La sourceCoFFee mornjengs
-//  La sourceréomjeno réreunems
-//  La sourceHello goorébye
-//  La sourceUNE NEW PRORÉUCTJEON
-//  La sourceRJESJENG STRONG
-//  La sourceFjenré Ouiour Element
-//  La sourceEN DEHORS À PRÉSENT
+  

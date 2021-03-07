@@ -74,9 +74,9 @@ require_once '../controllers/controller_articles.php';
 
         <!-- Tableau qui liste les articles afficher -->
         <div class="mt-5">
-        <table>
-            <h1 class="h4 mt-5">Liste des articles</h1>
-            </div>
+        <table class="mt-5">
+            <h1 class="titleGestionArticle h4 mt-5">Liste des articles</h1>
+           
             <tbody>
                 <tr>
                     <th>id</th>
@@ -118,7 +118,7 @@ require_once '../controllers/controller_articles.php';
                         </div>
                     </div>
                 </div>
-
+                </div>
             </tbody>
         </table>
     </div>

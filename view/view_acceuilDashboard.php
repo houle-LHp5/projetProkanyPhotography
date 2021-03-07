@@ -48,65 +48,62 @@
 
     <div class="container">
 
-        <h1 class="ml14">
-            <span class="text-wrapper">
-                <span class="letters text-dark">Tableau de bord</span>
-                <span class="line dark"></span>
-            </span>
+        <h1 class="ml15">
+            <span class="word text-dark">Tableau</span>
+            <span class="word text-dark">de Bord</span>
         </h1>
 
-            <div class="row row justify-content-center">
-                <div class="col-sm-3 mb-3 mt-5 pl-5">
-                    <div class="card text-center">
-                        <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
-                        <h5 class="card-title mt-3">Gestion des galeries photo</h5>
-                        <p class="card-text">
-                        </p>
-                        <a href="../view/view_gestionGaleriePhoto.php" id="buttonAllPage" type="button"
-                            class="btn text-white">Consultez</a>
-                    </div>
+        <div class="row row justify-content-center">
+            <div class="col-sm-3 mb-3 mt-5 pl-5">
+                <div class="card text-center">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
+                    <h5 class="card-title mt-3">Gestion des galeries photo</h5>
+                    <p class="card-text">
+                    </p>
+                    <a href="../view/view_gestionGaleriePhoto.php" id="buttonAllPage" type="button"
+                        class="btn text-white">Consultez</a>
                 </div>
-
-                <div class="col-sm-3 pl-5 mt-5 mb-2">
-                    <div class="card text-center">
-                        <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
-
-                        <h5 class="card-title mt-3">Supprimer une image</h5>
-                        <p class="card-text">
-                        </p>
-                        <button type="button" id="buttonAllPage" class="btn text-white">Supprimer</button>
-                    </div>
-                </div>
-
             </div>
-            <!-- fin de card -->
-            <div class="row row justify-content-center">
-                <div class="col-sm-3 mt-3 pl-5">
-                    <div class="card text-center">
-                        <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
-                        <h5 class="card-title mt-3">Gestion des articles</h5>
-                        <p class="card-text">
-                        </p>
-                        <a id="buttonAllPage" href="../view/view_gestionArticles.php"
-                            class=" btn text-white">Consultez</a>
-                    </div>
+
+            <div class="col-sm-3 pl-5 mt-5 mb-2">
+                <div class="card text-center">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
+
+                    <h5 class="card-title mt-3">Supprimer une image</h5>
+                    <p class="card-text">
+                    </p>
+                    <button type="button" id="buttonAllPage" class="btn text-white">Supprimer</button>
                 </div>
+            </div>
 
-                <div class="col-sm-3 pl-5 mt-3 mb-3">
-                    <div class="card text-center">
-                        <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
+        </div>
+        <!-- fin de card -->
+        <div class="row row justify-content-center">
+            <div class="col-sm-3 mt-3 pl-5">
+                <div class="card text-center">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
+                    <h5 class="card-title mt-3">Gestion des articles</h5>
+                    <p class="card-text">
+                    </p>
+                    <a id="buttonAllPage" href="../view/view_gestionArticles.php" class=" btn text-white">Consultez</a>
+                </div>
+            </div>
 
-                        <h5 class="card-title mt-3">Gestion des contact</h5>
-                        <p class="card-text">
-                        </p>
-                        <a href="../view/view_listContact.php" type="imput" id="buttonAllPage"
-                            class="btn text-white">Consultez</a>
-                        <imput type="button" value="Retour" class="text-white">
-                    </div>
+            <div class="col-sm-3 pl-5 mt-3 mb-3">
+                <div class="card text-center">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
+
+                    <h5 class="card-title mt-3">Gestion des contact</h5>
+                    <p class="card-text">
+                    </p>
+                    <a href="../view/view_listContact.php" type="imput" id="buttonAllPage"
+                        class="btn text-white">Consultez</a>
+                    <imput type="button" value="Retour" class="text-white">
                 </div>
             </div>
         </div>
-    
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -127,4 +124,5 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
