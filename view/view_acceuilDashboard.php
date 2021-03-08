@@ -49,8 +49,8 @@
     <div class="container">
 
         <h1 class="ml15">
-            <span class="word text-dark">Tableau</span>
-            <span class="word text-dark">de Bord</span>
+            <span class="word text-dark h6">Tableau</span>
+            <span class="word text-dark h6">de Bord</span>
         </h1>
 
         <div class="row row justify-content-center">

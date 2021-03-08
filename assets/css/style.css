@@ -290,3 +290,8 @@ tbody:hover > tr:hover td {
 .titleGestionArticle{
   margin-top: 15em;
 }
+
+.miniPhoto {
+  width: auto;
+  height: 4rem;
+}

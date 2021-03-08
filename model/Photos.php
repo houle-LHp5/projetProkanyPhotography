@@ -33,7 +33,7 @@ class Photos extends Database
     public function getAllPhotos(){
         $query = 'SELECT `id_photos`, `name_image`, `nameCategorie`
         FROM `photos`
-        INNER JOIN `category `
+        INNER JOIN `category`
         ON `photos`.`id` = `category`.`id`';
 
         $allPhotoQuery = $this->dataBase->query($query);

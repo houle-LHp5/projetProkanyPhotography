@@ -3,8 +3,10 @@
 require_once '../model/dataBase.php';
 require_once '../model/Photos.php';
 
-$test = new Photos;
-var_dump($test->getAllPhotos());
+$photoObj = new Photos;
+$photosArray = $photoObj->getAllPhotos();
+
+var_dump($photosArray);
 
 
 $regexName = '/^[a-zA-Zéèê\-]+$/';
