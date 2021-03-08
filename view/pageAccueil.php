@@ -64,7 +64,7 @@
                     <!-- bloc de presentation  -->
                     <section class="row ">
                         <div class="col mb-2 mt-5 text-center">
-                            <img src="../assets/img/img2/photoDuSite/portraitNb.png" alt="">
+                            <img src="../assets/img/img2/photoDuSite/portraitNb.png" alt="" class="imgApropos">
                         </div>
                         <div id="textColorPageAccueil" class="col mt-4 mr-5">
                             <h1>A propos de moi!</h1>
@@ -178,7 +178,7 @@
                     </section>
 
                     <!-- galerie image page d'accueil -->
-                        <section class="row align-center ml-2 mb-2">
+                        <section class="row align-center ml-2 mb-2 mt-3">
                             <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png"
                                 class="ml-2 mt-2 mr-1 " style="width: 22rem;" style="height: 16rem;"
@@ -195,17 +195,17 @@
                                 alt="image canapé de salon">
                             </div>
                             <div class="zoom colonne">
-                            <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco3.png"
+                            <img src="../assets/img/imagePageDecoInterieur/salon1.png"
                                 class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image salon meuble tv">
                             </div>
                             <div class="zoom colonne">
-                            <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png"
+                            <img src="../assets/img/imagePageDecoInterieur/salon2.png"
                                 class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image canapé de salon">
                             </div>
                             <div class="zoom colonne">
-                            <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco4.png"
+                            <img src="../assets/img/imagePageDecoInterieur/salon3.png"
                                 class="ml-2 mt-3 mr-1 zoom colonne" style="width: 22rem;" style="height: 16rem;"
                                 alt="image décoration salon meuble tv et tv">
                             </div>

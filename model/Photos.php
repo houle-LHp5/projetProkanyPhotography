@@ -44,6 +44,7 @@ class Photos extends Database
         }
     }
 
+    
     public function getAllPhotosByCat(string $idCat){
         $query = 'SELECT `id_photos`, `name_image`, `nameCategorie`
         FROM `photos`

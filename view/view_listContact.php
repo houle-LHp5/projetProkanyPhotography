@@ -34,9 +34,6 @@
                         <i class="fab fa-instagram"></i>Aller sur le site</a>
                 </li>
                 <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
-                </li>
-                <li class="nav-item text-nowrap">
                     <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
                 </li>
                 <li class="nav-item text-nowrap">
@@ -59,7 +56,7 @@
         <div class="mt-5">
             <table>
                 <tbody>
-                    <h1 class="h4 text-center">Liste des contacts</h1>
+                    <h1 class="h4 text-center">Gestion des contacts</h1>
                     <tr>
                         <th>Nom</th>
                         <th>Prénom</th>

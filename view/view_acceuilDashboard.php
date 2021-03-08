@@ -14,18 +14,15 @@
 </head>
 
 <body id="pageTableBord">
-    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav px-3">
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
+        <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../view/pageAccueil.php">Aller sur le site</a>
             </li>
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
+                <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
             </li>
             <li class="nav-item text-nowrap">
                 <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
@@ -49,7 +46,7 @@
     <div class="container">
 
         <h1 class="ml14">
-            <span class="text-wrapper">
+            <span class="text-wrapper titleDashboard text-dark">
                 <span class="letters">Tableau de Bord</span>
                 <span class="line"></span>
             </span>
@@ -92,6 +89,10 @@
             </div>
         </div>
     </div>
+
+    <form>
+        <input class="text-white" id="buttonAllPage" type="button" value="Retour!" onclick="history.go(-1)">
+    </form>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

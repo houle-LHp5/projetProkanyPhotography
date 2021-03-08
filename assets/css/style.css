@@ -285,6 +285,7 @@ tbody:hover > tr:hover td {
   padding-top: 0.1em;
   padding-right: 0.05em;
   padding-bottom: 0.15em;
+  margin-top: 2em;
 }
 
 .ml14 .line {
@@ -293,7 +294,6 @@ tbody:hover > tr:hover td {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #fff;
   transform-origin: 100% 100%;
   bottom: 0;
 }
@@ -305,10 +305,15 @@ tbody:hover > tr:hover td {
 /* fin du css titre du tableau de bord */
 
 .titleGestionArticle{
-  margin-top: 15em;
+  margin-top: 20em;
 }
 
 .miniPhoto {
   width: auto;
   height: 4rem;
+}
+
+.imgApropos{
+  width: auto;
+  height: 20rem;
 }

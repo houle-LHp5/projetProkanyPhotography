@@ -60,8 +60,9 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
     <!-- formulaire de contact -->
     <div class="container">
         <div class="row justify-content-center mt-5">
+        <h1 class="h4 mt-5">Gestion des photos</h1>
             <div class="card mt-5 w-50">
-                <h1 class="card-title h4 mt-5">Télècharger des images</h1>
+                <h1 class="card-title h4 mt-5">Télècharger</h1>
                 <div class=" row justify-content-center ml-5 mb-3">
                     <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation formGalerie" novalidate>
                         <div>
@@ -99,7 +100,6 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
     <!-- tableau de gestion du formulaire de contact -->
     <div class="table-responsive">
         <table>
-            <h1 class="h4 mt-5">Liste des images dans les galleries</h1>
             <tbody>
                 <tr>
                     <th>id</th>

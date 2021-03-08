@@ -20,7 +20,7 @@ $errors = [];
 // mise en place d'un tableau de messages
 $messages = [];
 
-if (isset($_POST['addPatientBtn'])) {
+if (isset($_POST['addPhotosBtn'])) {
 
     // check input lastname
     if (isset($_POST['name_image'])) {
@@ -49,9 +49,9 @@ if (isset($_POST['addPatientBtn'])) {
 
         if ($photoObj->addPhoto($photoDetails)) {
             $addPhotoInBase = true;
-            $messages['addPatient'] = 'Image enregistré';
+            $messages['addPhotos'] = 'Image enregistré';
         } else {
-            $messages['addPatient'] = 'Erreur lors de l\'envoi';
+            $messages['addPhotos'] = 'Erreur lors de l\'envoi';
         }
     }
 }

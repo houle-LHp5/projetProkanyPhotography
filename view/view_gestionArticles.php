@@ -27,18 +27,12 @@ require_once '../controllers/controller_articles.php';
     <!--Navbar -->
     <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="../view/pageAccueil.php">
                         <i class="fab fa-instagram"></i>Aller sur le site</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
                 </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
@@ -75,8 +69,7 @@ require_once '../controllers/controller_articles.php';
         <!-- Tableau qui liste les articles afficher -->
         <div class="mt-5">
         <table class="mt-5">
-            <h1 class="titleGestionArticle h4 mt-5">Liste des articles</h1>
-           
+            <h1 class="titleGestionArticle h4 mt-5">Gestion des Articles</h1>
             <tbody>
                 <tr>
                     <th>id</th>
