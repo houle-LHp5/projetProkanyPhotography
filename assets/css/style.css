@@ -274,18 +274,35 @@ tbody:hover > tr:hover td {
 }
 
 /* css du titre du tableau de bord */
-.ml15 {
-  font-weight: 800;
-  font-size: 3.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
 }
 
-.ml15 .word {
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
   display: inline-block;
   line-height: 1em;
 }
-/* fin du css du tutre du tableau de bord */
+/* fin du css titre du tableau de bord */
 
 .titleGestionArticle{
   margin-top: 15em;

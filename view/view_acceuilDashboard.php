@@ -48,12 +48,14 @@
 
     <div class="container">
 
-        <h1 class="ml15">
-            <span class="word text-dark h6">Tableau</span>
-            <span class="word text-dark h6">de Bord</span>
+        <h1 class="ml14">
+            <span class="text-wrapper">
+                <span class="letters">Tableau de Bord</span>
+                <span class="line"></span>
+            </span>
         </h1>
 
-        <div class="row row justify-content-center">
+        <div class="row justify-content-center mt-5">
             <div class="col-sm-3 mb-3 mt-5 pl-5">
                 <div class="card text-center">
                     <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
@@ -65,20 +67,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-3 pl-5 mt-5 mb-2">
-                <div class="card text-center">
-                    <img src="../assets/autres/videoEtPhotoFondEcran/Web 1280 – 1.png" alt="">
 
-                    <h5 class="card-title mt-3">Supprimer une image</h5>
-                    <p class="card-text">
-                    </p>
-                    <button type="button" id="buttonAllPage" class="btn text-white">Supprimer</button>
-                </div>
-            </div>
-
-        </div>
-        <!-- fin de card -->
-        <div class="row row justify-content-center">
             <div class="col-sm-3 mt-3 pl-5">
                 <div class="card text-center">
                     <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">

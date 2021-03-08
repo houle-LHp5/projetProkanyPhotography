@@ -43,4 +43,19 @@ class Photos extends Database
             return false;
         }
     }
+
+    public function getAllPhotosByCat(string $idCat){
+        $query = 'SELECT `id_photos`, `name_image`, `nameCategorie`
+        FROM `photos`
+        INNER JOIN `category`
+        ON `photos`.`id` = `category`.`id`
+        WHERE category.id = ' . $idCat;
+
+        $getAllPhotosByCatQuery = $this->dataBase->query($query);
+        if($getAllPhotosByCatQuery){
+            return $getAllPhotosByCatQuery->fetchAll();
+        }else{
+            return false;
+        }
+    }
 }
