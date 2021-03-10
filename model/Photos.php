@@ -59,4 +59,22 @@ class Photos extends Database
             return false;
         }
     }
+
+
+    public function UpdatePhotosCat($id_photos, $name_photos, $image){
+             // requete me permettant de modifier mon article
+             $query = 'UPDATE `photos` SET
+             `id_photos` = :id_photos,
+             `name_image` = :name_image,
+             WHERE id = :id';
+     
+             // je prepare requête à l'aide de la methode prepare pour me premunir des injections SQL 
+             $updatePhotosQuery = $this->dataBase->prepare($query);
+     
+             // On bind les values pour renseigner les marqueurs nominatifs
+             $updatePhotosQuery->bindValue(':id_photos', $id_photos['id_photos'], PDO::PARAM_STR);
+             $updatePhotosQuery->bindValue(':name_image', $name_photos['name_image'], PDO::PARAM_STR);
+
+             $updatePhotosQuery->execute();
+    }
 }

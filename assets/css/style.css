@@ -305,8 +305,9 @@ tbody:hover > tr:hover td {
 /* fin du css titre du tableau de bord */
 
 .titleGestionArticle{
-  margin-top: 20em;
+  margin-top: 5em;
 }
+
 
 .miniPhoto {
   width: auto;

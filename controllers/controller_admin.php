@@ -7,7 +7,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
     // connexion à la base de données
     $db_username = 'kanyphotography';
     $db_password = '270287Kouta.';
-    $db_name     = 'nom_bdd';
+    $db_name     = 'Kanyphotography';
     $db_host     = 'localhost';
     $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
            or die('could not connect to database');
@@ -32,16 +32,16 @@ if(isset($_POST['username']) && isset($_POST['password']))
         
         else
         {
-           header('Location: view_acceuilDashboard.php?erreur=1'); // utilisateur ou mot de passe incorrect
+           header('Location: view_admin.php?erreur=1'); // utilisateur ou mot de passe incorrect
         }
     }
     else
     {
-       header('Location: view_acceuilDashboard.php?erreur=2'); // utilisateur ou mot de passe vide
+       header('Location: view_admin.php?erreur=2'); // utilisateur ou mot de passe vide
     }
 }
 else
 {
-   header('Location: view_acceuilDashboard.php');
+   header('Location: view_admin.php');
 }
 mysqli_close($db); // fermer la connexion

@@ -1,15 +1,15 @@
-<?php 
+<?php
 
 require_once '../model/dataBase.php';
 require_once '../model/Photos.php';
 
-$photoObj = new Photos;
-$photosArray = $photoObj->getAllPhotos();
-
-var_dump($photosArray);
-
-
 $regexName = '/^[a-zA-Zéèê\-]+$/';
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+var_dump($_FILES);
 
 // mise en place d'une variable permettant de savoir si nous avons inscrit le patient dans la base
 $addPhotoInBase = false;
@@ -20,38 +20,57 @@ $errors = [];
 // mise en place d'un tableau de messages
 $messages = [];
 
+// j'effectue mes controles lors de l'appuie du bouton
 if (isset($_POST['addPhotosBtn'])) {
 
-    // check input lastname
-    if (isset($_POST['name_image'])) {
 
-        if (!preg_match($regexName, $_POST['name_image'])) {
-            $errors['name_image'] = 'Veuillez respecter le format ex. DOE';
-        }
-
-        if (empty($_POST['name_image'])) {
-            $errors['name_image'] = 'Veuillez renseigner ce champ';
-        }
+    // controle du choix du select de la part du user
+    if (!array_key_exists('catId', $_POST)) {
+        $errors['catId'] = 'Veuillez selectionner une catégorie';
     }
 
+    // controle si la personne a choisi un fichier
+    if ($_FILES['photoToUpload']['error'] == 4) {
+        $errors['photoToUpload'] = 'Veuillez selectionner une photo';
+    }
 
+    // controle de l'image
+    $fileMime = mime_content_type($_FILES["photoToUpload"]["tmp_name"]); // On extrait le mime de l'image à l'aide d'une fonction.
+    $fileType = explode('/', $fileMime); // on créé un array pour obtenit le type et l'extension
 
-    // Je verifie s'il n'y a pas d'erreurs afin de lancer ma requete
+    $target_dir = "assets/img/gallery"; // chemin du répertoire où seront stocké les images
+    $newFileName = uniqid(true) . '.' . $fileType[1]; // Mise en place d'un nom unique lors de l'enregistrement dans la base de données.
+    $target_file = $target_dir . $newFileName; // le chemin + nom du fichier qui nous servira lors de l'upload.
+
+    // Verification s'il s'agit bien d'une image 
+    if ($fileType[0] != 'image') {
+        $errors['photoToUpload'] = 'Votre fichier n\'est pas une image';
+    }
+
+    // Verification taille de l'image
+    $limit = 5000000; // on definit une limit en bits, 1Mo = 1000000 Bits.
+    if ($_FILES["photoToUpload"]["size"] > $limit) {
+        $errors['photoToUpload'] = 'Désolé, votre fichier doit faire moins de 5 Mo.';
+    }
+
+    // Je verifie s'il n'y a pas d'erreurs dans mon tableau d'erreur afin de lancer ma requete
     if (empty($errors)) {
-        $patientsObj = new Photos;
-
-        // Création d'un tableau contenant toutes les infos du formulaire
-        $photoDetails = [
-            'name_image' => htmlspecialchars($_POST['name_image']),
-            'id' => htmlspecialchars($_POST['id'])
-        ];
 
 
-        if ($photoObj->addPhoto($photoDetails)) {
-            $addPhotoInBase = true;
-            $messages['addPhotos'] = 'Image enregistré';
-        } else {
-            $messages['addPhotos'] = 'Erreur lors de l\'envoi';
-        }
+
+
+
+        // else {
+        //     if (move_uploaded_file($_FILES["photoToUpload"]["tmp_name"], $target_file)) {
+        //         $uploadObj = new Upload(); // Creation de l'objet Upload pour pouvoir utiliser les attributs + méthodes
+        //         $uploadObj->upsave($newFileName); // On sauvegarde le nom de l'image dans la base de données
+        //         $messageArray['uploadOK'] = 'le fichier ' . basename($_FILES["photoToUpload"]["name"]) . ' a bien été uploadé';
+        //     } else {
+        //         $messageArray['uploadKO'] = 'Désolé, nous n\'avons pas pu uploadé votre fichier.';
+        //     }
+        // }
     }
 }
+// Je créé un tableau contenant toutes mes photos
+$photoObj = new Photos;
+$photosArray = $photoObj->getAllPhotos();

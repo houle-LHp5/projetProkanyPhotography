@@ -2,8 +2,10 @@
 require_once '../controllers/controller_articles.php';
 ?>
 
+
 <!doctype html>
 <html lang="fr">
+
 
 <head>
     <title>KanysPhotoGraphie</title>
@@ -22,6 +24,8 @@ require_once '../controllers/controller_articles.php';
 
     </script>
 </head>
+
+
 
 <body>
     <!--Navbar -->
@@ -51,25 +55,14 @@ require_once '../controllers/controller_articles.php';
         </div>
     </nav>
     <!-- fin de la navbar -->
-
     <div class="container">
 
-        <?php
-         // Mise en place d'une condition pour ne plus afficher le formulaire quand l'article a bien été enregistré
-         if (!$addArticlesInBase) { ?>
-        <!-- si le patient n'est pas enregistré nous indiquons l'utilisateur via un message -->
-        <p class="h5 text-center text-danger"><?= $messages['addArticles'] ?? '' ?></p>
-
-        <!-- si l'article a bien été enregistré nous indiquons l'utilisateur via un message -->
-        <p class="h5 text-center text-info"><?= $messages['addArticles'] ?? '' ?></p>
-
-        <?php
-         } ?>
+    <div class="h4 titleGestionArticle mt-5">
+    <h1 class="mt-5">Gestion des Articles</h1>
+    </div>
 
         <!-- Tableau qui liste les articles afficher -->
-        <div class="mt-5">
-        <table class="mt-5">
-            <h1 class="titleGestionArticle h4 mt-5">Gestion des Articles</h1>
+        <table class="mt-5" id="ancreTable">
             <tbody>
                 <tr>
                     <th>id</th>
@@ -93,6 +86,7 @@ require_once '../controllers/controller_articles.php';
                 </tr>
                 <?php } ?>
 
+
                 <div class="modal" id="supArticle" tabindex="-1">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -111,7 +105,6 @@ require_once '../controllers/controller_articles.php';
                         </div>
                     </div>
                 </div>
-                </div>
             </tbody>
         </table>
     </div>
@@ -119,13 +112,25 @@ require_once '../controllers/controller_articles.php';
         <?= count($allArticlesArray) == 0 ? '<p class="h6 text-center">Vous n\'avez pas d\'article d\'enregistrés<p>' : '' ?>
     </div>
 
+    <?php
+         // Mise en place d'une condition pour ne plus afficher le formulaire quand l'article a bien été enregistré
+         if (!$addArticlesInBase) { ?>
+        <!-- si le patient n'est pas enregistré nous indiquons l'utilisateur via un message -->
+        <p class="h5 text-center text-danger"><?= $messages['addArticles'] ?? '' ?></p>
+
+        <!-- si l'article a bien été enregistré nous indiquons l'utilisateur via un message -->
+        <p class="h5 text-center text-info"><?= $messages['addArticles'] ?? '' ?></p>
+
+        <?php
+         } ?>
+
 <!-- card création d'article -->
     <div class="row justify-content-center mt-5">
         <div class="card mt-3 w-50">
-            <div class="mt-5">
+        <div class=" mt-5">
                 <div class="table-responsive">
                     <h1 class="h4 text-center mt-3 mb-5">Créer un article</h1>
-                    <div class=" row justify-content-center ml-5 formArticles">
+                    <div class="ml-5 formArticles">
                         <form method="POST" action="view_gestionArticles.php" class="needs-validation mb-5"
                             enctype="multipart/form-data">
                             <div>
@@ -144,17 +149,19 @@ require_once '../controllers/controller_articles.php';
                                 </div>
                             </div>
 
-                            <div class="form-floating mt-4 w-75">
-                                <label for="floatingTextarea">Contenu de l'article</label>
+                            <div class="mt-4 w-75">
+                                <label for="textarea" class="form-label">Contenu de l'article</label>
                                 <textarea class="form-control" placeholder="" id="floatingTextarea" name="textArticles"
                                     value="<?= isset($_POST['textArticles']) ? htmlspecialchars($_POST['textArticles']) : '' ?>"></textarea>
                             </div>
 
-                            <div class="">
+                            <div">
                                 <p class="mt-4">Télècharger une image</p>
                                 <input type="file" name="imageArticle">
                                 <button id="allFooter" type="submit" name="btnAddArticle"
-                                    class="btn text-white">Envoyer</button>
+                                    class="btn text-white w-75 mt-5">Envoyer</button>
+                                    <button type="reset" class="btn text-dark btn-light w-75">annuler</button>
+                            </div>
                             </div>
                         </form>
                     </div>
@@ -162,6 +169,9 @@ require_once '../controllers/controller_articles.php';
             </div>
         </div>
     </div>
+    <div>
+        <a class="mb-5" href="javascript:history.back()">Page Précédente</A>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

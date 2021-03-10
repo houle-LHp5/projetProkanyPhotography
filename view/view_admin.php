@@ -1,5 +1,6 @@
 <?php
 require_once '../controllers/controller_admin.php';
+session_start();
 ?>
 <!doctype html>
 <html lang="fr">
@@ -42,6 +43,7 @@ require_once '../controllers/controller_admin.php';
                         </div>
                         <button id="buttonAllPage" class="buttonFormAdmin btn mt-3 mb-3 text-white" type="submit">Connexion </button>
                         <?php 
+                        
                         if(isset($_GET['erreur'])){
                             $err = $_GET['erreur'];
                                 if($err==1 || $err==2)
