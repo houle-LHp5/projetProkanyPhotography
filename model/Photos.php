@@ -61,20 +61,45 @@ class Photos extends Database
     }
 
 
-    public function UpdatePhotosCat($id_photos, $name_photos, $image){
+    public function updatePhotos(array $photoDetails){
              // requete me permettant de modifier mon article
              $query = 'UPDATE `photos` SET
-             `id_photos` = :id_photos,
-             `name_image` = :name_image,
-             WHERE id = :id';
+             `id` = :id,
+             `name_image` = :name_image
+             WHERE id_photos = :id_photos';
      
              // je prepare requête à l'aide de la methode prepare pour me premunir des injections SQL 
              $updatePhotosQuery = $this->dataBase->prepare($query);
      
              // On bind les values pour renseigner les marqueurs nominatifs
-             $updatePhotosQuery->bindValue(':id_photos', $id_photos['id_photos'], PDO::PARAM_STR);
-             $updatePhotosQuery->bindValue(':name_image', $name_photos['name_image'], PDO::PARAM_STR);
+             $updatePhotosQuery->bindValue(':id_photos', $photoDetails['id_photos'], PDO::PARAM_STR);
+             $updatePhotosQuery->bindValue(':name_image', $photoDetails['name_image'], PDO::PARAM_STR);
+             $updatePhotosQuery->bindValue(':id', $photoDetails['id'], PDO::PARAM_STR);
 
-             $updatePhotosQuery->execute();
+
+             if ($updatePhotosQuery->execute()) {
+                return true;
+            } else {
+                return false;
+            }
+    }
+
+    public function getPhotosDetails(string $id_photos){
+        $query = 'SELECT `id_photos`, `name_image`, `nameCategorie`, `photos`.`id`
+        FROM `photos`
+        INNER JOIN `category`
+        ON `photos`.`id` = `category`.`id`
+        WHERE `id_photos` = :id_photos';
+
+        $getPhotosDetails = $this->dataBase->prepare($query);
+
+        $getPhotosDetails->bindValue(':id_photos', $id_photos , PDO::PARAM_STR);
+
+        if($getPhotosDetails->execute()){
+            var_dump('ok');
+            return $getPhotosDetails->fetch();
+        }else{
+            return false;
+        }
     }
 }

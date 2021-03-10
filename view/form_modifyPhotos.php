@@ -25,15 +25,20 @@ require_once '../controllers/controller_form_modifyPhotos.php';
     <div class="container">
         <div class="row justify-content-center">
             <h1 class="h4 mt-3">Modifier la gallerie </h1>
+
             <div class="card mt-3 w-50">
-                <h1 class="card-title h4 mt-3 mb-1">Enregistrer une image</h1>
+                <div class="container text-center mt-2">
+                <img src="../assets/img/gallery/<?= $_SESSION['photoDetails']['name_image'] ?? '' ?>" alt="" class="previewPhotoModify">
+                <p><?= $_SESSION['photoDetails']['nameCategorie'] ?? '' ?></p>
+                </div>
+                <h1 class="card-title h4 mt-3 mb-1">Modifier l'image</h1>
                 <div class=" row justify-content-center ml-4 mb-3">
-                    <form method="POST" action="view_gestionGaleriePhoto.php" class="needs-validation formGalerie"
+                    <form method="POST" enctype="multipart/form-data" action="" class="needs-validation formGalerie"
                         novalidate>
                         <div>
                             <div class="mt-5">
-                                <select>
-                                    <option selected>Veuillez choisir une catégorie</option>
+                                <select name="updateCat">
+                                    <option selected disabled>Veuillez choisir une catégorie</option>
                                     <option value="1">Portrait</option>
                                     <option value="2">Décoration Intérieure</option>
                                 </select>
@@ -43,23 +48,18 @@ require_once '../controllers/controller_form_modifyPhotos.php';
                         <div class="">
                         <!-- <img src="echo cour de l'image" alt=""> -->
                             <p class="mt-4">Changer la photo</p>
-                            <form enctype="multipart/form-data" action="view_gestionGaleriePhoto.php" method="post">
-                                <input type="file" name="MAX_FILE_SIZE" value="50000" />
-                            </form>
+                                <input type="file" name="updatePhoto" value="50000" />
                             <div class="row justify-content-center mt-5">
-                                <button id="allFooter" type="submit" class="btn text-white w-75 mb-3">Enregistrer les
+                                <button id="allFooter" type="submit" class="btn text-white w-75 mb-3" name="updatePhotoButton">Enregistrer les
                                     modifications</button>
-                                <button type="reset" class="btn text-dark btn-light w-75">annuler</button>
-                                <a id="allFooter" type="submit" class="btn text-white w-75 mt-3" href="../view/view_gestionGaleriePhoto.php#ancre">Afficher la liste des photos</a>
+                                <a class="btn text-dark btn-light w-75" href="../view/view_gestionGaleriePhoto.php">annuler</a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div>
-        <a class="mb-3" href="javascript:history.back()">Page Précédente</A>
-        </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

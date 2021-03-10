@@ -116,8 +116,8 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
                     <td><?= $photos['id_photos'] ?></td>
                     <td><img class="miniPhoto" src="../assets/img/gallery/<?= $photos['name_image'] ?>" alt=""></td>
                     <td><?= $photos['nameCategorie'] ?></td>
-                    <td><a type="button" class="btn btn-light" href="../view/form_modifyPhotos.php">Modif.</a></td>
-                    <td><button type="button" data-toggle="modal" data-target="#sup" class="btn btn-danger"><i
+                    <td><form action="../view/form_modifyPhotos.php" method="POST"><button type="submit" class="btn btn-light" name="photoToModify" value="<?= $photos['id_photos'] ?>">Modif.</button></form></td>
+                    <td><button type="submit" data-toggle="modal" data-target="#sup" class="btn btn-danger"><i
                                 class="bi bi-trash"></i></button></td>
                 </tr>
                 <?php } ?>

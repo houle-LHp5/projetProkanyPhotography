@@ -318,3 +318,8 @@ tbody:hover > tr:hover td {
   width: auto;
   height: 20rem;
 }
+
+.previewPhotoModify{
+  width: auto;
+  height: 10rem;
+}
