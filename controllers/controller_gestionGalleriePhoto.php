@@ -75,6 +75,17 @@ if (isset($_POST['addPhotosBtn'])) {
         }
     }
 }
+
+// nous controllons si nous avons appuyé sur notre bouton delete via la methode POST
+$objetSupPhoto = new Photos;
+
+if (isset($_POST['deleteBtn'])) {
+    if ($objetSupPhoto->deletePhotos($_POST['deleteBtn'])) {
+        $messages['delete'] = 'La photo a bien été supprimé';
+    } else {
+        $messages['delete'] = 'La photo n\'a pas pu être supprimé';
+    }
+}
 // Je créé un tableau contenant toutes mes photos
 $photoObj = new Photos;
 $photosArray = $photoObj->getAllPhotos();

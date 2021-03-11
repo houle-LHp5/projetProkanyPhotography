@@ -127,8 +127,7 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
                                 class="btn btn-light" name="photoToModify"
                                 value="<?= $photos['id_photos'] ?>">Modif.</button></form>
                     </td>
-                    <td><button type="submit" data-toggle="modal" data-target="#sup" class="btn btn-danger"><i
-                                class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-danger deletePhotos" type="submit" data-toggle="modal" data-target="#sup" data-del-id="<?= $photos['id_photos'] ?>"  data-del-image="<?= $photos['name_image'] ?>"><i class="bi bi-trash"></i></button></td>
                 </tr>
                 <?php } ?>
 
@@ -139,15 +138,18 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title"><i class="bi bi-trash"></i></h5>
+                        <h5 class="modal-title"><i class="bi bi-trash"> Supprimer cette photo ?</i></h5>
                         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <p>Êtes-vous sûr de vouloir supprimer</p>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" class="miniPhoto text-center" src="../assets/img/gallery/<?= $photos['name_image'] ?>">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-danger">Supprimer</button>
+                        <form action="" method="POST">
+                        <button type="submit" class="btn btn-danger" id="deleteBtn" name="deleteBtn">Supprimer</button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -174,7 +176,7 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 </body>
 

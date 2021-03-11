@@ -1,29 +1,18 @@
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml14 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml14 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.ml14 .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
-  }).add({
-    targets: '.ml14',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
+  // on définit la constante regroupant tous nos boutons 
+  const deleteButtons = document.querySelectorAll('.deletePhotos');
+
+  console.log(deleteButtons);
+
+  // nous ajoutons un écouteur d'événement sur chaque bouton à l'aide du foreach
+  deleteButtons.forEach(element => {
+    element.addEventListener('click', function () {
+      console.log('coucou');
+      // Nous allons recupérer les valeurs via les datas inclus dans chaque bouton
+      // Nous modifions la valeur des span à l'aide de innerHTML
+      modalImage.setAttribute('src',`../assets/img/gallery/${element.dataset.delImage}`);
+      // Nous attribuons la valeur de l'id du rdv pour supprimer le rdv
+      deleteBtn.value = element.dataset.delId;
+
+    })
   });
-

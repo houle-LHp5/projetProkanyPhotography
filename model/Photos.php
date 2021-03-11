@@ -34,7 +34,7 @@ class Photos extends Database
         $query = 'SELECT `id_photos`, `name_image`, `nameCategorie`
         FROM `photos`
         INNER JOIN `category`
-        ON `photos`.`id` = `category`.`id`';
+        ON `photos`.`id` = `category`.`id` ORDER BY `id_photos` DESC';
 
         $allPhotoQuery = $this->dataBase->query($query);
         if($allPhotoQuery){
@@ -46,11 +46,11 @@ class Photos extends Database
 
     
     public function getAllPhotosByCat(string $idCat){
-        $query = 'SELECT `id_photos`, `name_image`, `nameCategorie`
+        $query = "SELECT `id_photos`, `name_image`, `nameCategorie`
         FROM `photos`
         INNER JOIN `category`
         ON `photos`.`id` = `category`.`id`
-        WHERE category.id = ' . $idCat;
+        WHERE category.id = $idCat ORDER BY `id_photos` DESC";
 
         $getAllPhotosByCatQuery = $this->dataBase->query($query);
         if($getAllPhotosByCatQuery){
@@ -101,5 +101,28 @@ class Photos extends Database
         }else{
             return false;
         }
+    }
+
+       /**
+     * methode permettant d'effacer une photo
+     *
+     * @param string $id_photos
+     * @return boolean permettant de savoir si le delete est ok
+     */
+    public function deletePhotos(string $id_photos)
+    {
+        // Mise en place de la requête
+        $query = 'DELETE FROM `photos` WHERE `id_photos` = :id_photos';
+
+        $deletePhotosQuery = $this->dataBase->prepare($query);
+
+        $deletePhotosQuery->bindValue(':id_photos', $id_photos, PDO::PARAM_STR);
+
+        if ($deletePhotosQuery->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }
