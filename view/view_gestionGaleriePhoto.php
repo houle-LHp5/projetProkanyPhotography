@@ -91,9 +91,9 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
                             <p class="text-danger"><?= $errors['photoToUpload'] ?? '' ?></p>
                             <input type="file" name="photoToUpload" value="50000" />
                             <div class="row justify-content-center">
-                                <button type="reset" class="btn w-50 mt-5 bg-light text-dark">Annuler</button>
-                                <button id="allFooter" type="submit" class="btn text-white w-50 mt-2"
+                                <button id="allFooter" type="submit" class="btn text-white w-50 mt-5"
                                     name="addPhotosBtn">Envoyer</button>
+                                    <button type="reset" class="btn w-50 mt-2 bg-light text-dark">Annuler</button>
                             </div>
                         </div>
                     </form>
