@@ -54,7 +54,7 @@ require_once '../controllers/controller_decorationInterieur.php';
     <!--premier bloc 5 image -->
     <div class="container">
 
-        <div class="card-columns">
+        <div class="card-columns mt-5">
 
             <?php foreach ($photosDecoArray as $photos) { ?>
                 <div class="card">

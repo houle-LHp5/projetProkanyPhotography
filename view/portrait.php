@@ -52,7 +52,7 @@ require_once '../controllers/controller_portrait.php';
 
     <!--premier bloc 5 image -->
     <div class="container">
-        <div class="card-columns">
+        <div class="card-columns mt-5">
 
             <?php foreach ($photosPortraitArray as $photos) { ?>
             <div class="card">

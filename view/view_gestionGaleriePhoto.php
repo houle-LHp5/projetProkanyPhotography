@@ -20,6 +20,7 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
@@ -67,27 +68,32 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
             <div class="card mt-3 w-50">
                 <h1 class="card-title h4 mt-5 mb-4">Télécharger</h1>
                 <div class=" row justify-content-center ml-5 mb-3">
-                    <form method="POST" enctype="multipart/form-data" action=""  class="needs-validation formGalerie"
+                    <form method="POST" enctype="multipart/form-data" action="" class="needs-validation formGalerie"
                         novalidate>
                         <div>
                             <div class="mt-5">
-                            <p class="text-danger"><?= $errors['catId'] ?? '' ?></p>
+                                <p class="text-danger"><?= $errors['catId'] ?? '' ?></p>
                                 <select class="text-center" name="catId">
-                                    <option selected disabled > -- Veuillez choisir une catégorie --</option>
-                                    <option value="1" <?= isset($_POST['catId']) && $_POST['catId'] == 1 ? 'selected' : '' ?>>Portrait</option>
-                                    <option value="2" <?= isset($_POST['catId']) && $_POST['catId'] == 2 ? 'selected' : '' ?>>Décoration Intérieure</option>
+                                    <option selected disabled> -- Veuillez choisir une catégorie --</option>
+                                    <option value="1"
+                                        <?= isset($_POST['catId']) && $_POST['catId'] == 1 ? 'selected' : '' ?>>Portrait
+                                    </option>
+                                    <option value="2"
+                                        <?= isset($_POST['catId']) && $_POST['catId'] == 2 ? 'selected' : '' ?>>
+                                        Décoration Intérieure</option>
                                 </select>
-                                
+
                             </div>
                         </div>
 
                         <div class="">
                             <p class="mt-4">Selectionner une image</p>
                             <p class="text-danger"><?= $errors['photoToUpload'] ?? '' ?></p>
-                                <input type="file" name="photoToUpload" value="50000" />
+                            <input type="file" name="photoToUpload" value="50000" />
                             <div class="row justify-content-center">
-                            <button type="reset" class="btn w-50 mt-5 bg-light text-dark">Annuler</button>
-                            <button id="allFooter" type="submit" class="btn text-white w-50 mt-2" name="addPhotosBtn">Envoyer</button>
+                                <button type="reset" class="btn w-50 mt-5 bg-light text-dark">Annuler</button>
+                                <button id="allFooter" type="submit" class="btn text-white w-50 mt-2"
+                                    name="addPhotosBtn">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -116,7 +122,11 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
                     <td><?= $photos['id_photos'] ?></td>
                     <td><img class="miniPhoto" src="../assets/img/gallery/<?= $photos['name_image'] ?>" alt=""></td>
                     <td><?= $photos['nameCategorie'] ?></td>
-                    <td><form action="../view/form_modifyPhotos.php" method="POST"><button type="submit" class="btn btn-light" name="photoToModify" value="<?= $photos['id_photos'] ?>">Modif.</button></form></td>
+                    <td>
+                        <form action="../view/form_modifyPhotos.php" method="POST"><button type="submit"
+                                class="btn btn-light" name="photoToModify"
+                                value="<?= $photos['id_photos'] ?>">Modif.</button></form>
+                    </td>
                     <td><button type="submit" data-toggle="modal" data-target="#sup" class="btn btn-danger"><i
                                 class="bi bi-trash"></i></button></td>
                 </tr>
@@ -129,11 +139,11 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Supprimer</h5>
+                        <h5 class="modal-title"><i class="bi bi-trash"></i></h5>
                         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Etês vous sur de vouloir supprimer la photo?</p>
+                        <p>Êtes-vous sûr de vouloir supprimer</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Fermer</button>
@@ -143,6 +153,9 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
             </div>
         </div>
         <!-- FIN MODAL -->
+    </div>
+    <div id="scroll_to_top">
+        <a href="#top"><img src="../assets/img/gallery/flecheHaut.jpg" alt="Retourner en haut" /></a>
     </div>
     </div>
 

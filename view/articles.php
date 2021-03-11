@@ -91,11 +91,11 @@
                         dans le jardin de la maison de son frère. Un thème tout en blanc, une décoration au top, j'ai pu
                         prendre de belle photo. Une de ses mannequin était présente se jour pour la démonstration.
                     </p>
-                    <p class="text-right">
-                        Posté le
-                        <time datetime="2021-02-23 16:29">23 Février 2021</time>
-                        par Aïssétou.
-                    </p>
+                    <div class="float-right">
+                        <p>
+                            Posté le 23 Février 2021 par Aïssétou.
+                        </p>
+                    </div>
                 </div>
 
                 <hr>
@@ -122,11 +122,11 @@
 
 
                     </p>
-                    <p class="text-right">
-                        Posté le
-                        <time datetime="2021-02-23 16:29">23 Février 2021</time>
-                        par Aïssétou.
-                    </p>
+                    <div class="float-right">
+                        <p>
+                            Posté le 23 Février 2021 par Aïssétou.
+                        </p>
+                    </div>
                 </div>
 
                 <hr>
@@ -152,7 +152,7 @@
                         </p>
                     </div>
 
-                    <div class="text-right">
+                    <div class="float-right">
                         <p>
                             Posté le 23 Février 2021 par Aïssétou.
                         </p>
