@@ -54,7 +54,7 @@ class Articles extends Database
      * @param array contenant les infos de l'article
      * @return boolean permettant de savoir si la requête s'est bien déroulée
      */
-    public function updateArticle(array $articlesDetails)
+    public function updateArticles(array $articlesDetails)
     {
         // requete me permettant de modifier mon user
         $query = 'UPDATE `articlesactuality` SET
@@ -62,7 +62,7 @@ class Articles extends Database
         `dateArticles` = :dateArticles,
         `textArticles` = :textArticles,
         `imageArticle` = :imageArticle
-        WHERE id = :id';
+        WHERE id_articles = :id_articles';
 
         // je prepare requête à l'aide de la methode prepare pour me premunir des injections SQL 
         $updateArticleQuery = $this->dataBase->prepare($query);
@@ -72,7 +72,7 @@ class Articles extends Database
         $updateArticleQuery->bindValue(':dateArticles', $articlesDetails['dateArticles'], PDO::PARAM_STR);
         $updateArticleQuery->bindValue(':textArticles', $articlesDetails['textArticles'], PDO::PARAM_STR);
         $updateArticleQuery->bindValue(':imageArticle', $articlesDetails['imageArticle'], PDO::PARAM_STR);
-        $updateArticleQuery->bindValue(':id', $articlesDetails['id'], PDO::PARAM_STR);
+        $updateArticleQuery->bindValue(':id_articles', $articlesDetails['id_articles'], PDO::PARAM_STR);
 
         if ($updateArticleQuery->execute()) {
             return true;

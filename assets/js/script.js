@@ -7,7 +7,6 @@
   // nous ajoutons un écouteur d'événement sur chaque bouton à l'aide du foreach
   deleteButtons.forEach(element => {
     element.addEventListener('click', function () {
-      console.log('coucou');
       // Nous allons recupérer les valeurs via les datas inclus dans chaque bouton
       // Nous modifions la valeur des span à l'aide de innerHTML
       modalImage.setAttribute('src',`../assets/img/gallery/${element.dataset.delImage}`);

@@ -1,7 +1,7 @@
 <?php
 
 require_once '../model/dataBase.php';
-require_once '../model/modalArticles.php';
+require_once '../model/articles.php';
                                                          
 // Creation d'un tableau contenant nos articles avec comme info : id, nom, date, contenu et image
 //$articlesObj = new Articles;
