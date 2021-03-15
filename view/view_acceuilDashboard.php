@@ -18,32 +18,28 @@ session_start();
 
 <body id="pageTableBord">
     <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-        </button>
-        <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/pageAccueil.php">Aller sur le site</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_admin.php">Admin</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
-                    photos</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/error404.php">error 404</a>
-            </li>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="#">Déconnexion</a>
-            </li>
-        </ul>
+        <div class="navbar-collapse collapse justify-content-between">
+            <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
+            <ul class="navbar-nav ml-auto px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/pageAccueil.php"><span
+                            style="text-decoration: underline;">Aller sur le site</span></a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
+                        photos</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <button class="nav-link text-dark" type="submit"><b class="term">Déconnexion</b></button>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
@@ -56,9 +52,10 @@ session_start();
         </h1>
 
         <div class="row justify-content-center mt-5">
-            <div class="col-sm-3 mb-3 mt-5 pl-5">
+            <div class="col-sm-3 mb-3 mt-3 pl-5">
                 <div class="card text-center">
-                    <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg" alt="">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/slr-camera-3752493_1920.jpg"
+                        alt="image d'un appareil photo" class="responsive pb-4">
                     <h5 class="card-title mt-3">Gestion des galeries photo</h5>
                     <p class="card-text">
                     </p>
@@ -70,7 +67,8 @@ session_start();
 
             <div class="col-sm-3 mt-3 pl-5">
                 <div class="card text-center">
-                    <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/bag-1565402_1920.jpg" alt="image bloc note"
+                        class="responsive">
                     <h5 class="card-title mt-3">Gestion des articles</h5>
                     <p class="card-text">
                     </p>
@@ -80,7 +78,8 @@ session_start();
 
             <div class="col-sm-3 pl-5 mt-3 mb-3">
                 <div class="card text-center">
-                    <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg" alt="">
+                    <img src="../assets/autres/videoEtPhotoFondEcran/contact-5235117_1920.jpg"
+                        alt="image d'un bloc et un ordinateur" class="responsive">
 
                     <h5 class="card-title mt-3">Gestion des contact</h5>
                     <p class="card-text">
@@ -93,9 +92,6 @@ session_start();
         </div>
     </div>
 
-    <form>
-        <input class="text-white" id="buttonAllPage" type="button" value="Retour!" onclick="history.go(-1)">
-    </form>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

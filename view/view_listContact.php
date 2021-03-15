@@ -24,17 +24,12 @@ session_start();
 
 <body>
     <!--Navbar -->
-    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../view/pageAccueil.php">
-                        <i class="fab fa-instagram"></i>Aller sur le site</a>
+                    <a class="nav-link text-white" href="../view/pageAccueil.php"><span style="text-decoration: underline;">Aller sur le site</span></a>
                 </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
@@ -46,9 +41,9 @@ session_start();
                 <li class="nav-item text-nowrap">
                     <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
                 </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
-                </li>
+                <li class="nav-item text-nowrap pull-right">
+                <button class="nav-link text-dark" type="submit"><b class="term" >Déconnexion</b></button>
+            </li>
             </ul>
         </div>
     </nav>
