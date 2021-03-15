@@ -1,6 +1,5 @@
 <?php
 require_once '../controllers/controller_admin.php';
-session_start();
 ?>
 <!doctype html>
 <html lang="fr">
