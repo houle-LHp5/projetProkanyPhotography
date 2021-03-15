@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once '../controllers/controller_gestionGalleriePhoto.php';
 
 ?>

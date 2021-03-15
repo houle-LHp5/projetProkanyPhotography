@@ -1,35 +1,39 @@
-<?php 
+<?php
 session_start();
- require_once '../model/model_admin.php';
-require_once '../view/view_admin.php';
 require_once '../model/dataBase.php';
+require_once '../model/model_admin.php';
 
-if(isset($_POST['username']) && isset($_POST['password']))
-{
-    // connexion à la base de données
-    $db_username = 'kanyphotography';
-    $db_password = '270287Kouta.';
-    $db_name     = 'Kanyphotography';
-    $db_host     = 'localhost';
-    $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
-           or die('could not connect to database');
-    
-    // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
-    // pour éliminer toute attaque de type injection SQL et (XSS)
-    $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['username'])); 
-    $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['password']));
-    
-    if($username !== "" && $password !== "")
-    {
-        $requete = "SELECT * FROM user where 
-              username = '".$username."' and password = '".$password."' ";
-        $exec_requete = mysqli_query($db,$requete);
-        $reponse = mysqli_fetch_array($exec_requete);
-        $count = $reponse['count(*)'];
-        if($count!=0) // nom d'utilisateur et mot de passe correctes
-        {
-           $_SESSION['username'] = $username;
-           header('Location: view_admin.php');
-        }
+$errors = [];
+$message = [];
+
+$adminId = '$2y$10$G2zfKBt/TGJNpOqyV72Q0OrMS/uQX/jrUBmQI786rKtxCMUDzNIBa';
+$adminPassword = '$2y$10$k2ttDYUv1i2aVnDWjnbxCOrBG1VBdntf1c71Cq3LfuHyc53QqCj4K';
+
+if (isset($_POST['btnConnectAdmin'])) {
+
+   if (isset($_POST['username'])) {
+
+      if (empty($_POST['username'])) {
+         $errors['username'] = 'Veuillez renseigner un identifiant';
       }
    }
+
+   if (isset($_POST['password'])) {
+
+      if (empty($_POST['password'])) {
+         $errors['password'] = 'Veuillez renseigner un mot de passe';
+      }
+   }
+   if (empty($errors)) {
+      if (!password_verify($_POST['username'], $adminId)) {
+         $message['connection'] = 'Identifiant ou mot de passe incorrect';
+      }
+      if (!password_verify($_POST['password'], $adminPassword)) {
+         $message['connection'] = 'Identifiant ou mot de passe incorrect';
+      }
+      if (empty($message)) {
+         $_SESSION['user'] = 'admin';
+         header ("location: view_acceuilDashboard.php");
+      }
+   }
+}

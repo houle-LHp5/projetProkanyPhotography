@@ -4,6 +4,10 @@ class DataBase
 {
     protected $dataBase;
 
+    private $username = 'kanyphotography';
+    private $password = 'kanys2019';
+    private $dbName = 'kanyphotography';
+
     public function __construct()
     {
         // Nous effectuons un try and catch pour obtenir un message d'erreur explicite en cas de non connexion

@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -47,10 +51,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../view/contact.php">
                             <i class="fab fa-instagram"></i>Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">
-                            <i class="fab fa-instagram"></i>dasboard</a>
                     </li>
                 </ul>
             </div>

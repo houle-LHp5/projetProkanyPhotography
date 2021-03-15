@@ -28,27 +28,23 @@ require_once '../controllers/controller_admin.php';
         <main class="row justify-content-center align-items-center">
             <div class="card mt-5" style="width: 30rem;" style="height: 40rem;">
             <h1 class="mt-3">Connexion</h1>
-            <form action="../view/view_admin.php" method="POST" class="mt-5 ml-5">
+            <form action="../view/view_admin.php" method="POST" class="mt-5 ml-5" novalidate>
                         <div class="text-center ml-5">
                             <img class="mb-4 align-center" src="../assets/autres/videoEtPhotoFondEcran/imageAdmin.png" alt="">
                             <div class="center">
                                 <label for="username" class="w-50 mb-2 mt-1">Nom d'utlilisateur</label>
                                 <input type="text" id="username" class="imputFormAdmin form-control w-50"
-                                    placeholder="mon nom d'utilisateur" required autofocus>
+                                     name="username" required>
+                                    <span class="text-warning"><?= $errors['username'] ?? ''  ?></span>
                                 <label for="inputPassword" class="w-50 mb-2 mt-1">Mot de passe</label>
                                 <input type="password" id="inputPassword" class="imputFormAdmin form-control w-50 ml-5"
-                                    placeholder="65334KTRU98" required>
+                                    name="password" required>
+                                    <span class="text-warning"><?= $errors['password'] ?? '' ?></span>
+                                    
                             </div>
                         </div>
-                        <button id="buttonAllPage" class="buttonFormAdmin btn mt-3 mb-3 text-white" type="submit">Connexion </button>
-                        <?php 
-                        
-                        if(isset($_GET['erreur'])){
-                            $err = $_GET['erreur'];
-                                if($err==1 || $err==2)
-                                    echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                        }
-                        ?>
+                        <button id="buttonAllPage" class="buttonFormAdmin btn mt-3 mb-3 text-white" type="submit" name="btnConnectAdmin">Connexion </button>
+                        <div class="text-danger text-center"><?= $message['connection'] ?? '' ?></div>
                     </form>
                 </div>
         </main>
