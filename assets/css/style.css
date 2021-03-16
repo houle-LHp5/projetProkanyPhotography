@@ -183,7 +183,6 @@ margin-left: 15em;
 
 /* tableau de la liste des contact du dashboard */
 
-
 @import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Patua+One|Open+Sans);
 
@@ -264,61 +263,36 @@ tbody:hover > tr:hover td {
   opacity: 1.0;
 }
 
-
+/* formulaire des articles */
 .formArticles{
     margin: auto;
 }
+
+/* formulaire des galerie portrait et deco intereieur */
 .formGalerie{
   margin-top: 5rem;
   margin: auto;
 }
 
-/* css du titre du tableau de bord */
-.ml14 {
-  font-weight: 200;
-  font-size: 3.2em;
-}
 
-.ml14 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  margin-top: 2em;
-}
-
-.ml14 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  transform-origin: 100% 100%;
-  bottom: 0;
-}
-
-.ml14 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-/* fin du css titre du tableau de bord */
-
+/* titr de la page gestion des articles */
 .titleGestionArticle{
   margin-top: 5em;
 }
 
-
+/* les image des tableau  de la gestion des image, article et contact*/
 .miniPhoto {
   width: auto;
   height: 4rem;
 }
 
+/* image de la page d'acceuil du bloc "a propos de moi" */
 .imgApropos{
   width: auto;
   height: 20rem;
 }
 
+/* les image de la page de gestion des images, card de modification */
 .previewPhotoModify{
   width: auto;
   height: 10rem;
@@ -333,4 +307,9 @@ tbody:hover > tr:hover td {
 }
 #scroll_to_top img {
   width: 25px;
+}
+
+/* titre de la page gestion des article du dashboard */
+.titleGestionArticle{
+  margin-top: 10rem;
 }

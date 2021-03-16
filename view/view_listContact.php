@@ -1,5 +1,8 @@
 <?php 
 session_start();
+if (!isset($_SESSION['user'])) {
+    header("Location:../view/view_admin.php");
+}
 ?>
 <!doctype html>
 <html lang="fr">
@@ -24,29 +27,9 @@ session_start();
 
 <body>
     <!--Navbar -->
-    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="../view/pageAccueil.php"><span style="text-decoration: underline;">Aller sur le site</span></a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
-                        photos</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_gestionArticles.php">Gestion des articles</a>
-                </li>
-                <li class="nav-item text-nowrap pull-right">
-                <button class="nav-link text-dark" type="submit"><b class="term" >Déconnexion</b></button>
-            </li>
-            </ul>
-        </div>
-    </nav>
+    <?php 
+include './include/navBar.php';
+?>
     <!-- fin de la navbar -->
 
     <!-- tableau de gestion du formulaire de contact -->

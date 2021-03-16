@@ -1,1 +1,3 @@
-ErrorDocument 404 /../view/error404.php
+#la page d'erreur 404 du site kanyphotography
+ErrorDocument 404 /./view/error404.php
+

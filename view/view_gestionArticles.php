@@ -1,5 +1,8 @@
 <?php 
 session_start();
+if (!isset($_SESSION['user'])) {
+    header("Location:../view/view_admin.php");
+}
 require_once '../controllers/controller_articles.php';
 ?>
 
@@ -20,7 +23,7 @@ require_once '../controllers/controller_articles.php';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 
     </script>
@@ -30,40 +33,16 @@ require_once '../controllers/controller_articles.php';
 
 <body>
     <!--Navbar -->
-    <nav id="navbarAllPage" class="mb-1 navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand text-white" href="../index.php">KANY'S</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="../view/pageAccueil.php">
-                    <span style="text-decoration: underline;">Aller sur le site</span></a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_acceuilDashboard.php">Tableau de bord</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_gestionGaleriePhoto.php">Gestion des galleries
-                        photos</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link text-white" href="../view/view_listContact.php">Gestion des contacts </a>
-                </li>
-                <li class="nav-item text-nowrap pull-right">
-                <button class="nav-link text-dark" type="submit"><b class="term" >Déconnexion</b></button>
-            </li>
-            </ul>
-        </div>
-    </nav>
+    <?php 
+include './include/navBar.php';
+?>
     <!-- fin de la navbar -->
+
     <div class="container">
-
-    <div class="h4 titleGestionArticle mt-5">
-    <h1 class="mt-5">Gestion des Articles</h1>
-    </div>
-
         <!-- Tableau qui liste les articles afficher -->
         <table class="mt-5" id="ancreTable">
             <tbody>
+                <h5 class="mt-5 text-center titleGestionArticle">Gestion des Articles</h5>
                 <tr>
                     <th>id</th>
                     <th>Titre</th>
@@ -82,7 +61,8 @@ require_once '../controllers/controller_articles.php';
                     <td><?= $articles['textArticles'] ?></td>
                     <td><?= $articles['imageArticle'] ?></td>
                     <td><a type="button" class="btn btn-light" href="../view/form_articles.php">Modifier</a></td>
-                    <td><button type="button" data-toggle="modal" data-target="#supArticle" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#supArticle" class="btn btn-danger"><i
+                                class="bi bi-trash"></i></button></td>
                 </tr>
                 <?php } ?>
 
@@ -108,26 +88,26 @@ require_once '../controllers/controller_articles.php';
             </tbody>
         </table>
     </div>
-        <!-- Mise en place d'une ternaire pour permettre d'afficher un message si jamais le tableau est vide -->
-        <?= count($allArticlesArray) == 0 ? '<p class="h6 text-center">Vous n\'avez pas d\'article d\'enregistrés<p>' : '' ?>
+    <!-- Mise en place d'une ternaire pour permettre d'afficher un message si jamais le tableau est vide -->
+    <?= count($allArticlesArray) == 0 ? '<p class="h6 text-center">Vous n\'avez pas d\'article d\'enregistrés<p>' : '' ?>
     </div>
 
     <?php
          // Mise en place d'une condition pour ne plus afficher le formulaire quand l'article a bien été enregistré
          if (!$addArticlesInBase) { ?>
-        <!-- si le patient n'est pas enregistré nous indiquons l'utilisateur via un message -->
-        <p class="h5 text-center text-danger"><?= $messages['addArticles'] ?? '' ?></p>
+    <!-- si le patient n'est pas enregistré nous indiquons l'utilisateur via un message -->
+    <p class="h5 text-center text-danger"><?= $messages['addArticles'] ?? '' ?></p>
 
-        <!-- si l'article a bien été enregistré nous indiquons l'utilisateur via un message -->
-        <p class="h5 text-center text-info"><?= $messages['addArticles'] ?? '' ?></p>
+    <!-- si l'article a bien été enregistré nous indiquons l'utilisateur via un message -->
+    <p class="h5 text-center text-info"><?= $messages['addArticles'] ?? '' ?></p>
 
-        <?php
+    <?php
          } ?>
 
-<!-- card création d'article -->
+    <!-- card création d'article -->
     <div class="row justify-content-center mt-5">
         <div class="card mt-3 w-50">
-        <div class=" mt-5">
+            <div class=" mt-5">
                 <div class="table-responsive">
                     <h1 class="h4 text-center mt-3 mb-5">Créer un article</h1>
                     <div class="ml-5 formArticles">
@@ -160,21 +140,22 @@ require_once '../controllers/controller_articles.php';
                                 <input type="file" name="imageArticle">
                                 <button id="allFooter" type="submit" name="btnAddArticle"
                                     class="btn text-white w-75 mt-5">Envoyer</button>
-                                    <button type="reset" class="btn text-dark btn-light w-75">annuler</button>
-                            </div>
-                            </div>
-                        </form>
+                                <button type="reset" class="btn text-dark btn-light w-75">annuler</button>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>
+    </div>
+    </div>
     <div>
         <a class="mb-5" href="javascript:history.back()">Page Précédente</A>
-        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="script.js"></script>
 

@@ -13,7 +13,7 @@ public function addUsernamePassword(array $userDetails){
         $addUserQuery = $this->dataBase->prepare($query);
 
         // je bind mes valeurs à l'aide de la methode bindvalue()
-        $addUserQuery->bindValue(':name_image', $userDetails['kanyphotography'], PDO::PARAM_STR);
+        $addUserQuery->bindValue(':username', $userDetails['kanyphotography'], PDO::PARAM_STR);
         $addUserQuery->bindValue(':password', $userDetails['kanys1993'], PDO::PARAM_STR);
 
 
