@@ -298,16 +298,7 @@ tbody:hover > tr:hover td {
   height: 10rem;
 }
 
-#scroll_to_top {
-  position: fixed;
-  width: 25px;
-  height: 25px;
-  bottom: 50px;
-  right: 30px;
-}
-#scroll_to_top img {
-  width: 25px;
-}
+
 
 /* titre de la page gestion des article du dashboard */
 .titleGestionArticle{

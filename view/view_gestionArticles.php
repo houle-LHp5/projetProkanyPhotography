@@ -40,9 +40,12 @@ include './include/navBar.php';
 
     <div class="container">
         <!-- Tableau qui liste les articles afficher -->
+        <div class="mt-5 row justify-content-center">
+        <div class="">
+        <h1 class="h4 mt-5 text-center titleGestionArticle">Gestion des Articles</h1>
+        </div>
         <table class="mt-5" id="ancreTable">
             <tbody>
-                <h5 class="mt-5 text-center titleGestionArticle">Gestion des Articles</h5>
                 <tr>
                     <th>id</th>
                     <th>Titre</th>
@@ -87,6 +90,7 @@ include './include/navBar.php';
                 </div>
             </tbody>
         </table>
+        </div>
     </div>
     <!-- Mise en place d'une ternaire pour permettre d'afficher un message si jamais le tableau est vide -->
     <?= count($allArticlesArray) == 0 ? '<p class="h6 text-center">Vous n\'avez pas d\'article d\'enregistrés<p>' : '' ?>

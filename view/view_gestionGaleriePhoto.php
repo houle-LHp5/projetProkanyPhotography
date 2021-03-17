@@ -31,7 +31,7 @@ require_once '../controllers/controller_gestionGalleriePhoto.php';
 <body>
 
 
-<?php 
+    <?php 
 include './include/navBar.php';
 ?>
     <!-- fin de la navbar -->
@@ -39,7 +39,9 @@ include './include/navBar.php';
     <!-- formulaire de telechargemennt -->
     <div class="container">
         <div class="row justify-content-center mt-5">
-            <h1 class="h4 mt-4">Gestion des photos</h1>
+            <div class="mt-5">
+                <h1 class="h4 mt-4">Gestion des photos</h1>
+            </div>
             <div class="card mt-3 w-50">
                 <h1 class="card-title h4 mt-5 mb-4">Télécharger</h1>
                 <div class=" row justify-content-center ml-5 mb-3">
@@ -68,7 +70,7 @@ include './include/navBar.php';
                             <div class="row justify-content-center">
                                 <button id="allFooter" type="submit" class="btn text-white w-50 mt-5"
                                     name="addPhotosBtn">Envoyer</button>
-                                    <button type="reset" class="btn w-50 mt-2 bg-light text-dark">Annuler</button>
+                                <button type="reset" class="btn w-50 mt-2 bg-light text-dark">Annuler</button>
                             </div>
                         </div>
                     </form>
@@ -102,7 +104,9 @@ include './include/navBar.php';
                                 class="btn btn-light" name="photoToModify"
                                 value="<?= $photos['id_photos'] ?>">Modif.</button></form>
                     </td>
-                    <td><button class="btn btn-danger deletePhotos" type="submit" data-toggle="modal" data-target="#sup" data-del-id="<?= $photos['id_photos'] ?>"  data-del-image="<?= $photos['name_image'] ?>"><i class="bi bi-trash"></i></button></td>
+                    <td><button class="btn btn-danger deletePhotos" type="submit" data-toggle="modal" data-target="#sup"
+                            data-del-id="<?= $photos['id_photos'] ?>" data-del-image="<?= $photos['name_image'] ?>"><i
+                                class="bi bi-trash"></i></button></td>
                 </tr>
                 <?php } ?>
 
@@ -117,14 +121,16 @@ include './include/navBar.php';
                         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
-                        <img id="modalImage" class="miniPhoto text-center" src="../assets/img/gallery/<?= $photos['name_image'] ?>">
+                        <img id="modalImage" class="miniPhoto text-center"
+                            src="../assets/img/gallery/<?= $photos['name_image'] ?>">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Fermer</button>
                         <form action="" method="POST">
-                        <button type="submit" class="btn btn-danger" id="deleteBtn" name="deleteBtn">Supprimer</button>
+                            <button type="submit" class="btn btn-danger" id="deleteBtn"
+                                name="deleteBtn">Supprimer</button>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
@@ -132,7 +138,7 @@ include './include/navBar.php';
         <!-- FIN MODAL -->
     </div>
     <div id="scroll_to_top">
-        <a href="#top"><img src="../assets/img/gallery/flecheHaut.jpg" alt="Retourner en haut" /></a>
+        <a href="#top"><i class="bi bi-arrow-up-square "></i></a>
     </div>
     </div>
 
