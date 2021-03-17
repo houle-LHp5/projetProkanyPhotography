@@ -22,16 +22,14 @@ session_start();
 </head>
 
 <body>
-    <div class="containeur-fluid">
+    <div class="containeur">
         <!--Navbar -->
         <?php 
 include './include/navBarUtilisateur.php';
 ?>
-
         <!-- fin de la navbar-->
 
-        <!-- title page accueil -->
-        <main>
+        <main class="mb-1">
             <div id="textColorPageAccueil" class="mt-5">
                 <div class="container">
                     <!-- bloc de presentation  -->
@@ -39,9 +37,9 @@ include './include/navBarUtilisateur.php';
                         <div class="col mb-2 mt-5 text-center">
                             <img src="../assets/img/img2/photoDuSite/portraitNb.png" alt="" class="imgApropos">
                         </div>
-                        <div id="textColorPageAccueil" class="col mt-4 mr-5">
-                            <h1>A propos de moi!</h1>
-                            <p class="styleTextAccueil">Je suis une jeune entrepreneuse qui à crée son entreprise en
+                        <div id="textColorPageAccueil" class="col mt-5 mr-5">
+                            <h1 class="m-4 mt-2">A propos de moi!</h1>
+                            <p class="text-justify">Je suis une jeune entrepreneuse qui à crée son entreprise en
                                 juin
                                 2019.
                                 Passionné par la photographie en général.
@@ -96,8 +94,9 @@ include './include/navBarUtilisateur.php';
                                     </p>
                                 </div>
                                 <div class="text-center ml-1 mr-5">
-                                    <title>Shooting à PARIS</title>
-                                    <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="">
+                                    <title>Décoration Intérieure</title>
+                                    <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt=""
+                                        style="width: 22rem;" style="height: 13rem;">
                                     <p class="text-center text-white mt-2 mb-5">
                                         Séance photos en pleine air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
@@ -118,8 +117,8 @@ include './include/navBarUtilisateur.php';
 
                     <!-- a propos de moi 2éme partie -->
                     <section class="row">
-                        <div id="textColorPageAccueil" class=" text-center col mt-5 mr-5">
-                            <p class="styleTextAccueil pt-3">Vous pouvez découvrir su mon site une rubrique dédier à la
+                        <div id="textColorPageAccueil" class=" text-justify col mt-5 mr-5">
+                            <p class="pt-3">Vous pouvez découvrir su mon site une rubrique dédier à la
                                 photographie,
                                 avec les réalisations que j'ai pu faire depuis mon commencement. Il y a également une
                                 rubrique dédier
@@ -183,11 +182,13 @@ include './include/navBarUtilisateur.php';
                                 alt="image décoration salon meuble tv et tv">
                         </div>
                     </section>
-        </main>
+                </div>
+            </div>
 
 
-        <!-- boutton préceédent et suivant -->
-        <!-- <nav aria-label="navigation">
+
+            <!-- boutton préceédent et suivant -->
+            <!-- <nav aria-label="navigation">
                     <div class="pager">
                         <p><a href="../index.php" class=" float-left" title="Précédent"><i class="material-icons">keyboard_arrow_left</i>Précédent</a>
                         <p><a href="portrait.php" class="float-right" title="Suivant">Suivant<i class="material-icons">keyboard_arrow_right</i></a>
@@ -196,12 +197,12 @@ include './include/navBarUtilisateur.php';
                 </nav>
                 </div> -->
 
-        <!-- footer -->
-        <?php 
+            <!--include du footer -->
+            <?php 
         include './include/footer.php';
         ?>
-
-
+            <!-- fin de l'include du footer -->
+        </main>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
