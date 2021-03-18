@@ -34,7 +34,7 @@ session_start();
                 </p>
             </div>
             <!-- img du formulaire -->
-            <div class="mb-4">
+            <div class="mb-4 responsive">
                 <img src="../assets/autres/videoEtPhotoFondEcran/photography.jpg" alt="image d'un appareil photo"
                     style="width: 60rem;" style="height: auto;">
             </div>
@@ -42,51 +42,50 @@ session_start();
         </div>
         <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
         <!-- formulaire -->
-        <div class="">
+        <div class="formContact">
             <h4 class="mb-3 text-center">Vos Coordonnées</h4>
             <form action="" method="POST" class="needs-validation" name="formContact" novalidate>
-                <div class="">
-                    <div class="row g-3 justify-content-start">
+                <div class=" text-center">
+                    <div class="row g-3">
                         <div class="col-sm-6">
                             <label for="lastname" class="form-label">Nom</label>
-                            <input type="text" class="form-control w-75" id="lastname" placeholder="DUPOND"
+                            <input type="text" class="form-control w-100" id="lastname" placeholder="DUPOND"
                                 name="lastname" value="" required>
                         </div>
 
                         <div class="col-sm-6">
                             <label for="firstname" class="form-label">Prénom</label>
-                            <input type="text" class="form-control w-75" id="firstname" placeholder="Marie"
+                            <input type="text" class="form-control w-100" id="firstname" placeholder="Marie"
                                 name="firstname" value="" required>
                             <div class="errors">
                             </div>
                         </div>
                     </div>
 
-                    <div class="row g-3 justify-content-start">
+                    <div class="row g-3 mt-4">
                         <div class="col-sm-6">
                             <label for="phone" class="form-label">Télèphone</label>
-                            <input type="text" class="form-control w-75" id="phone" placeholder="" name="phone" value=""
+                            <input type="text" class="form-control w-100" id="phone" placeholder="" name="phone" value=""
                                 required>
                         </div>
 
                         <div class="col-sm-6">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control w-75" id="email" placeholder="you@example.com"
+                            <input type="email" class="form-control w-100" id="email" placeholder="you@example.com"
                                 name="message" value="" required>
                         </div>
                     </div>
 
-                    <div>
-                    <div class="justify-content-start">
+                    <div class="text-center mt-4">
                         <label for="floatingTextarea">Message</label>
-                        <textarea class="form-control w-50" name="message" placeholder="Ecrivez votre message ici"
+                        <textarea class="form-control w-75 align-center ml-5" name="message" placeholder="Ecrivez votre message ici"
                             id="floatingTextarea" required></textarea>
                     </div>
                     
 
-                    <div class="row justify-content-start">
+                    <div class="row">
                         <div class="mt-5 mb-4 col-6">
-                            <button type="submit" id="buttonAllPage" class="btn text-white center mb-2 w-50"
+                            <button type="submit" role="button" id="buttonAllPage" class="btnFormContact btn text-white center mb-2 w-50"
                                 name="addVisitorBtn">Envoyer</button>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ require_once '../controllers/controller_portrait.php';
     ?>
 
     <!--premier bloc 5 image -->
-    <div class="container">
+    <div class="container mb-1">
         <div class="card-columns mt-5">
 
             <?php foreach ($photosPortraitArray as $photos) { ?>
@@ -34,12 +34,13 @@ require_once '../controllers/controller_portrait.php';
             </div>
             <?php } ?>
         </div>
-        </div>
 
-<!-- include du footer -->
+
+        <!-- include du footer -->
         <?php 
         include './include/footer.php';
         ?>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

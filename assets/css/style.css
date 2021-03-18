@@ -315,3 +315,19 @@ a:hover{
 .art-soulignement titleCitationFooter {
   text-decoration: underline double #8C654F;
 }
+
+.formContact{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em; 
+}
+
+.btnFormContact{
+  width: 256px;
+  margin-left: 20rem;
+
+}
+
+.colorTextArticles{
+ color:#8C654F;
+}

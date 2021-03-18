@@ -10,8 +10,6 @@ session_start();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
@@ -55,7 +53,7 @@ include './include/navBarUtilisateur.php';
                     </section>
                     <!-- fin de bloc présentation -->
 
-                    <!-- bloc des articles -->
+                    <!-- bloc des articles page d'accueil -->
                     <section class="article mb-2 mt-2 ">
                         <div id="colorTextAllPage" class="text-center text-white">
                             <h2 class="h2 mt-3 pt-4 pb-3 mb-3">Dernières réalisations</h2>
@@ -64,7 +62,7 @@ include './include/navBarUtilisateur.php';
                             <div class="text-center mr-4">
                                 <title>MasterClass</title>
                                 <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="">
-                                <p class="text-center text-white mt-2 mb-5">
+                                <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                     MasterClass de brook'devis, qui c'est déroulé</br>
                                     en éxtérieur, j'ai réaliser la totalité des photos</br>
                                     Cette master classe était ma premier préstation.</br>
@@ -74,7 +72,7 @@ include './include/navBarUtilisateur.php';
                             <div class="text-center mr-4">
                                 <title>NSNV</title>
                                 <img src="../assets/img/img2/photoDuSite/nsnsMara.png" alt="">
-                                <p class="text-center text-white mt-2 mb-5">
+                                <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                     Le shooting avec les mannequins de mla Marque NSNV</br>
                                     c'etait à la foret de mangeons. NSNV étant</br>
                                     la marque de vêtement de mon frére</br>
@@ -86,7 +84,7 @@ include './include/navBarUtilisateur.php';
                                 <div class="text-center mr-5">
                                     <title>Shooting à PARIS</title>
                                     <img src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="">
-                                    <p class="text-center text-white mt-2 mb-5">
+                                    <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                         Séance photos en pleine air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
                                         Une journée ensoleillé, j'ai pu faire de belle photo</br>
@@ -97,7 +95,7 @@ include './include/navBarUtilisateur.php';
                                     <title>Décoration Intérieure</title>
                                     <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt=""
                                         style="width: 22rem;" style="height: 13rem;">
-                                    <p class="text-center text-white mt-2 mb-5">
+                                    <p class="colorText text-center text-white mt-2 mb-5">
                                         Séance photos en pleine air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
                                         Une journée ensoleillé, j'ai pu faire de belle photo</br>
@@ -111,7 +109,7 @@ include './include/navBarUtilisateur.php';
                                 class="btn text-center text-white">Lire plus</a>
                         </div>
                     </section>
-                    <!-- fin block des articles -->
+                    <!-- fin bloc des articles de la page d'accueil -->
 
 
 
@@ -184,8 +182,6 @@ include './include/navBarUtilisateur.php';
                     </section>
                 </div>
             </div>
-
-
 
             <!-- boutton préceédent et suivant -->
             <!-- <nav aria-label="navigation">
