@@ -304,3 +304,14 @@ tbody:hover > tr:hover td {
 .titleGestionArticle{
   margin-top: 10rem;
 }
+
+/* effet de survol sur les balises <a> boutton des mes pages */
+a:hover{
+  background-color: #C3B2A0;
+}
+
+
+/* soulignement des titres de citation du footer */
+.art-soulignement titleCitationFooter {
+  text-decoration: underline double #8C654F;
+}

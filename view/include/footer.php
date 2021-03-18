@@ -6,7 +6,7 @@
             <div class="containerFooters p-4">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center">Citation</h5>
+                        <h5 class="titleCitationFooter text-uppercase text-center">Citation</h5>
                         <p class="text-center">
                             "Ce que j'aime avec la photographie, c'est qu'elle capture un moment disparu à
                             jamais,

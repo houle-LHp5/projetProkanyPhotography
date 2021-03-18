@@ -34,11 +34,11 @@
             if (!empty($_SESSION['user'])){ ?> 
                 
                 <li class="nav-item text-nowrap">
-                <a class="btn nav-link text-dark bg-light mr-2" type="button" href="../view/deconnexionDasbord.php"><b
+                <a class="btn btn-sm nav-link text-dark bg-light mr-2" type="button" href="../view/deconnexionDasbord.php"><b
                         class="term">Déconnexion</b></a>
             </li>
             <li class="nav-item text-nowrap">
-                <a class="btn nav-link text-dark bg-light" type="button" href="../view/view_acceuilDashboard.php"><b
+                <a class="btn btn-sm nav-link text-dark bg-light" type="button" href="../view/view_acceuilDashboard.php"><b
                         class="term">Tableau de bord</b></a>
             </li>
         <?php } else{ ?>

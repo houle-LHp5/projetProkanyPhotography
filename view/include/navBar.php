@@ -24,11 +24,11 @@
             <?php
             if (!empty($_SESSION['user']['id'])){?>
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="../view/view_listContact.php">Connecté</a>
+                <a class="btn btn-sm nav-link text-white" href="../view/view_listContact.php">Connecté</a>
             </li>
             <?php  } else { ?> 
             <li class="nav-item text-nowrap">
-                <a class="btn nav-link text-dark bg-light" type="button" href="../view/deconnexionDasbord.php"><b
+                <a class="btn btn-sm nav-link text-dark bg-light" type="button" href="../view/deconnexionDasbord.php"><b
                         class="term">Déconnexion</b></a>
             </li>
               <?php } ?>

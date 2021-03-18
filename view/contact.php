@@ -25,91 +25,83 @@ session_start();
     include './include/navBarUtilisateur.php';  
     ?>
         <!-- fin de la navbar-->
-
-        <main>
-            <div>
-                <div class="py-5 text-center mt-5">
-                    <h2>Formulaire de Contact</h2>
-                    <p class="lead">Vous trouverez ci dessous un formmulaire de contact pour me contacter, Veuillez
-                        indiquer
-                        la raison de votre message précissement dans la partie message d'édier en bas du formulaire.
-                    </p>
-                </div>
-
-
-                <!-- img du formulaire -->
-                <div class="col-md-5 col-lg-4 order-md-last mb-4 ml-5 text-center">
-                    <img src="../assets/autres/videoEtPhotoFondEcran/photography.jpg" alt="image d'un appareil photo"
-                        style="width: 60rem;" style="height: auto;">
-                </div>
-                <!-- fin de img du formulaire -->
-
-                <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
-                <!-- formulaire -->
-                <div class="g-3 justify-content-center">
-                        <h4 class="mb-3 text-center">Vos Coordonnées</h4>
-
-                        <form class="needs-validation ml-3 justify-content-center" novalidate>
-                            <div class="row g-3 ml-4">
-                                <div class="col-sm-6">
-                                    <label for="lastname" class="form-label">Nom</label>
-                                    <input type="text" class="form-control w-75" id="lastname" placeholder="DUPOND"
-                                        name="lastname" value="" required>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="firstname" class="form-label">Prénom</label>
-                                    <input type="text" class="form-control w-75" id="firstname" placeholder="Marie"
-                                        name="firstname" value="" required>
-                                    <div class="errors">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row g-3 ml-4">
-                                <div class="col-sm-6">
-                                    <label for="phone" class="form-label">Télèphone</label>
-                                    <input type="text" class="form-control w-75" id="phone" placeholder=""
-                                        name="phone" value="" required>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="email" class="form-label">E-mail</label>
-                                    <input type="email" class="form-control w-75" id="email" placeholder="you@example.com"
-                                        name="message" value="" required>
-                                </div>
-                            </div>
-
-                            <div class="form-floating ml-5">
-                                <label for="floatingTextarea">Message</label>
-                                <textarea class="form-control w-75" name="message" placeholder="Ecrivez votre message ici"
-                                    id="floatingTextarea" required></textarea>
-                            </div>
-
-                            <div class="mt-5 mb-4">
-                                <button type="submit" id="buttonAllPage" class="btn text-white center mb-2 w-50"
-                                    name="addVisitorBtn">Envoyer</button>
-                            </div>
-                        </form>
-                </div>
-                <!-- fin de formulaire -->
-
-                <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="text-center">
+            <div class="py-5 text-center mt-5">
+                <h2>Formulaire de Contact</h2>
+                <p class="lead">Vous trouverez ci dessous un formmulaire de contact pour me contacter, Veuillez
+                    indiquer
+                    la raison de votre message précissement dans la partie message d'édier en bas du formulaire.
+                </p>
             </div>
-        </main>
-
-        <!-- <nav aria-label="navigation">
-        <div class="pager">
-            <p><a href="articles.php" id="allFooter" type="button" class="text-white float-left"
-                    title="Précédent">Précédent</a></p>
+            <!-- img du formulaire -->
+            <div class="mb-4">
+                <img src="../assets/autres/videoEtPhotoFondEcran/photography.jpg" alt="image d'un appareil photo"
+                    style="width: 60rem;" style="height: auto;">
+            </div>
+            <!-- fin de img du formulaire -->
         </div>
-    </nav> -->
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- formulaire -->
+        <div class="">
+            <h4 class="mb-3 text-center">Vos Coordonnées</h4>
+            <form action="" method="POST" class="needs-validation" name="formContact" novalidate>
+                <div class="">
+                    <div class="row g-3 justify-content-start">
+                        <div class="col-sm-6">
+                            <label for="lastname" class="form-label">Nom</label>
+                            <input type="text" class="form-control w-75" id="lastname" placeholder="DUPOND"
+                                name="lastname" value="" required>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="firstname" class="form-label">Prénom</label>
+                            <input type="text" class="form-control w-75" id="firstname" placeholder="Marie"
+                                name="firstname" value="" required>
+                            <div class="errors">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 justify-content-start">
+                        <div class="col-sm-6">
+                            <label for="phone" class="form-label">Télèphone</label>
+                            <input type="text" class="form-control w-75" id="phone" placeholder="" name="phone" value=""
+                                required>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control w-75" id="email" placeholder="you@example.com"
+                                name="message" value="" required>
+                        </div>
+                    </div>
+
+                    <div>
+                    <div class="justify-content-start">
+                        <label for="floatingTextarea">Message</label>
+                        <textarea class="form-control w-50" name="message" placeholder="Ecrivez votre message ici"
+                            id="floatingTextarea" required></textarea>
+                    </div>
+                    
+
+                    <div class="row justify-content-start">
+                        <div class="mt-5 mb-4 col-6">
+                            <button type="submit" id="buttonAllPage" class="btn text-white center mb-2 w-50"
+                                name="addVisitorBtn">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- fin de formulaire -->
+
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         <!-- include du footer -->
         <?php 
         include './include/footer.php';
         ?>
-
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
