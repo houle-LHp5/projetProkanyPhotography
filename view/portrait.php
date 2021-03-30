@@ -24,7 +24,6 @@ require_once '../controllers/controller_portrait.php';
     include './include/navBarUtilisateur.php';  
     ?>
 
-    <!--premier bloc 5 image -->
     <div class="container mb-1">
         <div class="card-columns mt-5">
 

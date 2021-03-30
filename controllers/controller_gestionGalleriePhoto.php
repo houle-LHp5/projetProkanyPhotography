@@ -5,13 +5,7 @@ require_once '../model/Photos.php';
 
 $regexName = '/^[a-zA-Zéèê\-]+$/';
 
-// echo '<br>';
-// echo '<br>';
-// echo '<br>';
-// echo '<br>';
-// var_dump($_FILES);
-
-// mise en place d'une variable permettant de savoir si nous avons inscrit le patient dans la base
+// mise en place d'une variable permettant de savoir si nous avons inscrit l'image dans la base
 $addPhotoInBase = false;
 
 // mise en place d'un tableau d'erreurs

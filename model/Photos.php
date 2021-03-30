@@ -62,7 +62,7 @@ class Photos extends Database
 
 
     public function updatePhotos(array $photoDetails){
-             // requete me permettant de modifier mon article
+             // requete me permettant de modifier ma photo
              $query = 'UPDATE `photos` SET
              `id` = :id,
              `name_image` = :name_image
