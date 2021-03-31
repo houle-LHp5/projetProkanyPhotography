@@ -81,7 +81,7 @@ include './include/navBarUtilisateur.php';
                             <div class="row mt-3">
                                 <div class="text-center mr-5">
                                     <title>Shooting à PARIS</title>
-                                    <img class="img-responsive center-block"
+                                    <img class="img-responsive"
                                         src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="les filles">
                                     <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                         Séance photos en plein air sur la plage du Havre</br>
@@ -93,7 +93,7 @@ include './include/navBarUtilisateur.php';
                                 </div>
                                 <div class="text-center ml-1 mr-5">
                                     <title>Décoration Intérieure</title>
-                                    <img class="img-responsive center-block"
+                                    <img class="img-responsive"
                                         src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png"
                                         alt="table a manger" style="width: 22rem;" style="height: 13rem;">
                                     <p class="colorText text-center text-white mt-2 mb-5">

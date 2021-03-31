@@ -34,8 +34,8 @@ session_start();
                 </p>
             </div>
             <!-- img du formulaire -->
-            <div class="mb-4 responsive">
-                <img src="../assets/autres/videoEtPhotoFondEcran/photography.jpg" alt="image d'un appareil photo"
+            <div class="mb-4">
+                <img class="img-responsive" src="../assets/autres/videoEtPhotoFondEcran/photography.jpg" alt="image d'un appareil photo"
                     style="width: 60rem;" style="height: auto;">
             </div>
             <!-- fin de img du formulaire -->
