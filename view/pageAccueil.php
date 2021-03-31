@@ -33,10 +33,10 @@ include './include/navBarUtilisateur.php';
                     <!-- bloc de presentation  -->
                     <section class="row ">
                         <div class="col mb-2 mt-5 text-center">
-                            <img src="../assets/img/img2/photoDuSite/portraitNb.png" alt="" class="imgApropos">
+                            <img src="../assets/img/img2/PHOTOredimrnsionner/femmeN.png" alt="" class="imgApropos float-left">
                         </div>
                         <div id="textColorPageAccueil" class="col mt-5 mr-5">
-                            <h1 class="m-4 mt-2">A propos de moi!</h1>
+                            <h1 class="h3 m-4 mt-2">A propos de moi!</h1>
                             <p class="text-justify">Je suis une jeune entrepreneuse qui a créé son entreprise en juin
                                 2019. Passionné par la photographie en général. j'offre mes prestations à travers la
                                 région normande. Mes réalisations sont divers cars je peux être appelé pour des services
@@ -44,7 +44,8 @@ include './include/navBarUtilisateur.php';
                                 Vous trouverez sur mon site quelques-unes dès mes réalisations une galerie spéciale
                                 shoot ing et une galerie spéciale décoration Intéreure. Je suis également passionné par
                                 la décoration intérieure actuellement en formation de décoratrice intérieure, je me suis
-                                lancé dans le business de décoratrice intérieure chez les personnes.</p>
+                                lancé dans le business de décoratrice intérieure chez les personnes.
+                            </p>
                         </div>
                     </section>
                     <!-- fin de bloc présentation -->
@@ -52,7 +53,7 @@ include './include/navBarUtilisateur.php';
                     <!-- bloc des articles page d'accueil -->
                     <section class="article mb-2 mt-2 ">
                         <div id="colorTextAllPage" class="text-center text-white">
-                            <h2 class="h2 mt-3 pt-4 pb-3 mb-3">Dernières réalisations</h2>
+                            <h2 class="h3 mt-3 pt-4 pb-3 mb-3">Dernières réalisations</h2>
                         </div>
                         <div class="row justify-content-center">
                             <div class="text-center mr-4">
@@ -115,20 +116,20 @@ include './include/navBarUtilisateur.php';
 
                     <!-- a propos de moi 2éme partie -->
                     <section class="row">
-                        <div id="textColorPageAccueil" class=" text-justify col mt-5 mr-5">
-                            <p class="pt-3">Vous pouvez découvrir su mon site une rubrique dédier à la
+                        <div id="textColorPageAccueil" class="col mt-5 mr-5">
+                            <p class="pt-3 text-justify">Vous pouvez découvrir su mon site une rubrique dédier à la
                                 photographie,
                                 avec les réalisations que j'ai pu faire depuis mon commencement. Il y a également une
                                 rubrique dédiee
                                 à la décoration intérieure (Maison, appartement ...). Je propose mes services pour la
                                 décotation Intérieure de vos maisons ,
-                                que vous soyez en cours de construction ou que vous avez juste envie de changer vôtre
+                                que vous soyez en cours de construction ou que vous ayez juste envie de changer vôtre
                                 intérieur, je suis là pour donner du renouveau
                                 à votre intérieur.
                             </p>
                         </div>
-                        <div class="col mb-2 mt-3 ">
-                            <img src="../assets/img/img2/PHOTOredimrnsionner/Web 1280 – 1.png" alt="">
+                        <div class="col mb-2 mt-3">
+                            <img class="float-right" src="../assets/img/img2/Nouveau dossier/femmeRegardHaut.png" style="height: 20rem;" alt="photo personnage">
                         </div>
                     </section>
 
@@ -182,16 +183,6 @@ include './include/navBarUtilisateur.php';
                     </section>
                 </div>
             </div>
-
-            <!-- boutton préceédent et suivant -->
-            <!-- <nav aria-label="navigation">
-                    <div class="pager">
-                        <p><a href="../index.php" class=" float-left" title="Précédent"><i class="material-icons">keyboard_arrow_left</i>Précédent</a>
-                        <p><a href="portrait.php" class="float-right" title="Suivant">Suivant<i class="material-icons">keyboard_arrow_right</i></a>
-                        </p>
-                    </div>
-                </nav>
-                </div> -->
 
             <!--include du footer -->
             <?php 

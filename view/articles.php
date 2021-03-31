@@ -30,9 +30,7 @@ session_start();
             <div class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
                 <div class="col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 fw-normal">Mes articles</h1>
-                    <p class="lead fw-normal">Retrouver sur cette page les articles dédiés à mes derniéres réalisation
-                        ou
-                        préstations.</p>
+                    <p class="lead fw-normal">Retrouver sur cette page les articles dédiés à mes dernières réalisations.</p>
                 </div>
                 <div class="product-device shadow-sm d-none d-md-block"></div>
                 <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
