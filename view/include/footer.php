@@ -1,6 +1,14 @@
- 
- 
-  <!-- footer -->
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../assets/css/style.css">
+     <title></title>
+ </head>
+ <body>
+    <!-- footer -->
 <footer class="text-white text-center text-lg-start">
   <div class="container">
             <div class="containerFooters p-4">
@@ -14,11 +22,11 @@
                             KARL LAGARFELD
                         </p>
                         <p>
-                            <a href="pageAccueil.php">Accueil</a><br>
-                            <a href="portrait.php">Portrait</a><br>
-                            <a href="decorationInterieur.php">Déco_Intérieure</a><br>
-                            <a href="articles.php">Articles</a><br>
-                            <a href="contact.php">Contact</a>
+                            <a class="mentions" href="pageAccueil.php" style="color:#8C654F;">Accueil</a><br>
+                            <a class="mentions" href="portrait.php" style="color:#8C654F;">Portrait</a><br>
+                            <a class="mentions" href="decorationInterieur.php" style="color:#8C654F;">Déco_Intérieure</a><br>
+                            <a class="mentions" href="articles.php" style="color:#8C654F;">Articles</a><br>
+                            <a class="mentions" href="contact.php" style="color:#8C654F;">Contact</a>
                         </p>
                     </div>
                     <div>
@@ -26,11 +34,11 @@
                         <p>Kany's</p>
                         <p>11 Rue des chemins de Fer</p>
                         <p>76620 LE HAVRE</p>
-                        <P>Tél : <a href="tel:+33711223344">06 03 80 24 82</a></P>
-                        <p><a href ="sms:+33603802482">Cliquez ici pour envoyer un SMS</a></p>
+                        <P>Tél : <a class="mentions" href="tel:+33711223344" style="color:#8C654F;">06 03 80 24 82</a></P>
+                        <p><a class="mentions" href ="sms:+33603802482" style="color:#8C654F;">Cliquez ici pour envoyer un SMS</a></p>
                         </div>
                         
-                    <a href="http://www.monblog.fr/mentions-legales/" target="_blank">Mentions Légales</a>
+                    <a class="mentions" href="http://www.monblog.fr/mentions-legales/" style="color:#8C654F;" target="_blank">Mentions Légales</a>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5>Mes réseaux Sociaux</h5>
@@ -57,3 +65,7 @@
             </div>
             </div>
         </footer>
+   
+ </body>
+ </html>
+ 

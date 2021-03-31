@@ -37,18 +37,14 @@ include './include/navBarUtilisateur.php';
                         </div>
                         <div id="textColorPageAccueil" class="col mt-5 mr-5">
                             <h1 class="m-4 mt-2">A propos de moi!</h1>
-                            <p class="text-justify">Je suis une jeune entrepreneuse qui à crée son entreprise en
-                                juin
-                                2019.
-                                Passionné par la photographie en général.
-                                j'offre mes prestation à travers la région normande.
-                                Mes réalisation sont divers car je peu être appeler pour des services de mariage
-                                des shooting de naissance, baptême, anniversaire....
-                                Vous trouverez sur mon site quelque unes des mes réalisation
-                                une galerie spéciale shooting et une galerie spéciale décoration Intéreure.
-                                Je suis également passionné par la décoration intérieure
-                                Actuellement en formation de décoratrice intérieure, je me suis lancé
-                                dans le buisness de décoratrice intérieure chez les personnes.</p>
+                            <p class="text-justify">Je suis une jeune entrepreneuse qui a créé son entreprise en juin
+                                2019. Passionné par la photographie en général. j'offre mes prestations à travers la
+                                région normande. Mes réalisations sont divers cars je peux être appelé pour des services
+                                de mariage des shoots ing de naissance, baptême, anniversaire...
+                                Vous trouverez sur mon site quelques-unes dès mes réalisations une galerie spéciale
+                                shoot ing et une galerie spéciale décoration Intéreure. Je suis également passionné par
+                                la décoration intérieure actuellement en formation de décoratrice intérieure, je me suis
+                                lancé dans le business de décoratrice intérieure chez les personnes.</p>
                         </div>
                     </section>
                     <!-- fin de bloc présentation -->
@@ -61,12 +57,13 @@ include './include/navBarUtilisateur.php';
                         <div class="row justify-content-center">
                             <div class="text-center mr-4">
                                 <title>MasterClass</title>
-                                <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="oury entrain de maquiller sa mannequin">
+                                <img src="../assets/img/img2/photoDuSite/masterClass.png"
+                                    alt="oury entrain de maquiller sa mannequin">
                                 <p class="colorTextArticles text-center text-white mt-2 mb-5">
-                                    MasterClass de brook'devis, qui c'est déroulé</br>
-                                    en éxtérieur, j'ai réaliser la totalité des photos</br>
-                                    Cette master classe était ma premier préstation.</br>
-                                    Comment bien faire ces silles avec les différents...</br>
+                                    Master class de brook 'devis, qui s'est déroulé</br>
+                                    en extérieur, j'ai réalisé la totalité des photos</br>
+                                    Ce master classé était ma première prestation.</Br>
+                                    Comment bien faire ces sille avec les différends...
                                 </p>
                             </div>
                             <div class="text-center mr-4">
@@ -83,18 +80,21 @@ include './include/navBarUtilisateur.php';
                             <div class="row mt-3">
                                 <div class="text-center mr-5">
                                     <title>Shooting à PARIS</title>
-                                    <img class="img-responsive center-block" src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="les filles">
+                                    <img class="img-responsive center-block"
+                                        src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="les filles">
                                     <p class="colorTextArticles text-center text-white mt-2 mb-5">
-                                        Séance photos en pleine air sur la plage du Havre</br>
+                                        Séance photos en plein air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
-                                        Une journée ensoleillé, j'ai pu faire de belle photo</br>
-                                        en extérieure...
+                                        Une journée ensoleillée, j'ai pu faire de belle
+                                        photo</br>
+                                        en extérieure....
                                     </p>
                                 </div>
                                 <div class="text-center ml-1 mr-5">
                                     <title>Décoration Intérieure</title>
-                                    <img class="img-responsive center-block" src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="table a manger"
-                                        style="width: 22rem;" style="height: 13rem;">
+                                    <img class="img-responsive center-block"
+                                        src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png"
+                                        alt="table a manger" style="width: 22rem;" style="height: 13rem;">
                                     <p class="colorText text-center text-white mt-2 mb-5">
                                         Ma plus belle satisfaction c'est de voir le regard </br>
                                         émerveillé des clients à la réception du chantier" </br>
@@ -119,11 +119,11 @@ include './include/navBarUtilisateur.php';
                             <p class="pt-3">Vous pouvez découvrir su mon site une rubrique dédier à la
                                 photographie,
                                 avec les réalisations que j'ai pu faire depuis mon commencement. Il y a également une
-                                rubrique dédier
+                                rubrique dédiee
                                 à la décoration intérieure (Maison, appartement ...). Je propose mes services pour la
-                                décotation Intérieure de vos maison ,
-                                que vous soyez en cours de construction ou que vous avez juste envie de changer votre
-                                intérieur, je suis la pour donner du renouveau
+                                décotation Intérieure de vos maisons ,
+                                que vous soyez en cours de construction ou que vous avez juste envie de changer vôtre
+                                intérieur, je suis là pour donner du renouveau
                                 à votre intérieur.
                             </p>
                         </div>
@@ -136,10 +136,10 @@ include './include/navBarUtilisateur.php';
                     <section class="container-fluid containerFooters text-white">
                         <div class="text-center mt-2">
                             <p class="pt-4">
-                                Vous pouvez me contacter via le formulaire de conatcte ci-joint</br>
-                                ou par les réseau sociaux (Facebook, Instagram)
-                                N'hésitez pas pour vos reservation à me laisser vos coordonnées en remplir le formulaire
-                                .
+                                Vous pouvez me contacter via le formulaire de contact ci-joint</br>
+                                ou par les réseaux
+                                sociaux (Facebook, Instagram) N'hésitez pas pour vos réservations à me laisser vos
+                                coordonnées en remplir le formulaire..
                             </p>
                         </div>
                         <div class="col mb-2 mt-3 pb-3 text-center">

@@ -96,7 +96,6 @@ class Photos extends Database
         $getPhotosDetails->bindValue(':id_photos', $id_photos , PDO::PARAM_STR);
 
         if($getPhotosDetails->execute()){
-            var_dump('ok');
             return $getPhotosDetails->fetch();
         }else{
             return false;

@@ -11,7 +11,7 @@ if (isset($_POST['photoToModify'])) {
     $_SESSION['photoDetails'] = $photoDetails;
 }
 
-require_once '../view/form_modifyPhotos.php';
+// require_once '../view/form_modifyPhotos.php';
 
 if (isset($_POST['updatePhotoButton'])) {
 

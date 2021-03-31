@@ -301,3 +301,7 @@ a:hover{
 .colorTextArticles{
  color:#8C654F;
 }
+
+.mentions{
+  text-decoration: underline;
+}
