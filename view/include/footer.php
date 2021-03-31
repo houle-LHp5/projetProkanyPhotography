@@ -27,7 +27,7 @@
                         <p>11 Rue des chemins de Fer</p>
                         <p>76620 LE HAVRE</p>
                         <P>Tél : <a href="tel:+33711223344">06 03 80 24 82</a></P>
-                        <P></P>
+                        <p><a href ="sms:+33603802482">Cliquez ici pour envoyer un SMS</a></p>
                         </div>
                         
                     <a href="http://www.monblog.fr/mentions-legales/" target="_blank">Mentions Légales</a>

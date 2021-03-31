@@ -61,7 +61,7 @@ include './include/navBarUtilisateur.php';
                         <div class="row justify-content-center">
                             <div class="text-center mr-4">
                                 <title>MasterClass</title>
-                                <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="">
+                                <img src="../assets/img/img2/photoDuSite/masterClass.png" alt="oury entrain de maquiller sa mannequin">
                                 <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                     MasterClass de brook'devis, qui c'est déroulé</br>
                                     en éxtérieur, j'ai réaliser la totalité des photos</br>
@@ -71,7 +71,7 @@ include './include/navBarUtilisateur.php';
                             </div>
                             <div class="text-center mr-4">
                                 <title>NSNV</title>
-                                <img src="../assets/img/img2/photoDuSite/nsnsMara.png" alt="">
+                                <img src="../assets/img/img2/photoDuSite/nsnsMara.png" alt="mara">
                                 <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                     Le shooting avec les mannequins de mla Marque NSNV</br>
                                     c'etait à la foret de mangeons. NSNV étant</br>
@@ -83,7 +83,7 @@ include './include/navBarUtilisateur.php';
                             <div class="row mt-3">
                                 <div class="text-center mr-5">
                                     <title>Shooting à PARIS</title>
-                                    <img src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="">
+                                    <img class="img-responsive center-block" src="../assets/img/img2/photoDuSite/soeurMannequinStoo.png" alt="les filles">
                                     <p class="colorTextArticles text-center text-white mt-2 mb-5">
                                         Séance photos en pleine air sur la plage du Havre</br>
                                         les filles ont était maquillé par Brook Devis</br>
@@ -93,13 +93,13 @@ include './include/navBarUtilisateur.php';
                                 </div>
                                 <div class="text-center ml-1 mr-5">
                                     <title>Décoration Intérieure</title>
-                                    <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt=""
+                                    <img class="img-responsive center-block" src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco2.png" alt="table a manger"
                                         style="width: 22rem;" style="height: 13rem;">
                                     <p class="colorText text-center text-white mt-2 mb-5">
-                                        Séance photos en pleine air sur la plage du Havre</br>
-                                        les filles ont était maquillé par Brook Devis</br>
-                                        Une journée ensoleillé, j'ai pu faire de belle photo</br>
-                                        en extérieure...
+                                        Ma plus belle satisfaction c'est de voir le regard </br>
+                                        émerveillé des clients à la réception du chantier" </br>
+                                        Pour la petite histoire, je dois avouer que je suis attirée </br>
+                                        par la décoration depuis toujours...
                                     </p>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ include './include/navBarUtilisateur.php';
                     </section>
 
                     <!-- galerie image page d'accueil -->
-                    <section class="row align-center ml-2 mb-2 mt-3">
+                    <section class="row align-center ml-2 mb-2 mt-3 img-responsive center-block">
                         <div class="zoom colonne">
                             <img src="../assets/img/imagePageDecoInterieur/décoRedimensionner/déco1.png"
                                 class="ml-2 mt-2 mr-1 " style="width: 22rem;" style="height: 16rem;"
